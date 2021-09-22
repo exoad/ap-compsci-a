@@ -10,3 +10,7 @@ For each project and assignment, the code and assignment details would be put in
 ### Notice
 
 This repo is only for resources and not to teach you anything directly.
+
+### Code Quality
+
+If I have a current assignment, I will not put it on this REPO before it is due!
