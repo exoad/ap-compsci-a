@@ -25,3 +25,5 @@ This License allows for the distribution of said software for only educational p
 notices must be preserved. Source code is also allowed to be distributed under different names and terms, but not licenses.
 
 Said consumer must use code at their own expenses and risks as the original author will not be held accountable for any misconducts and any mishaps.
+
+<center>Created by Jack Meng 2020 | Last Revised 2021</center>
