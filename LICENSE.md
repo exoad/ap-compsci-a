@@ -1,4 +1,4 @@
-# C-License 1.0
+# C-License 1.0 RENEWED
 
 ```
 COPYRIGHT (C) 2021 JACKMENG
@@ -24,3 +24,4 @@ Permission is hereby granted to anyone of all associated pieces of software, cod
 This License allows for the distribution of said software for only educational purposes. However, no matter the distribution, all original documentations and licensing
 notices must be preserved. Source code is also allowed to be distributed under different names and terms, but not licenses.
 
+Said consumer must use code at their own expenses and risks as the original author will not be held accountable for any misconducts and any mishaps.
