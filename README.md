@@ -4,6 +4,8 @@ Here are the stuffs I did for my AP-CS class of year 2021-2022 at the school of 
 
 Remember, don't copy my code if you get the same project. Please read the license for further details.
 
+All code are licenses and protected by the license see [here](./LICENSE.md). Please read this in order to better understand how things work.
+
 ### Files
 For each project and assignment, the code and assignment details would be put into a seperate folder.
 
