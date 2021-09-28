@@ -2,7 +2,9 @@
 
 Here are the stuffs I did for my AP-CS class of year 2021-2022 at the school of GNSHS.
 
-Remember, don't copy my code if you get the same project. Please read the license for further details.
+**Remember, don't copy my code if you get the same project. Please read the license for further details.**
+
+**COPYING MY CODE WON'T HELP YOU WITH ANYTHING USE IT AT YOUR OWN COST!!!! I TAKE NO RESPONSIBILITIES (See License)**
 
 All code are licenses and protected by the license see [here](./LICENSE.md). Please read this in order to better understand how things work.
 
