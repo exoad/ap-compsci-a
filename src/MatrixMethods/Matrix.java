@@ -46,8 +46,7 @@ public class Matrix {
   }
 
   /**
-   * @param arr the 2D array in question
-   * @return the final array after it's columns and rows have been inversed
+   * @return the final array after it's columns and rows have been inverse
    */
   public int[][] transpose() {
     int[][] temp = new int[partMatrix.length][partMatrix[0].length];
@@ -61,7 +60,7 @@ public class Matrix {
    * Helper method for the rotateArray() method and thus is private
    */
   private int[][] rotateOnce(int[][] ar) {
-    /* Store the modified array here with the sizes of the array inversed */
+    /* Store the modified array here with the sizes of the array inverse */
     int[][] temp = new int[ar[0].length][ar.length];
     final int row_length = ar.length;
 
@@ -106,7 +105,6 @@ public class Matrix {
   }
 
   /**
-   * @param matrix    the matrix to be used with the internal methods
    * @param rotations the amount of rotations needed for the rotateArray() method
    * @param addMatrix this is the 2D array that will be used for the addArrays()
    *                  method
