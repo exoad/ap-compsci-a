@@ -19,6 +19,13 @@ This repo is only for resources and not to teach you anything directly.
 
 If I have a current assignment, I will not put it on this REPO before it is due!
 
-**JDK Used** 16
 
-**JDK Required** 8
+
+| Property Name | Information |
+| ------------- | ----------- |
+| JDK Version   | `16`        |
+| JDK Minimum   | `8`         |
+| Software Used | `DrJava` `VSCode`   |
+
+
+> REMEMBER COPYING CODE FROM HERE WON'T TEACH YOU ANYTHING!!!
