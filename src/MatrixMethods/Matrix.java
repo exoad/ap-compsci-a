@@ -3,6 +3,8 @@
  */
 package src.MatrixMethods;
 
+import java.util.*;
+
 /* Name: Jack Meng 
  * Class: APCS 2021-2022 
  * File Name: Matrix.java 
@@ -18,16 +20,30 @@ public class Matrix {
   /**
    * Initiate the matrix through the constructor
    * 
-   * @param matrix the matrix to be set to var matrix Otherwise overload the
-   *               constructor in which the user can then use the setMatrix()
+   * @param matrix the matrix to be set to var matrix Otherwise overload the method which will ask the user for input
    */
   public Matrix(int[][] matrix) {
     this.matrix = matrix;
-    rows = matrix.length;
-    cols = matrix[0].length;
   }
 
-  public Matrix() {
+  /**
+   * 
+   * @param rowLen the size of the row
+   * @param colLen the size of the columns
+   * 
+   * This method is overloaded and is used when the user decides to input the values manually
+   */
+  public Matrix(int rowLen, int colLen) {
+    rows = rowLen;
+    cols = colLen;
+    matrix = new int[rows][cols];
+    System.out.println("Fill your 2D array: ");
+    for (int i = 0; i < matrix.length; i++) {
+      for (int j = 0; j < matrix[0].length; j++) {
+        System.out.println("Enter value at location: ROW: " + i + " COL: " + j);
+        matrix[i][j] = new Scanner(System.in).nextInt();
+      }
+    }
   }
 
   /*
@@ -41,14 +57,6 @@ public class Matrix {
     return cols;
   }
 
-  /* If the user did not use the proper overloaded method
-   * 
-   */
-  public void setMatrix(int[][] matrix) {
-    if(matrix == null)
-      this.matrix = matrix;
-  }
-
   public int[][] getMatrix() {
     if(matrix == null)
       return null;
@@ -59,17 +67,17 @@ public class Matrix {
    * @return the final array after it's columns and rows have been inversed
    */
   public int[][] transpose() {
-    int[][] temp = new int[matrix.length][matrix[0].length];
-    for (int i = 0; i < matrix.length; i++)
-      for (int j = 0; j < matrix[i].length; j++)
+    int[][] temp = new int[matrix[0].length][matrix.length];
+    for (int i = 0; i < matrix[0].length; i++)
+      for (int j = 0; j < matrix.length; j++)
         /* Inverse the rows and columns from the original array to the new array */
         temp[i][j] = matrix[j][i];
     return temp;
   }
   public int[][] transpose(int[][] arr) {
-    int[][] temp = new int[arr.length][arr[0].length];
-    for (int i = 0; i < arr.length; i++)
-      for (int j = 0; j < arr[i].length; j++)
+    int[][] temp = new int[arr[0].length][arr.length];
+    for (int i = 0; i < arr[0].length; i++)
+      for (int j = 0; j < arr.length; j++)
         /* Inverse the rows and columns from the original array to the new array */
         temp[i][j] = arr[j][i];
     return temp;
