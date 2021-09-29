@@ -11,6 +11,6 @@ public class MatrixDriver {
     int[][] testCase1Correct = { { 4, 1, 4, 1 }, { 2, 3, 3, 3 }, { 5, 5, 1, 4 }, { 0, 2, 8, 9 } };
     Matrix t = new Matrix(test);
     System.out.println(t.toString(test1, 90));
-    System.out.println(Arrays.deepEquals(t.rotateArray(testCase1, 90), testCase1Correct) ? "OK" : "NO");
+    System.out.println(Arrays.deepEquals(t.rotateArray(testCase1, 90), testCase1Correct) ? "OK 1" : "NO");
   }
 }
