@@ -51,14 +51,24 @@ COMMENTED.
   the
   given transformation to the given <code>Point</code>. They get harder as you go down the list.<br>
   <code>Point translate(double deltaX, double deltaY)
-Point dilate(double factor)   //dilates by given factor, center at origin<br>
-Point reflectYEqualsX()                 //reflects across line y = x<br>
-Point reflectHorizontal(double xValue)  //reflects across line x = xValue<br>
-Point reflectVertical(double yValue)    //reflects across line y = yValue<br>
-Point rotate(int angle) //angle must be a multiple of 90°<br>
-Point dilate(double factor, Point center) //center of dilation variable<br>
-Point rotate(double angle) //rotates by angle (degrees) around origin<br>
-Point rotate(double angle, Point center) //rotates by angle around center<br>
+    
+Point dilate(double factor)   //dilates by given factor, center at origin
+    
+Point reflectYEqualsX()                 //reflects across line y = x
+    
+Point reflectHorizontal(double xValue)  //reflects across line x = xValue
+    
+Point reflectVertical(double yValue)    //reflects across line y = yValue
+    
+Point rotate(int angle) //angle must be a multiple of 90°
+    
+Point dilate(double factor, Point center) //center of dilation variable
+    
+Point rotate(double angle) //rotates by angle (degrees) around origin
+    
+Point rotate(double angle, Point center) //rotates by angle around center
+    
 Point reflect(Point a, Point b) //reflects across line through a and b
+    
 <code>
 </p>
