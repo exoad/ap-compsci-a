@@ -3,7 +3,7 @@
  */
 package src.MatrixMethods;
 
-import java.util.*;
+import java.util.Scanner;
 
 /* Name: Jack Meng 
  * Class: APCS 2021-2022 
@@ -43,7 +43,7 @@ public class Matrix {
     System.out.println("Fill your 2D array: ");
     for (int i = 0; i < matrix.length; i++) {
       for (int j = 0; j < matrix[0].length; j++) {
-        System.out.println("Enter value at location: ROW: " + i + " COL: " + j);
+        System.out.println("Enter value at location: ROW: " + (i + 1) + " COL: " + (j + 1));
         matrix[i][j] = new Scanner(System.in).nextInt();
       }
     }

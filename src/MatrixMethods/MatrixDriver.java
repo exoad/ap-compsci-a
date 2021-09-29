@@ -20,7 +20,7 @@ public class MatrixDriver {
     Matrix t3 = new Matrix(3,3);
 
     System.out.println(Arrays.deepToString(t3.transpose()));
-
+    System.out.println(Arrays.deepToString(t3.rotateArray(90)));
     System.out.flush();
   }
 }
