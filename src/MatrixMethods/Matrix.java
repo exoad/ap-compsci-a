@@ -12,19 +12,19 @@ public class Matrix {
   /**
    * Properties that will be used
    */
-  private int[][] partMatrix;
+  private int[][] matrix;
   private int rows, cols;
 
   /**
    * Initiate the matrix through the constructor
    * 
-   * @param matrix the matrix to be set to var partMatrix Otherwise overload the
+   * @param matrix the matrix to be set to var matrix Otherwise overload the
    *               constructor in which the user can then use the setMatrix()
    */
   public Matrix(int[][] matrix) {
-    partMatrix = matrix;
-    rows = partMatrix.length;
-    cols = partMatrix[0].length;
+    this.matrix = matrix;
+    rows = matrix.length;
+    cols = matrix[0].length;
   }
 
   public Matrix() {
@@ -41,24 +41,37 @@ public class Matrix {
     return cols;
   }
 
-  /* If the user did not use the proper overloaded method */
+  /* If the user did not use the proper overloaded method
+   * 
+   */
   public void setMatrix(int[][] matrix) {
-    partMatrix = matrix;
+    if(matrix == null)
+      this.matrix = matrix;
   }
 
   public int[][] getMatrix() {
-    return partMatrix;
+    if(matrix == null)
+      return null;
+    return matrix;
   }
 
   /**
    * @return the final array after it's columns and rows have been inversed
    */
   public int[][] transpose() {
-    int[][] temp = new int[partMatrix.length][partMatrix[0].length];
-    for (int i = 0; i < partMatrix.length; i++)
-      for (int j = 0; j < partMatrix[i].length; j++)
+    int[][] temp = new int[matrix.length][matrix[0].length];
+    for (int i = 0; i < matrix.length; i++)
+      for (int j = 0; j < matrix[i].length; j++)
         /* Inverse the rows and columns from the original array to the new array */
-        temp[i][j] = partMatrix[j][i];
+        temp[i][j] = matrix[j][i];
+    return temp;
+  }
+  public int[][] transpose(int[][] arr) {
+    int[][] temp = new int[arr.length][arr[0].length];
+    for (int i = 0; i < arr.length; i++)
+      for (int j = 0; j < arr[i].length; j++)
+        /* Inverse the rows and columns from the original array to the new array */
+        temp[i][j] = arr[j][i];
     return temp;
   }
 
@@ -85,14 +98,30 @@ public class Matrix {
    */
   public int[][] rotateArray(int rot) {
     if (rot == 90)
-      return rotateOnce(partMatrix);
+      return rotateOnce(matrix);
     else if (rot == 180)
-      return rotateOnce(rotateOnce(partMatrix));
+      return rotateOnce(rotateOnce(matrix));
     else if (rot == 270)
-      return rotateOnce(rotateOnce(rotateOnce(partMatrix)));
+      return rotateOnce(rotateOnce(rotateOnce(matrix)));
     else if (rot == 360)
       /* Just to make sure */
-      return rotateOnce(rotateOnce(rotateOnce(rotateOnce(partMatrix))));
+    return rotateOnce(rotateOnce(rotateOnce(rotateOnce(matrix))));
+
+    return null;
+  }
+  /*
+   * Overloaded Version
+   */ 
+  public int[][] rotateArray(int[][] arr, int rot) {
+    if (rot == 90)
+      return rotateOnce(arr);
+    else if (rot == 180)
+      return rotateOnce(rotateOnce(arr));
+    else if (rot == 270)
+      return rotateOnce(rotateOnce(rotateOnce(arr)));
+    else if (rot == 360)
+      /* Just to make sure */
+      return rotateOnce(rotateOnce(rotateOnce(rotateOnce(arr))));
 
     return null;
   }
@@ -103,9 +132,9 @@ public class Matrix {
    */
   public int addArrays(int[][] toAdd) {
     int sum = 0;
-    for (int i = 0; i < partMatrix.length; i++)
-      for (int j = 0; j < partMatrix[i].length; j++)
-        sum += toAdd[i][j] + partMatrix[i][j];
+    for (int i = 0; i < matrix.length; i++)
+      for (int j = 0; j < matrix[i].length; j++)
+        sum += toAdd[i][j] + matrix[i][j];
     return sum;
   }
 
@@ -118,8 +147,8 @@ public class Matrix {
   public String toString(int[][] addMatrix, int rotations) {
     String con = "";
     con += "Add 2D arrays: " + addArrays(addMatrix) + "\n";
-    con += "Rotate Arrays with degrees " + rotations + " : " + arrayToString(rotateArray(rotations)) + "\n";
-    con += "Transpose the Array: " + arrayToString(transpose()) + "\n";
+    con += "Rotate Arrays with degrees " + rotations + " : \n" + arrayToString(rotateArray(rotations)) + "\n";
+    con += "Transpose the Array: \n" + arrayToString(transpose()) + "\n";
     con += "Matrix Properties, Rows : " + rows + " Columns : " + cols + "\n";
 
     return con;
@@ -130,11 +159,13 @@ public class Matrix {
    * String
    */
   private String arrayToString(int[][] arr) {
-    String con = "";
-    for (int i = 0; i < arr.length; i++)
-      for (int j = 0; j < arr[0].length; j++)
-        con += arr[i][j] + " ";
-    con += "\n";
+    String con = "\n";
+    for (int[] el : arr) {
+      for (int e : el) {
+        con += e + " ";
+      }
+      con += "\n";
+    }
     return con;
   }
 }
