@@ -1,7 +1,8 @@
 package src.MatrixMethods;
 
 /**
- * Name: Jack Meng Class: APCS 2021-2022 File Name: Matrix.java Purpose:
+ * Name: Jack Meng Class: APCS 2021-2022 File Name: Matrix.java Purpose: To
+ * demonstrate the use of class to perform certain functions
  * 
  */
 public class Matrix {
@@ -107,7 +108,6 @@ public class Matrix {
   /**
    * @param rotations the amount of rotations needed for the rotateArray() method
    * @param addMatrix this is the 2D array that will be used for the addArrays()
-   *                  method
    * @return the final value returned to the user without the user having to set
    *         everything up
    */
@@ -119,7 +119,6 @@ public class Matrix {
     con += "Matrix Properties, Rows : " + rows + " Columns : " + cols + "\n";
 
     return con;
-
   }
 
   /*
