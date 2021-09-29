@@ -20,18 +20,21 @@ public class Matrix {
   /**
    * Initiate the matrix through the constructor
    * 
-   * @param matrix the matrix to be set to var matrix Otherwise overload the method which will ask the user for input
+   * @param matrix the matrix to be set to var matrix Otherwise overload the
+   *               method which will ask the user for input
    */
   public Matrix(int[][] matrix) {
     this.matrix = matrix;
+    rows = matrix.length;
+    cols = matrix[0].length;
   }
 
   /**
-   * 
    * @param rowLen the size of the row
    * @param colLen the size of the columns
    * 
-   * This method is overloaded and is used when the user decides to input the values manually
+   *               This method is overloaded and is used when the user decides to
+   *               input the values manually
    */
   public Matrix(int rowLen, int colLen) {
     rows = rowLen;
@@ -57,10 +60,12 @@ public class Matrix {
     return cols;
   }
 
+  public int getSpecific(int row, int column) {
+    return matrix == null ? null : matrix[row][column];
+  }
+
   public int[][] getMatrix() {
-    if(matrix == null)
-      return null;
-    return matrix;
+    return matrix == null ? null : matrix;
   }
 
   /**
@@ -74,6 +79,7 @@ public class Matrix {
         temp[i][j] = matrix[j][i];
     return temp;
   }
+
   public int[][] transpose(int[][] arr) {
     int[][] temp = new int[arr[0].length][arr.length];
     for (int i = 0; i < arr[0].length; i++)
@@ -85,6 +91,7 @@ public class Matrix {
 
   /**
    * Helper method for the rotateArray() method and thus is privated
+   * 
    * @param ar the array to be rotated 90 degrees
    */
   private int[][] rotateOnce(int[][] ar) {
@@ -114,13 +121,14 @@ public class Matrix {
       return rotateOnce(rotateOnce(rotateOnce(matrix)));
     else if (rot == 360)
       /* Just to make sure */
-    return rotateOnce(rotateOnce(rotateOnce(rotateOnce(matrix))));
+      return rotateOnce(rotateOnce(rotateOnce(rotateOnce(matrix))));
 
     return null;
   }
+
   /*
    * Overloaded Version
-   */ 
+   */
   public int[][] rotateArray(int[][] arr, int rot) {
     if (rot == 90)
       return rotateOnce(arr);
