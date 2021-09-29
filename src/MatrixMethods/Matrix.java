@@ -34,13 +34,14 @@ public class Matrix {
    * Setter & Mutator Methods
    */
   public int getRows() {
-    return partMatrix.length;
+    return rows;
   }
 
   public int getColumns() {
-    return partMatrix[0].length;
+    return cols;
   }
 
+  /* If the user did not use the proper overloaded method */
   public void setMatrix(int[][] matrix) {
     partMatrix = matrix;
   }
@@ -62,7 +63,7 @@ public class Matrix {
   }
 
   /*
-   * Helper method for the rotateArray() method and thus is private
+   * Helper method for the rotateArray() method and thus is privated
    */
   private int[][] rotateOnce(int[][] ar) {
     /* Store the modified array here with the sizes of the array inverse */
