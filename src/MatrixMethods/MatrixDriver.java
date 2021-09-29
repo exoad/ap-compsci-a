@@ -17,9 +17,9 @@ public class MatrixDriver {
     System.out.println(Arrays.deepEquals(t.rotateArray(testCase1, 90), testCase1Correct) ? "OK 1" : "NO");
     System.out.println();
 
-    Matrix t3 = new Matrix(2,2);
+    Matrix t3 = new Matrix(3,3);
 
-    System.out.println(t3.toString(test, 90));
+    System.out.println(Arrays.deepToString(t3.transpose()));
 
     System.out.flush();
   }
