@@ -75,8 +75,9 @@ public class Matrix {
     return temp;
   }
 
-  /*
+  /**
    * Helper method for the rotateArray() method and thus is privated
+   * @param ar the array to be rotated 90 degrees
    */
   private int[][] rotateOnce(int[][] ar) {
     /* Store the modified array here with the sizes of the array inverse */
