@@ -1,9 +1,12 @@
+/*
+ * Remove this package declaration
+ */
 package src.MatrixMethods;
 
-/**
- * Name: Jack Meng Class: APCS 2021-2022 File Name: Matrix.java Purpose: To
- * demonstrate the use of class to perform certain functions
- * 
+/* Name: Jack Meng 
+ * Class: APCS 2021-2022 
+ * File Name: Matrix.java 
+ * Purpose: Todemonstrate the use of class to perform certain functions
  */
 public class Matrix {
   /**
@@ -47,7 +50,7 @@ public class Matrix {
   }
 
   /**
-   * @return the final array after it's columns and rows have been inverse
+   * @return the final array after it's columns and rows have been inversed
    */
   public int[][] transpose() {
     int[][] temp = new int[partMatrix.length][partMatrix[0].length];
