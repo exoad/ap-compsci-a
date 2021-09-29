@@ -26,4 +26,4 @@ notices must be preserved. Source code is also allowed to be distributed under d
 
 Said consumer must use code at their own expenses and risks as the original author will not be held accountable for any misconducts and any mishaps.
 
-> Created by Jack Meng 2020 | Last Revised 2021
+> Created by Jack Meng 2020 | Last Revised 2021 | Copyright not Copyleft 
