@@ -56,6 +56,7 @@ public class Matrix {
     int[][] temp = new int[partMatrix.length][partMatrix[0].length];
     for (int i = 0; i < partMatrix.length; i++)
       for (int j = 0; j < partMatrix[i].length; j++)
+        /* Inverse the rows and columns from the original array to the new array */
         temp[i][j] = partMatrix[j][i];
     return temp;
   }
@@ -67,7 +68,6 @@ public class Matrix {
     /* Store the modified array here with the sizes of the array inverse */
     int[][] temp = new int[ar[0].length][ar.length];
     final int row_length = ar.length;
-
     /*
      * Loop through the 2D array and append the new values to the new array (temp)
      * in the correct location within a time complexity of O(N^2)
@@ -125,18 +125,15 @@ public class Matrix {
   }
 
   /*
-   * Helper method for the main toString()
-   * 
-   * Only converts 2D arrays of integers to String
+   * Helper method for the main toString() Only converts 2D arrays of integers to
+   * String
    */
   private String arrayToString(int[][] arr) {
     String con = "";
-    for (int i = 0; i < arr.length; i++) {
-      for (int j = 0; j < arr[0].length; j++) {
+    for (int i = 0; i < arr.length; i++)
+      for (int j = 0; j < arr[0].length; j++)
         con += arr[i][j] + " ";
-      }
-      con += "\n";
-    }
+    con += "\n";
     return con;
   }
 }
