@@ -2,6 +2,7 @@
 .idea
 .vscode
 /out
+.settings
 
 # current assignments ignore
 /src/Quadrilaterals/*.java
