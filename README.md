@@ -1,4 +1,4 @@
-# AP-Computer Science
+# AP-Computer Science [![Java CI with Gradle](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml/badge.svg)](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml)
 
 Here are the stuffs I did for my AP-CS class of year 2021-2022 at the school of GNSHS.
 
