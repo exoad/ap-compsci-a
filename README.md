@@ -11,6 +11,8 @@ All code are licenses and protected by the license see [here](./LICENSE.md). Ple
 ### Files
 For each project and assignment, the code and assignment details would be put into a seperate folder.
 
+Check in the folder `/src/`. Folders besides this folder should be ignored unless you are running this entire repo.
+
 ### Notice
 
 This repo is only for resources and not to teach you anything directly.
