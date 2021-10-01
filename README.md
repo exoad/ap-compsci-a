@@ -13,6 +13,8 @@ For each project and assignment, the code and assignment details would be put in
 
 Check in the folder `/src/`. Folders besides this folder should be ignored unless you are running this entire repo.
 
+Check `TODO.md` for more info on how I am gonna make this repository more usable :)
+
 ### Notice
 
 This repo is only for resources and not to teach you anything directly.
