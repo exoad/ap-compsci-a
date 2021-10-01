@@ -3,6 +3,7 @@
 .vscode
 /out
 .settings
+.gradle
 
 # current assignments ignore
 /src/Quadrilaterals/*.java
