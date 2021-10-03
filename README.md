@@ -11,9 +11,12 @@ All code are licenses and protected by the license see [here](./LICENSE.md). Ple
 ### Files
 For each project and assignment, the code and assignment details would be put into a seperate folder.
 
-Check in the folder `/src/`. Folders besides this folder should be ignored unless you are running this entire repo.
+Check in the folder `/resource/`. Folders besides this folder should be ignored unless you are running this entire repo.
 
 Check [TODO.md](./TODO.md) for more info on how I am gonna make this repository more usable :)
+
+For the files related to the easier accessor program, look into the folder `/src/`
+
 
 ### Notice
 
