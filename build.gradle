@@ -2,6 +2,10 @@ apply plugin: 'java'
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
+sourceSets.main.java.srcDirs = ['/src'];
+
+
+
 jar {
     archiveBaseName = 'jack-apcs'
     archiveVersion =  '0.0.1'

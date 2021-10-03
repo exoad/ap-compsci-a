@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
 	<name>jack-meng-apcs</name>
-	<comment>Project apcs created by Buildship.</comment>
+	<comment>APCS Resource folder</comment>
 	<projects>
 	</projects>
 	<buildSpec>
@@ -22,7 +22,7 @@
 	</natures>
 	<filteredResources>
 		<filter>
-			<id>1633054550032</id>
+			<id>0</id>
 			<name></name>
 			<type>30</type>
 			<matcher>

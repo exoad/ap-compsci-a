@@ -60,7 +60,7 @@ die () {
     exit 1
 }
 
-# OS specific support (must be 'true' or 'false').
+
 cygwin=false
 msys=false
 darwin=false
@@ -81,9 +81,6 @@ case "`uname`" in
 esac
 
 CLASSPATH=$APP_HOME/gradle/wrapper/gradle-wrapper.jar
-
-
-# Determine the Java command to use to start the JVM.
 if [ -n "$JAVA_HOME" ] ; then
     if [ -x "$JAVA_HOME/jre/sh/java" ] ; then
         # IBM's JDK on AIX uses strange locations for the executables
