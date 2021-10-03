@@ -4,8 +4,3 @@
 /out
 .settings
 /.gradle
-
-/resource
-
-# current assignments ignore
-/src/Quadrilaterals/*.java
