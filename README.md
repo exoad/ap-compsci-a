@@ -1,5 +1,4 @@
-# AP-Computer Science [![Java CI with Gradle](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml/badge.svg)](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml) [![Java CI with Maven](https://github.com/meng-jack/apcs/actions/workflows/maven.yml/badge.svg)](https://github.com/meng-jack/apcs/actions/workflows/maven.yml)
-
+# AP-Computer Science [![Java CI with Gradle](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml) [![Java CI with Maven](https://github.com/meng-jack/apcs/actions/workflows/maven.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/maven.yml) [![Prettier for JS Code](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml) [![CodeQL](https://github.com/meng-jack/apcs/actions/workflows/codeql.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/codeql.yml)
 Here are the stuffs I did for my AP-CS class of year 2021-2022 at the school of GNSHS.
 
 **Remember, don't copy my code if you get the same project. Please read the license for further details.**
