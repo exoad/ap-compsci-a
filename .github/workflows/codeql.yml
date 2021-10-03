@@ -63,7 +63,6 @@ jobs:
 
     - run: |
         gradle build
-        make release
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v1
