@@ -1,4 +1,4 @@
-package src.HomeWorks;
+package resource.HomeWorks;
 
 public class CreateMatrix {
   public static String[][] createMatrix(String[] arr) {

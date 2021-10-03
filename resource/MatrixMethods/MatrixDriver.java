@@ -1,4 +1,4 @@
-package src.MatrixMethods;
+package resource.MatrixMethods;
 
 import java.util.Arrays;
 

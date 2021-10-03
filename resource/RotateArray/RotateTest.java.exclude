@@ -1,4 +1,4 @@
-package src.assignments.RotateArray;
+package resource.assignments.RotateArray;
 
 /**
  * Tests for class RotateArray.

@@ -1,4 +1,4 @@
-package src.HomeWorks;
+package resource.HomeWorks;
 
 public class MaxRow {
   public static int[] largestRow(int[][] arr) {

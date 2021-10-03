@@ -1,7 +1,7 @@
 /*
  * Remove this package declaration
  */
-package src.MatrixMethods;
+package resource.MatrixMethods;
 
 import java.util.Scanner;
 

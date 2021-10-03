@@ -40,11 +40,11 @@
   </component>
   <component name="RunManager">
     <configuration name="MatrixDriver" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="src.MatrixMethods.MatrixDriver" />
+      <option name="MAIN_CLASS_NAME" value="resource.MatrixMethods.MatrixDriver" />
       <module name="apcs" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="src.MatrixMethods.*" />
+          <option name="PATTERN" value="resource.MatrixMethods.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
