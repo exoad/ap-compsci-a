@@ -32,8 +32,6 @@ If I have a current assignment, I will not put it on this REPO before it is due!
 
 ### Gradle Wrapper
 
-Use your required setup, `gradlew.bat` or just `./gradlew` depending on your OS
-
 
 | Property Name | Information |
 | ------------- | ----------- |
