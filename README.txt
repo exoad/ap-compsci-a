@@ -6,3 +6,5 @@ straight from the repository. Instead, this is a much more user friendly setup :
 This is a work in progress, usability documentations will arrive later.
 
 See License.txt
+
+Notice: This branch is to never be PR into master as these two branches are separate entities
