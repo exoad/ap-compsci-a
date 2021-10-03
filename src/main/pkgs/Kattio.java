@@ -1,3 +1,7 @@
+/**
+ * @author Kattis
+ */
+
 package main.pkgs;
 
 import java.util.StringTokenizer;

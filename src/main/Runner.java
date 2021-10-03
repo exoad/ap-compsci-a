@@ -1,20 +1,23 @@
 /**
  * C-License 1.2 RENEWED
- *
+ * @author Jack Meng
+ * @since 1.2
  * COPYRIGHT (C) 2021 JACKMENG
  */
 
 package main;
 
-import java.util.BufferedReader;
-import java.lang.*;
+import main.pkgs.DaxIO;
 import main.pkgs.Kattio;
 
-public class Runner {
-  public static void main(String[] args) {
+public class Runner extends DaxIO {
+  /**
+   * @throws java.lang.Exception
+   */
+  public static void main(String[] args) throws java.lang.Exception {
     Kattio sc = new Kattio(System.in);
-    System.out.println();
+    println("Hello");
     
-    Process p = Runtime.getRuntime().exec(null);
+    //Process p = Runtime.getRuntime().exec(null);
   }  
 }
