@@ -16,7 +16,7 @@ on:
     branches: [ dax-program ]
   pull_request:
     # The branches below must be a subset of the branches above
-    branches: [ master ]
+    branches: [ dax-program ]
   schedule:
     - cron: '20 7 * * 0'
 
@@ -62,7 +62,7 @@ jobs:
     #    uses a compiled language
 
     - run: |
-        make bootstrap
+        gradle build
         make release
 
     - name: Perform CodeQL Analysis
