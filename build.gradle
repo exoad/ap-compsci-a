@@ -1,0 +1,14 @@
+apply plugin: 'java'
+sourceCompatibility = org.gradle.api.JavaVersion.VERSION_16
+targetCompatibility = org.gradle.api.JavaVersion.VERSION_16
+
+
+
+sourceSets.main.java.srcDirs = ['/src'];
+
+
+
+jar {
+    archiveBaseName = 'jack-apcs'
+    archiveVersion =  '0.0.1'
+}
