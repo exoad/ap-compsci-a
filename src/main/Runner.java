@@ -10,13 +10,14 @@ package main;
 import main.pkgs.DaxIO;
 import main.pkgs.Kattio;
 
-public class Runner extends DaxIO {
+public class Runner {
   /**
    * @throws java.lang.Exception
    */
   public static void main(String[] args) throws java.lang.Exception {
     Kattio sc = new Kattio(System.in);
-    println("Hello");
+    DaxIO stdout = new DaxIO();
+    stdout.println();
     
     //Process p = Runtime.getRuntime().exec(null);
   }  

@@ -11,36 +11,34 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 
 public class DaxIO {
-  private static OutputStreamWriter osw;
+  private OutputStreamWriter osw;
   private static Object byteBuffer;
 
   public DaxIO() {
     osw = new OutputStreamWriter(System.out);
   }
 
-  public static <T> void println(T streamByte) {
+  public <T> void println(T streamByte) {
     DaxIO.byteBuffer = streamByte;
     try {
-      osw.write("" + streamByte);
-      new DaxIO();
-      DaxIO.println();
+      osw.write((Object) streamByte + "\n");
       osw.flush();
     } catch (IOException e) {
       e.printStackTrace();
     }
   }
 
-  public static <T> void print(T streamByte) {
+  public <T> void print(T streamByte) {
     DaxIO.byteBuffer = streamByte;
     try {
-      osw.write("" + streamByte);
+      osw.write((Object) streamByte + "");
       osw.flush();
     } catch (IOException e) {
       e.printStackTrace();
     }
   }
 
-  public static <T> void print() {
+  public <T> void print() {
     try {
       osw.write("");
       osw.flush();
@@ -49,7 +47,7 @@ public class DaxIO {
     }
   }
 
-  public static <T> void flush() {
+  public <T> void flush() {
     try {
       osw.flush();
       osw.notify();
@@ -58,7 +56,7 @@ public class DaxIO {
     }
   }
 
-  public static void println() {
+  public void println() {
     try {
       osw.write("\n");
       osw.flush();
@@ -67,15 +65,15 @@ public class DaxIO {
     }
   }
 
-  public static void writeBuffer() {
+  public void writeBuffer() {
     try {
-      osw.write((String) byteBuffer);
+      osw.write((Object) byteBuffer + " \n");
     } catch (IOException e) {
       e.printStackTrace();
     }
   }
 
-  public static void close() throws IOException {
+  public void close() throws IOException {
     osw.flush();
     osw.close();
     byteBuffer = null;
