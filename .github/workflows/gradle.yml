@@ -5,9 +5,9 @@ name: Java CI with Gradle
 
 on:
   push:
-    branches: [ master ]
+    branches: [ dax-program ]
   pull_request:
-    branches: [ master ]
+    branches: [ dax-program ]
 
 jobs:
   build:
