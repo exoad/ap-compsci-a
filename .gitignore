@@ -1,0 +1,12 @@
+*.class
+.idea
+.vscode
+/out
+.settings
+/.gradle
+
+/src/
+
+# current assignments ignore
+/resource/quadrilateral/*.java
+/resource/quadrilateral/*.class
