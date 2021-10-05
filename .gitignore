@@ -8,9 +8,5 @@
 /src/
 
 # current assignments ignore
-<<<<<<< HEAD
 /resource/quadrilateral/*.java
 /resource/quadrilateral/*.class
-=======
-/resource/quadrilateral/*.java
->>>>>>> c8cd1141b33d85418a5c0aa5e06bb85150fcd38b
