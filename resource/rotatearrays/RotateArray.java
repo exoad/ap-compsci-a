@@ -1,4 +1,4 @@
-package rotatearrays;
+package resource.rotatearrays;
 
 /**
  * @author Jack Meng File name: RotateArray.java Purpose: to rotate a 2D array

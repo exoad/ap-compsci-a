@@ -1,4 +1,4 @@
-package homeworks;
+package resource.homeworks;
 
 public class CreateMatrix {
   public static String[][] createMatrix(String[] arr) {
