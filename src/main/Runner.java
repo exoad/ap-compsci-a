@@ -10,21 +10,22 @@ package main;
 
 import main.pkgs.DaxIO;
 import main.pkgs.Kattio;
+import main.pkgs.Eval;
 
 public class Runner {
-  public Runner() {
-    
-  }
+  protected static Eval e;
+  protected static Kattio sc;
+  protected static DaxIO std;
   /**
    * @throws java.lang.Exception
    */
   public static void main(String[] args) throws java.lang.Exception {
-    Kattio sc = new Kattio(System.in);
-    DaxIO stdout = new DaxIO();
-    stdout.println("Enter file");
+    sc = new Kattio(System.in);
+    std = new DaxIO();
+    std.println("Enter file");
     //nvm
     
-    Runtime.getRuntime().exec("javac ./test/Test.java && java ./test/Test");
+    new Eval("java ./test/Test.java");
 
 
     
