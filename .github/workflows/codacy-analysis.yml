@@ -6,14 +6,14 @@
 # For more information on Codacy Analysis CLI in general, see
 # https://github.com/codacy/codacy-analysis-cli.
 
-name: Codacy Security Scan
+name: Codacy Security Scan Branch 2
 
 on:
   push:
-    branches: [ master ]
+    branches: [ dax-program ]
   pull_request:
     # The branches below must be a subset of the branches above
-    branches: [ master ]
+    branches: [ dax-program ]
   schedule:
     - cron: '17 15 * * 4'
 
