@@ -1,7 +1,9 @@
 apply plugin: 'java'
+apply plugin: 'application'
 sourceCompatibility = 11
 targetCompatibility = 11
 
+mainClassName = 'src.main.Runner'
 
 
 sourceSets {
