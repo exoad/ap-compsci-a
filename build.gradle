@@ -1,10 +1,17 @@
 apply plugin: 'java'
-sourceCompatibility = org.gradle.api.JavaVersion.VERSION_16
-targetCompatibility = org.gradle.api.JavaVersion.VERSION_16
+sourceCompatibility = 11
+targetCompatibility = 11
 
 
 
-sourceSets.main.java.srcDirs = ['/src'];
+sourceSets {
+    main {
+        java {
+            srcDirs 'src'
+            srcDirs 'test'
+        }
+    }
+ }
 
 
 
