@@ -7,8 +7,8 @@ targetCompatibility = 11
 sourceSets {
     main {
         java {
-            srcDirs 'src'
-            srcDirs 'test'
+            srcDirs './src'
+            srcDirs './test'
         }
     }
  }
