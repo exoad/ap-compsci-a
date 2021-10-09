@@ -1,3 +1,5 @@
+package resource.quadrilateral;
+
 /*
  * Author Jack Meng
  * Purpose: This is a class that creates a point on a XY coordinate plane
