@@ -1,4 +1,4 @@
-name: Prettier for JS Code
+name: Prettier for Code
 
 on:
   push:
