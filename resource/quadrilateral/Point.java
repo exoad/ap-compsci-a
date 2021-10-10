@@ -85,7 +85,7 @@ public class Point {
      * @return a new instance after the change in values
      */
     public Point translate(double deltaX, double deltaY) {
-        return new Point(x + deltaX, y + deltaY);
+        return new Point(x - deltaX, y - deltaY);
     }
 
     /**
