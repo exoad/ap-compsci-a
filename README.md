@@ -16,6 +16,8 @@ Check [TODO.md](./TODO.md) for more info on how I am gonna make this repository 
 
 For files related to the dax program please check the branch `dax-program`
 
+The file [LATEST](./LATEST) will provide you all the current assignments and projects that is ongoing or is recent. Use it to view the status of this repository 
+
 ### Dax Program
 
 I created this program so you could easily find anything you are looking for without having to look through this master branch manually. Just run the program and yea :).
