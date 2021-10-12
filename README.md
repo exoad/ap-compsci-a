@@ -33,6 +33,8 @@ If I have a current assignment, I will not put it on this REPO before it is due!
 
 There is a Codacy Badge above that will show this branch's Code quality and Grade, with `A` being the best, etc..
 
+Some workflows to improve Code Quality are the following Workflows: `Prettier, Codacy, Discord Webhook`
+
 ### Gradle Wrapper
 
 
