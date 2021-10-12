@@ -31,6 +31,8 @@ This repo is only for resources and not to teach you anything directly.
 
 If I have a current assignment, I will not put it on this REPO before it is due!
 
+There is a Codacy Badge above that will show this branch's Code quality and Grade, with `A` being the best, etc..
+
 ### Gradle Wrapper
 
 
