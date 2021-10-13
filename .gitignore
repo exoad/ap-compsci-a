@@ -6,3 +6,6 @@
 /.gradle
 
 # current assignments ignore
+/resource/account/solution/*.java
+/resource/account/solution/*.md
+/resource/account/solution/*.txt
