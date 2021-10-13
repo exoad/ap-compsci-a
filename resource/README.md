@@ -18,3 +18,8 @@ For more information about Code Usage(s) see: [Click Here](../LICENSE.md)
 [/quadrilateral](/quadrilateral) - This folder contains everything for the Quadrilateral Project 
 
 [/rotatearray](/rotatearray) - This folder contains everything for the Miniproject Rotate Array
+
+## Files
+[README](./README.md) - This file is the current file you are reading
+
+[TODO](./TODO) - Things I plan on doing for this directory
