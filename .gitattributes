@@ -19,7 +19,7 @@
 *.tag           text
 *.tagx          text
 *.xml           text
-*.class         binary
+*.class         text
 *.dll           binary
 *.ear           binary
 *.jar           binary
