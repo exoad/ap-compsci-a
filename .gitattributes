@@ -19,7 +19,7 @@
 *.tag           text
 *.tagx          text
 *.xml           text
-*.class         text
+*.class         text diff=java
 *.dll           binary
 *.ear           binary
 *.jar           binary
