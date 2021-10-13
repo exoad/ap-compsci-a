@@ -1,0 +1,2 @@
+*.java          text diff=java
+*.kt            text diff=kotlin
