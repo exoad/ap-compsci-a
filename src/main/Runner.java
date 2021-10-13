@@ -34,4 +34,14 @@ public class Runner {
     
     //Process p = Runtime.getRuntime().exec(null);
   }  
+  public Runner() {
+    JFrame jf = new JFrame("Jack Meng - APCS 2021-2022 | Dax Program");
+
+
+    JPanel jp = new JPanel();
+    jf.add(jp);
+    jf.setDefaultLookAndFeelDecorated(javax.swing.default_index());
+    jf.pack();
+    jp.setVisible(true);
+  }
 }
