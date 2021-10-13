@@ -12,3 +12,4 @@ See License.txt for more information.
 Note: this license applies to the totality of this repository, this means source code within may also have differing licenses according to their specific owners.
 
 Notice: This branch is to never be PR into master as these two branches are separate entities
+Notice: This program is not licensed as the master branch, please see the LICENSE file in this branch for further detail about the license.
