@@ -1,0 +1,3 @@
+tasks:
+  - init: echo 'apcs'
+    command: echo 'welcome'
