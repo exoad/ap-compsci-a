@@ -1,3 +1,5 @@
+package resource.miniprojects.account.original;
+
 public class CheckingAccount extends Account {
   //Additional properties/fields:
   private int nextCheckNumber;

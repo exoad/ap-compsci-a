@@ -1,4 +1,4 @@
-package resource.quadrilateral;
+package resource.projects.quadrilateral;
 
 /*
  * Author Jack Meng

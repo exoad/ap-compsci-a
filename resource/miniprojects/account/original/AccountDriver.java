@@ -1,3 +1,5 @@
+package resource.miniprojects.account.original;
+
 public class AccountDriver {
   public static void main(String[] args) {
     Account[] acctList = new Account[6];

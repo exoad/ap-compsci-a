@@ -1,3 +1,5 @@
+package resource.miniprojects.account.original;
+
 public class SavingsAccount extends Account {
   //Additional properties/fields:
   private double interestRate;

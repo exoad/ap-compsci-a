@@ -1,7 +1,7 @@
 /*
  * Remove this package declaration
  */
-package resource.matrixmethod;
+package resource.miniprojects.matrixmethod;
 
 import java.util.Scanner;
 

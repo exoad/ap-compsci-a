@@ -1,4 +1,4 @@
-package resource.matrixmethod;
+package resource.miniprojects.matrixmethod;
 
 import java.util.Arrays;
 
