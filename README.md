@@ -12,8 +12,6 @@ For each project and assignment, the code and assignment details would be put in
 
 Check in the folder `/resource/`. Folders besides this folder should be ignored unless you are running this entire repo.
 
-Check [TODO.md](./TODO.md) for more info on how I am gonna make this repository more usable :)
-
 For files related to the dax program please check the branch `dax-program`
 
 The file [LATEST](./LATEST) will provide you all the current assignments and projects that is ongoing or is recent. Use it to view the status of this repository 
@@ -21,7 +19,6 @@ The file [LATEST](./LATEST) will provide you all the current assignments and pro
 ### Dax Program
 
 I created this program so you could easily find anything you are looking for without having to look through this master branch manually. Just run the program and yea :).
-
 
 ### Notice
 
@@ -46,3 +43,14 @@ Some workflows to improve Code Quality are the following Workflows: `Prettier, C
 
 
 > REMEMBER COPYING CODE FROM HERE WON'T TEACH YOU ANYTHING!!!
+
+### Files to ignore
+
+Here are files & directories that are nonessential to the usage of this repository:
+
+`.project`
+`launch.json`
+`.gitignore`
+`.gitattributes`
+`.gitpod.yml`
+`/.github`
