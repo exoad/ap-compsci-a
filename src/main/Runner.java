@@ -40,7 +40,6 @@ public class Runner {
 
     JPanel jp = new JPanel();
     jf.add(jp);
-    jf.setDefaultLookAndFeelDecorated(javax.swing.default_index());
     jf.pack();
     jp.setVisible(true);
   }
