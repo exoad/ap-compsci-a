@@ -24,7 +24,7 @@ I created this program so you could easily find anything you are looking for wit
 
 - This repo is only for resources and not to teach you anything directly.
 - Binary files will not be distributed
-- Run code at your own risk and use code at your own risk (in regardance with the [license](./LICENSE))
+- Run code at your own risk and use code at your own risk (in regardance with the [license](./LICENSE.md))
 
 ### Code Quality
 
