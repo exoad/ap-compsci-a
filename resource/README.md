@@ -13,11 +13,11 @@ For more information about Code Usage(s) see: [Click Here](../LICENSE.md)
 
 [/homeworks](/homeworks) - This folder contains classwork related assignments
 
-[/matrixmethod](/matrixmethod) - This folder contains the necessary assignment details for the Miniproject Matrix Methods
+[/lessons](/lessons) - This folder contains all lessons (not assignments)
 
-[/quadrilateral](/quadrilateral) - This folder contains everything for the Quadrilateral Project 
+[/miniprojects](/miniprojects) - This folder contains all miniprojects (smaller projects)
 
-[/rotatearray](/rotatearray) - This folder contains everything for the Miniproject Rotate Array
+[/projects](/projects) - This folder contains all major projects
 
 ## Files
 [README](./README.md) - This file is the current file you are reading
