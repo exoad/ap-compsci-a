@@ -10,7 +10,7 @@ package main;
 
 public enum Accessor {
   RESOURCE_FOLDER("./resources/..."),
-  DIR_FOLDER("./reosurces/homeworks");
+  DIR_FOLDER("./resources/homeworks");
 
   public final String l;
 

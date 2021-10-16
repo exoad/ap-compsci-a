@@ -12,27 +12,24 @@ import main.pkgs.DaxIO;
 import main.pkgs.Kattio;
 import main.pkgs.Eval;
 
-//import javax.swing.JFrame;
-//import javax.swing.JPanel;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
 
-public class Runner {
-  protected static Eval e;
-  protected static Kattio sc;
-  protected static DaxIO std;
+public class Runner implements Runnable {
+  private static Eval e;
+  private static Kattio sc;
+  private static DaxIO std;
+  private JFrame jf;
+  private JPanel jp;
   /**
-   * @throws java.lang.Exception
+   * @throws java.lang.Exception usage of exception inclusive operations
    */
-  public static void main(String[] args) throws java.lang.Exception {
+  public static void main(String[] args) throws Exception {
     sc = new Kattio(System.in);
     std = new DaxIO();
     std.println("Enter file");
-    //nvm
     
     new Eval("java ./test/Test.java");
-
-
-    
-    //Process p = Runtime.getRuntime().exec(null);
   }  
   public Runner() {
     JFrame jf = new JFrame("Jack Meng - APCS 2021-2022 | Dax Program");
@@ -40,8 +37,12 @@ public class Runner {
 
     JPanel jp = new JPanel();
     jf.add(jp);
-    jf.setDefaultLookAndFeelDecorated(javax.swing.default_index());
     jf.pack();
     jp.setVisible(true);
+  }
+  @Override
+  public void run() {
+    jf.add(jp);
+    jf.pack();
   }
 }

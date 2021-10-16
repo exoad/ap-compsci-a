@@ -45,7 +45,6 @@ public class Kattio extends PrintWriter {
   }
 
   private BufferedReader r;
-  private String line;
   private StringTokenizer st;
   private String token;
 
@@ -53,14 +52,13 @@ public class Kattio extends PrintWriter {
     if (token == null)
       try {
         while (st == null || !st.hasMoreTokens()) {
-          line = r.readLine();
+          String line = r.readLine();
           if (line == null)
             return null;
           st = new StringTokenizer(line);
         }
         token = st.nextToken();
-      } catch (IOException e) {
-      }
+      } catch (IOException ignored) {}
     return token;
   }
 

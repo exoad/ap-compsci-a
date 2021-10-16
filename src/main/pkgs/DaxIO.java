@@ -11,7 +11,7 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 
 public class DaxIO {
-  private OutputStreamWriter osw;
+  private final OutputStreamWriter osw;
   private static Object byteBuffer;
 
   public DaxIO() {
