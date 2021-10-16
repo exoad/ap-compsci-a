@@ -1,8 +1,8 @@
 apply plugin: 'java'
 apply plugin: 'application'
 sourceCompatibility = 16
-targetCompatibility = 11
-version = '1.4'
+targetCompatibility = 16
+version = '1.4.1'
 mainClassName = 'src.main.Runner'
 
 task fatJar(type: Jar) {
