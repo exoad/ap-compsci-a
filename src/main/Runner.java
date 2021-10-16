@@ -29,18 +29,19 @@ public class Runner implements Runnable {
     sc = new Kattio(System.in);
     std = new DaxIO();
     std.println("Enter file");
-    
+
     new Eval("java ./test/Test.java");
-  }  
+  }
+
   public Runner() {
     jf = new JFrame("Jack Meng - APCS 2021-2022 | Dax Program");
-
 
     jp = new JPanel();
     jf.add(jp);
     jf.pack();
     jp.setVisible(true);
   }
+
   @Override
   public void run() {
     jf.add(jp);

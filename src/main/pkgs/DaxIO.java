@@ -78,5 +78,5 @@ public class DaxIO {
     osw.close();
     byteBuffer = null;
   }
-  
+
 }

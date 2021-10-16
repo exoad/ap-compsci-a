@@ -16,7 +16,6 @@ task fatJar(type: Jar) {
     with jar
 }
 
-
 sourceSets {
     main {
         java {
@@ -25,8 +24,6 @@ sourceSets {
         }
     }
  }
-
-
 
 jar {
     archiveBaseName = 'jack-apcs'

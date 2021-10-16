@@ -30,7 +30,8 @@ public class DaxFileIO {
    * @param objs     objnum Number
    * @throws IOException an exception when it is encountered
    */
-  public void write(int clicks, int mult, int multCost, int objs, int displayUpgrade, Object subDir) throws IOException {
+  public void write(int clicks, int mult, int multCost, int objs, int displayUpgrade, Object subDir)
+      throws IOException {
     if (new File(fileDir).isDirectory()) {
       String msg = clicks + "\n" + mult + "\n" + multCost + "\n" + objs + "\n" + displayUpgrade + "\n";
       Files.write(Paths.get(fileDir + subDir.toString()), msg.getBytes());
@@ -51,7 +52,6 @@ public class DaxFileIO {
     }
     return "0";
   }
-
 
   public boolean resetData(Object subDir) {
     File fr = new File(fileDir + subDir.toString());
