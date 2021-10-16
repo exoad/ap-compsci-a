@@ -19,6 +19,8 @@ public class Runner implements Runnable {
   protected static Eval e;
   protected static Kattio sc;
   protected static DaxIO std;
+  private JFrame jf;
+  private JPanel jp;
 
   /**
    * @throws java.lang.Exception usage of exception inclusive operations
@@ -31,10 +33,10 @@ public class Runner implements Runnable {
     new Eval("java ./test/Test.java");
   }  
   public Runner() {
-    JFrame jf = new JFrame("Jack Meng - APCS 2021-2022 | Dax Program");
+    jf = new JFrame("Jack Meng - APCS 2021-2022 | Dax Program");
 
 
-    JPanel jp = new JPanel();
+    jp = new JPanel();
     jf.add(jp);
     jf.pack();
     jp.setVisible(true);
