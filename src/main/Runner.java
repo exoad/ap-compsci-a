@@ -15,10 +15,11 @@ import main.pkgs.Eval;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-public class Runner {
+public class Runner implements Runnable {
   protected static Eval e;
   protected static Kattio sc;
   protected static DaxIO std;
+
   /**
    * @throws java.lang.Exception usage of exception inclusive operations
    */
