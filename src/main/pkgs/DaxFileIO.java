@@ -23,21 +23,6 @@ public class DaxFileIO {
     fileDir = dir;
   }
 
-  /**
-   * @param clicks   the clicks value recieved at the time of the save action
-   * @param mult     the multiplier current
-   * @param multCost multiplier Cost at current tick
-   * @param objs     objnum Number
-   * @throws IOException an exception when it is encountered
-   */
-  public void write(int clicks, int mult, int multCost, int objs, int displayUpgrade, Object subDir)
-      throws IOException {
-    if (new File(fileDir).isDirectory()) {
-      String msg = clicks + "\n" + mult + "\n" + multCost + "\n" + objs + "\n" + displayUpgrade + "\n";
-      Files.write(Paths.get(fileDir + subDir.toString()), msg.getBytes());
-    }
-  }
-
   public String readLineNumber(int number, Object subDir) {
     if (new File(fileDir + subDir.toString()).exists()) {
       String t = "";

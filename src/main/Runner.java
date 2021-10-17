@@ -16,9 +16,9 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 public class Runner implements Runnable {
-  protected static Eval e;
-  protected static Kattio sc;
-  protected static DaxIO std;
+  private static Eval e;
+  private static Kattio sc;
+  private static DaxIO std;
   private JFrame jf;
   private JPanel jp;
 
@@ -28,9 +28,6 @@ public class Runner implements Runnable {
   public static void main(String[] args) throws Exception {
     sc = new Kattio(System.in);
     std = new DaxIO();
-    std.println("Enter file");
-
-    new Eval("java ./test/Test.java");
   }
 
   public Runner() {
@@ -40,6 +37,8 @@ public class Runner implements Runnable {
     jf.add(jp);
     jf.pack();
     jp.setVisible(true);
+
+
   }
 
   @Override
