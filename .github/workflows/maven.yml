@@ -5,9 +5,9 @@ name: Java CI with Maven
 
 on:
   push:
-    branches: [ dax-program ]
+    branches: [ view-program ]
   pull_request:
-    branches: [ dax-program ]
+    branches: [ view-program ]
 
 jobs:
   build:
