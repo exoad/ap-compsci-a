@@ -9,7 +9,7 @@
 package main;
 
 public enum Accessor {
-  RESOURCE_FOLDER("./resources/..."), DIR_FOLDER("./resources/homeworks");
+  RESOURCE_FOLDER("./resources/..."), DIR_FOLDER("./resources/homeworks"), DEFAULT_NO_VAL("./configs/_default");
 
   public final String l;
 
