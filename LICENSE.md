@@ -1,15 +1,8 @@
 <h1 id="c-license-1-2-renewed">C-License 1.2 RENEWED</h1>
 <pre><code>COPYRIGHT (C) <span class="hljs-number">2021</span> JACKMENG
 
-Permission is hereby granted <span class="hljs-built_in">to</span> anyone
-<span class="hljs-keyword">of</span> all associated pieces
-<span class="hljs-keyword">of</span> software, code,
-<span class="hljs-keyword">and</span> documentations free
-<span class="hljs-keyword">of</span> charge under
-<span class="hljs-keyword">the</span> notice
-<span class="hljs-keyword">of</span> <span class="hljs-keyword">the</span>
-following permits: </code></pre><p><strong>Eligible</strong></p>
-
+Permission is hereby granted <span class="hljs-built_in">to</span> anyone <span class="hljs-keyword">of</span> all associated pieces <span class="hljs-keyword">of</span> software, code, <span class="hljs-keyword">and</span> documentations free <span class="hljs-keyword">of</span> charge under <span class="hljs-keyword">the</span> notice <span class="hljs-keyword">of</span> <span class="hljs-keyword">the</span> following permits:
+</code></pre><p><strong>Eligible</strong></p>
 <ol>
 <li>Distribution for education and only educational usage.</li>
 <li>Modification of said software with the preservation of original license notices and documentations</li>
