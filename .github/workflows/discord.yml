@@ -2,7 +2,7 @@ name: Discord Webhook
 
 on: 
   push: 
-    branches: [ dax-program ]
+    branches: [ view-program ]
 
 jobs:
   git:
