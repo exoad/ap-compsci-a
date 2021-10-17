@@ -1,8 +1,8 @@
 package main;
 
 /**
- * C-License 1.2 RENEWED
- * @author Jack Meng
+  C-License 1.2 RENEWED
+  @author Jack Meng
  * @since 1.2
  * COPYRIGHT (C) 2021 JACKMENG
  * File Purpose: The main handler for this project using sub project files
@@ -17,17 +17,15 @@ import javax.swing.JPanel;
 
 public class Runner implements Runnable {
   private static Eval e;
-  private static Kattio sc;
-  private static DaxIO std;
-  private JFrame jf;
-  private JPanel jp;
+  private final JFrame jf;
+  private final JPanel jp;
 
   /**
    * @throws java.lang.Exception usage of exception inclusive operations
    */
   public static void main(String[] args) throws Exception {
-    sc = new Kattio(System.in);
-    std = new DaxIO();
+    Kattio sc = new Kattio(System.in);
+    DaxIO std = new DaxIO();
   }
 
   public Runner() {
@@ -35,8 +33,6 @@ public class Runner implements Runnable {
 
     jp = new JPanel();
     jf.add(jp);
-    jf.pack();
-    jp.setVisible(true);
 
 
   }
@@ -45,5 +41,6 @@ public class Runner implements Runnable {
   public void run() {
     jf.add(jp);
     jf.pack();
+    jf.setVisible(true);
   }
 }

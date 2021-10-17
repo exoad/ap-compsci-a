@@ -3,11 +3,11 @@ apply plugin: 'application'
 sourceCompatibility = 11
 targetCompatibility = 11
 version = '1.4.1'
-mainClassName = 'src.main.Runner'
+mainClassName = 'main.Runner'
 
 task fatJar(type: Jar) {
 	manifest {
-        attributes 'Implementation-Title': 'APCS-DAX',  
+        attributes 'Implementation-Title': 'APCS-DAX',
         	'Implementation-Version': version,
         	'Main-Class': 'src.main.Runner'
     }
@@ -19,8 +19,8 @@ task fatJar(type: Jar) {
 sourceSets {
     main {
         java {
-            srcDirs './src'
-            srcDirs './test'
+            srcDirs '/src'
+            srcDirs '/test'
         }
     }
  }
