@@ -2,7 +2,7 @@ name: Prettier for Code
 
 on:
   push:
-    branches: [ dax-program ]
+    branches: [ view-program ]
 
 jobs:
   cleanup_tasks:
