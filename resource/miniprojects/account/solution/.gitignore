@@ -1,3 +1,5 @@
+# git ignore will be removed once the submission has been past due
+
 *.class
 *.java
 *.java~
