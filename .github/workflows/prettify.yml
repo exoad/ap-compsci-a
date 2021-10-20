@@ -17,6 +17,6 @@ jobs:
       uses: lwerner-lshigh/prettier_action_java@v1.1.1
       with:
         prettier_options: '--no-semi --write *.java'
-        branch: dax-program
+        branch: view-program
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
