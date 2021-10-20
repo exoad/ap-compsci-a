@@ -13,7 +13,7 @@ public class Window implements ActionListener, Runnable {
   private JPanel jf;
   private Dimension windowSize;
   
-  public Window(String windowName, Dimension windowSize, WindowProperties p) {
+  public Window(String windowName, Dimension windowSize) {
     this.windowSize = windowSize;
     jf = new JFrame(windowName);
   }
