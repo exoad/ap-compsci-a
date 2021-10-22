@@ -1,3 +1,8 @@
+mkdir "exoad-apcs-cache" 
+cd "exoad-apcs-cache"
+wget https://raw.githubusercontent.com/exoad/apcs/view-program/caches/LICENSE_PLAIN.txt
+cd ../
+
 errorAPP_NOT_INSTALLED="The program/script is not installed: "
 successAPP_INSTALLED=" is installed"
 success="Successful."
@@ -9,7 +14,7 @@ welcomeMSGFOOTEr="\n============"
 repo_FOLDER="/exoad-apcs"
 
 echo -e "\e[31m${welcomeNAME} \e[0m" ;
-printf "Script Version: v${versinNO}\nAPCS Guide Repository Script\nCreated by Jack Meng (exoad)\nLicensed C-Renewed (C) 2021-2022\nThis script will help you with accessing much of the APCS repository's content\n\nHere are you choices:\n- Type \"1\" to fetch or refresh the content\n- Type \"2\" to present the REAMDE"
+printf "Script Version: v${versinNO}\nAPCS Guide Repository Script\nCreated by Jack Meng (exoad)\nLicensed C-Renewed (C) 2021-2022\nThis script will help you with accessing much of the APCS repository's content\n\nHere are you choices:\n- Type \"1\" to fetch or refresh the content\n- Type \"2\" to present the LICENSE"
 echo -e "\e[31m${welcomeMSGFOOTEr}" ; echo -e "\e[0m" ; echo ;
 
 echo -e "\e[34mEnter your choice: \e[0m" ; 
@@ -35,6 +40,10 @@ if [ $choiceVAR == "1" ]
         exit
       fi
     else
-        echo -e "\e[31m${errorAPP_NOT_INSTALLED}git"
+        echo -e "\e[31m${errorAPP_NOT_INSTALLED}git" ; exit 1 ;
     fi
+elif [ $choiceVAR == "2" ] 
+  then
+    cd exoad-apcs-cache
+    vim LICENSE_PLAIN.txt
 fi
