@@ -13,6 +13,8 @@
 #
 # Run at your own risk in accordance with the license (^above)
 
+errorAPP_NOT_INSTALLED="The program/script is not installed: "
+successAPP_INSTALLED=" is installed"
 
 versinNO="1.0"
 welcomeNAME="==Welcome!==\n"
@@ -29,7 +31,14 @@ read choiceVAR;
 
 if [ choiceVAR == "1" ] 
   then
-   #...
+    git --version 2>&1 >/dev/null 
+    GIT_IS_AVAILABLE=$?
+    if [ $GIT_IS_AVAILABLE -eq 0 ]; then
+      echo -e "\e[32mgit ${successAPP_INSTALLED}" ; echo -e "\e[0m" ; echo;
+    else
+      then
+        echo -e "\e[31m${errorAPP_NOT_INSTALLED}git"
+      exit
   exit
 fi
 
