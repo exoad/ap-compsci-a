@@ -2,10 +2,10 @@ package resource.assignments.RotateArray;
 
 /**
  * Tests for class RotateArray.
- * 
- * All tests in the folder "test" are executed 
+ *
+ * All tests in the folder "test" are executed
  * when the "Test" action is invoked.
- * 
+ *
  */
 
 import static org.junit.Assert.*;
