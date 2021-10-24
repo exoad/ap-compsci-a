@@ -1,3 +1,10 @@
+# Run this code on a *Nix system to easily be able to grab things from the home repository
+#
+# This script is also implemented in a different way for the view program
+#
+# This Script is licensed under the MIT License, but all code that use this script or that this script pulls, clones, fetches, pushes, and comes into contact
+# with will be licensed under the C-License (Renewed)
+
 mkdir "exoad-apcs-cache" 
 cd "exoad-apcs-cache"
 wget https://raw.githubusercontent.com/exoad/apcs/view-program/caches/LICENSE_PLAIN.txt
