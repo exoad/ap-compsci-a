@@ -1,3 +1,5 @@
+# Assignment Details
+
 Create a mini paint program that allows the user to draw a line on the screen based upon their mouse clicks. You will need the following import statements.
 
 ```java
