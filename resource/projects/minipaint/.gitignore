@@ -4,3 +4,8 @@
 *.java
 *.java~
 *.rtxt
+*.out
+*.classpath
+*.xml
+*.cls
+*.cpp
