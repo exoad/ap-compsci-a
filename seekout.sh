@@ -1,5 +1,9 @@
 # Run this code on a *Nix system to easily be able to grab things from the home repository
-#
+# For now this code is only supprts debian, but I will try to implement a support for other distributions like
+# homebrew/brew (MacOS), Arch (pamac & pacman), and also snap package.
+# To run this on a Windows like OS you must install a Linux Environment (WSL) etc..
+# Packages you need installed: vim
+# Packages needed but will be auto installed for you are: JDK, GIT
 # This script is also implemented in a different way for the view program
 #
 # This Script is licensed under the MIT License, but all code that use this script or that this script pulls, clones, fetches, pushes, and comes into contact
