@@ -14,6 +14,7 @@
 <ul>
 <li>This repo is only for resources and not to teach you anything directly.</li>
 <li>Binary files will not be distributed</li>
+  <li>For some files, in order to run them you might need to remove the <code>package</code> statement from the top of the file</li>
 <li>Run code at your own risk and use code at your own risk (in regardance with the <a href="./LICENSE.md">license</a>)</li>
 </ul>
 <h3 id="code-quality">Code Quality</h3>
