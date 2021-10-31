@@ -54,4 +54,5 @@
 <code>.gitignore</code>
 <code>.gitattributes</code>
 <code>.gitpod.yml</code>
-<code>/.github</code></p>
+<code>/.github</code>
+<code>seekout.sh</code></p>
