@@ -6,7 +6,6 @@
 <p>For each project and assignment, the code and assignment details would be put into a seperate folder.</p>
 <p>Check in the folder <code>/resource/</code>. Folders besides this folder should be ignored unless you are running this entire repo.</p>
 <p>For files related to the view program please check the branch <code>view-program</code></p>
-<p>The file <a href="./LATEST">LATEST</a> will provide you all the current assignments and projects that is ongoing or is recent. Use it to view the status of this repository </p>
 <h3 id="dax-program">View Program</h3>
 <p>I created this program so you could easily find anything you are looking for without having to look through this master branch manually. Just run the program and yea :).</p>
 <h3 id="notice">Notice</h3>
@@ -39,7 +38,7 @@
 </tr>
 <tr>
 <td>Software Used</td>
-<td><code>DrJava</code> <code>VSCode</code></td>
+<td><code>DrJava</code> <code>VSCode Insiders</code></td>
 </tr>
 </tbody>
 </table>
