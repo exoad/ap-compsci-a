@@ -38,7 +38,7 @@
 </tr>
 <tr>
 <td>Software Used</td>
-<td><code>DrJava</code> <code>VSCode</code></td>
+<td><code>DrJava</code> <code>VSCode Insiders</code></td>
 </tr>
 </tbody>
 </table>
