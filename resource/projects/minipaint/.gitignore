@@ -1,11 +1,3 @@
-# WIP will be shown once project done
-
-*.class
 *.java
+*.class
 *.java~
-*.rtxt
-*.out
-*.classpath
-*.xml
-*.cls
-*.cpp
