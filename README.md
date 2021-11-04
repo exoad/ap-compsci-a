@@ -4,6 +4,7 @@
 <p>All code are licenses and protected by the license see <a href="./LICENSE.md">here</a>. Please read this in order to better understand how things work.</p>
 <h3 id="files">Files</h3>
 <p>For each project and assignment, the code and assignment details would be put into a seperate folder.</p>
+<p>Most MARKDOWN files will be written and parsed in HTML</p>
 <p>Check in the folder <code>/resource/</code>. Folders besides this folder should be ignored unless you are running this entire repo.</p>
 <p>For files related to the view program please check the branch <code>view-program</code></p>
 <h3 id="dax-program">View Program</h3>
