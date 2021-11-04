@@ -54,3 +54,10 @@
 <code>.gitpod.yml</code>
 <code>/.github</code>
 <code>seekout.sh</code></p>
+<h1 id="archive-notice">Archive Notice</h1>
+<p>Since I am taking APCS in the school year 2021-2022. This means that after I finish this course, this repository WILL BE ARCHIVED</p>
+<h4 id="what-happens">What happens</h4>
+<p>The view program will be finalized and ready for user distribution and user friendly usage. Along with this, the real content you are looking for, the &quot;answers&quot; will also be finalized and archived in the <strong>master</strong> branch of this repository</p>
+<h4 id="questions-">Questions?</h4>
+<p>If you have any questions regarding the archiving or just this repository in general feel free to reach out to me with my email or submitting an <a href="https://github.com/exoad/apcs/issues">Issue here!</a></p>
+
