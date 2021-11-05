@@ -85,3 +85,5 @@ The view program will be finalized and ready for user distribution and user frie
 #### Questions?
 
 If you have any questions regarding the archiving or just this repository in general feel free to reach out to me with my email or submitting an [Issue here!](https://github.com/exoad/apcs/issues)
+
+> Yes I know I treat this way too seriously :P
