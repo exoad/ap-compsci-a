@@ -57,7 +57,7 @@ JDKバージョン
 
 `16`
 
-JDK Minimum
+JDK最小
 
 `8`
 
@@ -84,3 +84,5 @@ JDK Minimum
 #### 質問？
 
 アーカイブまたはこのリポジトリ全般について質問がある場合は、メールまたは送信で私に連絡してください。[ここで発行してください！](https://github.com/exoad/apcs/issues)
+
+> Yes I know I treat this way too seriously :P
