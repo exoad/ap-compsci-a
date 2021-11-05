@@ -10,7 +10,7 @@
 
 现在支持此 REAMDE 的不同语言！
 
-目前支持：` chinese (simplified)``japanese``spanish `
+目前支持：`chinese (simplified)``japanese``spanish`
 
 **文件**
 
@@ -20,7 +20,7 @@
 
 [西班牙语](README.es.md)
 
-# 文件
+# Files
 
 对于每个项目和作业，代码和作业详细信息将放在单独的文件夹中。
 
@@ -36,10 +36,10 @@
 
 # 注意
 
-- 这个 repo 仅用于资源，而不是直接教你任何东西。
-- 不会分发二进制文件
-- 对于某些文件，为了运行它们，您可能需要删除`package`文件顶部的语句
-- 运行代码的风险自负，使用代码的风险自负（考虑到[执照](./LICENSE.md))
+-   这个 repo 仅用于资源，而不是直接教你任何东西。
+-   不会分发二进制文件
+-   对于某些文件，为了运行它们，您可能需要删除`package`文件顶部的语句
+-   运行代码的风险自负，使用代码的风险自负（考虑到[执照](./LICENSE.md))
 
 # 代码质量
 
@@ -55,7 +55,7 @@
 
 信息
 
-JDK 版本
+JDK版本
 
 `16`
 
@@ -65,7 +65,7 @@ JDK 最低要求
 
 使用的软件
 
-` DrJava``VSCode Insiders `
+`DrJava``VSCode Insiders`
 
 > 记住从这里复制代码不会教你任何东西！！！
 
@@ -73,7 +73,7 @@ JDK 最低要求
 
 以下是使用此存储库无关紧要的文件和目录：
 
-` .project``launch.json``.gitignore``.gitattributes``.gitpod.yml``/.github``seekout.sh `
+`.project``launch.json``.gitignore``.gitattributes``.gitpod.yml``/.github``seekout.sh`
 
 # 存档通知
 
