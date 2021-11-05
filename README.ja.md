@@ -10,11 +10,13 @@
 
 現在、このREAMDEのさまざまな言語がサポートされています。
 
-現在サポートされているもの：`chinese (simplified)`
+現在サポートされているもの：`chinese (simplified)``japanese`
 
 **ファイル**
 
 [中国語（簡体字](README.zh-CN.md)
+
+[日本](README.ja.md)
 
 # ファイル
 
@@ -55,7 +57,7 @@ JDKバージョン
 
 `16`
 
-JDK最小
+JDK Minimum
 
 `8`
 
