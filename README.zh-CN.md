@@ -1,4 +1,4 @@
-# 计算机科学[![Java CI with Gradle](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml) [![Java CI with Maven](https://github.com/meng-jack/apcs/actions/workflows/maven.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/maven.yml)[![Prettier for JS Code](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml)![](https://img.shields.io/github/repo-size/exoad/apcs)[![Codacy Security Scan](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml/badge.svg)](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml)
+# 计算机科学[![Java CI with Gradle](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml)[![Java CI with Maven](https://github.com/meng-jack/apcs/actions/workflows/maven.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/maven.yml)[![Prettier for JS Code](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml)![](https://img.shields.io/github/repo-size/exoad/apcs)[![Codacy Security Scan](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml/badge.svg)](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml)
 
 以下是我在 GNSHS（Great Neck South High School）学校为 2021-2022 年的 AP-CS 课程所做的事情。
 
@@ -10,13 +10,15 @@
 
 现在支持此 REAMDE 的不同语言！
 
-目前支持：`chinese (simplified)``japanese`
+目前支持：`chinese (simplified)``japanese``spanish`
 
 **文件**
 
 [简体中文](README.zh-CN.md)
 
 [日本人](README.ja.md)
+
+[Spanish](README.es.md)
 
 # 文件
 
@@ -26,11 +28,11 @@
 
 检查文件夹`/resource/`.除非您正在运行整个存储库，否则应忽略除此文件夹之外的文件夹。
 
-与查看程序相关的文件请查看分支`view-program`
+For files related to the view program please check the branch `view-program`
 
 ### 查看程序
 
-我创建了这个程序，这样你就可以轻松找到你正在寻找的任何东西，而无需手动浏览这个主分支。只需运行程序，是的:)。
+我创建了这个程序，这样你就可以轻松找到你要找的任何东西，而不必手动浏览这个主分支。只需运行程序，是的:)。
 
 # 注意
 
@@ -83,6 +85,6 @@ JDK 最低要求
 
 #### 问题？
 
-如果您对存档或一般这个存储库有任何疑问，请随时通过我的电子邮件与我联系或提交[问题在这里！](https://github.com/exoad/apcs/issues)
+如果您对归档有任何疑问，或者只是对这个存储库有任何疑问，请随时通过我的电子邮件与我联系或提交[问题在这里！](https://github.com/exoad/apcs/issues)
 
 > 是的，我知道我对待这种方式太认真了：P
