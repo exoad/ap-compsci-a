@@ -14,11 +14,11 @@
 
 **文件**
 
-[简体中文](README.zh-CN.md)
+[简体中文）](README.zh-CN.md)
 
 [日本人](README.ja.md)
 
-[Spanish](README.es.md)
+[西班牙语](README.es.md)
 
 # 文件
 
@@ -28,7 +28,7 @@
 
 检查文件夹`/resource/`.除非您正在运行整个存储库，否则应忽略除此文件夹之外的文件夹。
 
-For files related to the view program please check the branch `view-program`
+与查看程序相关的文件请查看分支`view-program`
 
 ### 查看程序
 
