@@ -1,4 +1,4 @@
-# Ciencias de la computación[![Java CI with Gradle](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml)[![Java CI with Maven](https://github.com/meng-jack/apcs/actions/workflows/maven.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/maven.yml)[![Prettier for JS Code](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml)![](https://img.shields.io/github/repo-size/exoad/apcs)[![Codacy Security Scan](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml/badge.svg)](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml)
+# Ciencias de la computación[![Java CI with Gradle](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml)[![Java CI with Maven](https://github.com/meng-jack/apcs/actions/workflows/maven.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/maven.yml) [![Prettier for JS Code](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml)![](https://img.shields.io/github/repo-size/exoad/apcs)[![Codacy Security Scan](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml/badge.svg)](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml)
 
 Aquí están las cosas que hice para mi clase AP-CS del año 2021-2022 en la escuela de GNSHS (Great Neck South High School).
 
@@ -10,7 +10,7 @@ Todos los códigos son licencias y están protegidos por la licencia ver[aquí](
 
 ¡Ahora hay soporte para diferentes idiomas de este REAMDE!
 
-Actualmente admite:` chinese (simplified)``japanese``spanish `
+Actualmente admite:`chinese (simplified)``japanese``spanish`
 
 **Archivos**
 
@@ -26,7 +26,7 @@ Para cada proyecto y asignación, el código y los detalles de la asignación se
 
 La mayoría de los archivos MARKDOWN se escribirán y analizarán en HTML
 
-Verificar en la carpeta`/resource/`. Folders besides this folder should be ignored unless you are running this entire repo.
+Verificar en la carpeta`/resource/`. Las carpetas además de esta carpeta deben ignorarse a menos que esté ejecutando este repositorio completo.
 
 Para los archivos relacionados con el programa de visualización, consulte la rama`view-program`
 
@@ -36,10 +36,10 @@ Creé este programa para que pueda encontrar fácilmente cualquier cosa que est�
 
 # Aviso
 
-- Este repositorio es solo para recursos y no para enseñarle nada directamente.
-- Los archivos binarios no se distribuirán
-- Para algunos archivos, para ejecutarlos, es posible que deba eliminar el`package`declaración de la parte superior del archivo
-- Ejecute el código bajo su propio riesgo y use el código bajo su propio riesgo (de acuerdo con el[licencia](./LICENSE.md))
+-   Este repositorio es solo para recursos y no para enseñarle nada directamente.
+-   Los archivos binarios no se distribuirán
+-   Para algunos archivos, para ejecutarlos, es posible que deba eliminar el`package`declaración de la parte superior del archivo
+-   Ejecute el código bajo su propio riesgo y use el código bajo su propio riesgo (de acuerdo con el[licencia](./LICENSE.md))
 
 # Calidad del código
 
@@ -65,7 +65,7 @@ JDK mínimo
 
 Software utilizado
 
-` DrJava``VSCode Insiders `
+`DrJava``VSCode Insiders`
 
 > RECUERDA QUE COPIAR EL CÓDIGO DESDE AQUÍ NO TE ENSEÑARÁ NADA !!!
 
@@ -73,7 +73,7 @@ Software utilizado
 
 Aquí hay archivos y directorios que no son esenciales para el uso de este repositorio:
 
-` .project``launch.json``.gitignore``.gitattributes``.gitpod.yml``/.github``seekout.sh `
+`.project``launch.json``.gitignore``.gitattributes``.gitpod.yml``/.github``seekout.sh`
 
 # Aviso de archivo
 
