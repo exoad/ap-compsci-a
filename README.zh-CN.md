@@ -1,63 +1,74 @@
-<h1 id="ap-computer-science-java-ci-with-gradle-https-github-com-meng-jack-apcs-actions-workflows-gradle-yml-badge-svg-branch-dax-program-https-github-com-meng-jack-apcs-actions-workflows-gradle-yml-java-ci-with-maven-https-github-com-meng-jack-apcs-actions-workflows-maven-yml-badge-svg-branch-dax-program-https-github-com-meng-jack-apcs-actions-workflows-maven-yml-prettier-for-js-code-https-github-com-meng-jack-apcs-actions-workflows-prettify-yml-badge-svg-branch-dax-program-https-github-com-meng-jack-apcs-actions-workflows-prettify-yml-codacy-badge-master-https-api-codacy-com-project-badge-grade-151fd5e66914495e83eb60ae8fe73e65-https-app-codacy-com-gh-meng-jack-apcs-utm_source-github-com-utm_medium-referral-utm_content-meng-jack-apcs-utm_campaign-badge_grade_settings-codacy-security-scan-https-github-com-meng-jack-apcs-actions-workflows-codacy-analysis-yml-badge-svg-https-github-com-meng-jack-apcs-actions-workflows-codacy-analysis-yml-https-img-shields-io-github-languages-code-size-meng-jack-apcs-">AP-Computer Science <a href="https://github.com/meng-jack/apcs/actions/workflows/gradle.yml"><img src="https://github.com/meng-jack/apcs/actions/workflows/gradle.yml/badge.svg?branch=dax-program" alt="Java CI with Gradle"></a> <a href="https://github.com/meng-jack/apcs/actions/workflows/maven.yml"><img src="https://github.com/meng-jack/apcs/actions/workflows/maven.yml/badge.svg?branch=dax-program" alt="Java CI with Maven"></a> <a href="https://github.com/meng-jack/apcs/actions/workflows/prettify.yml"><img src="https://github.com/meng-jack/apcs/actions/workflows/prettify.yml/badge.svg?branch=dax-program" alt="Prettier for JS Code"></a></a><img src="https://img.shields.io/github/repo-size/exoad/apcs" alt=""><a href="https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml"><img src="https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml/badge.svg" alt="Codacy Security Scan"></a></h1>
-<p>Here are the stuffs I did for my AP-CS class of year 2021-2022 at the school of GNSHS (Great Neck South High School).</p>
-<p><strong>Remember, don&#39;t copy my code if you get the same project. Please read the license for further details.</strong></p>
-<p>All code are licenses and protected by the license see <a href="./LICENSE.md">here</a>. Please read this in order to better understand how things work.</p>
-<h3 id="files">Files</h3>
-<p>For each project and assignment, the code and assignment details would be put into a seperate folder.</p>
-<p>Most MARKDOWN files will be written and parsed in HTML</p>
-<p>Check in the folder <code>/resource/</code>. Folders besides this folder should be ignored unless you are running this entire repo.</p>
-<p>For files related to the view program please check the branch <code>view-program</code></p>
-<h3 id="dax-program">View Program</h3>
-<p>I created this program so you could easily find anything you are looking for without having to look through this master branch manually. Just run the program and yea :).</p>
-<h3 id="notice">Notice</h3>
-<ul>
-<li>This repo is only for resources and not to teach you anything directly.</li>
-<li>Binary files will not be distributed</li>
-  <li>For some files, in order to run them you might need to remove the <code>package</code> statement from the top of the file</li>
-<li>Run code at your own risk and use code at your own risk (in regardance with the <a href="./LICENSE.md">license</a>)</li>
-</ul>
-<h3 id="code-quality">Code Quality</h3>
-<p>If I have a current assignment, I will not put it on this REPO before it is due!</p>
-<p>There is a Codacy Badge above that will show this branch&#39;s Code quality and Grade, with <code>A</code> being the best, etc..</p>
-<p>Some workflows to improve Code Quality are the following Workflows: <code>Prettier, Codacy, Discord Webhook</code></p>
-<h3 id="gradle-wrapper">Gradle Wrapper</h3>
-<table>
-<thead>
-<tr>
-<th>Property Name</th>
-<th>Information</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>JDK Version</td>
-<td><code>16</code></td>
-</tr>
-<tr>
-<td>JDK Minimum</td>
-<td><code>8</code></td>
-</tr>
-<tr>
-<td>Software Used</td>
-<td><code>DrJava</code> <code>VSCode Insiders</code></td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p>REMEMBER COPYING CODE FROM HERE WON&#39;T TEACH YOU ANYTHING!!!</p>
-</blockquote>
-<h3 id="files-to-ignore">Files to ignore</h3>
-<p>Here are files &amp; directories that are nonessential to the usage of this repository:</p>
-<p><code>.project</code>
-<code>launch.json</code>
-<code>.gitignore</code>
-<code>.gitattributes</code>
-<code>.gitpod.yml</code>
-<code>/.github</code>
-<code>seekout.sh</code></p>
-<h1 id="archive-notice">Archive Notice</h1>
-<p>Since I am taking APCS in the school year 2021-2022. This means that after I finish this course, this repository WILL BE ARCHIVED</p>
-<h4 id="what-happens">What happens</h4>
-<p>The view program will be finalized and ready for user distribution and user friendly usage. Along with this, the real content you are looking for, the &quot;answers&quot; will also be finalized and archived in the <strong>master</strong> branch of this repository</p>
-<h4 id="questions-">Questions?</h4>
-<p>If you have any questions regarding the archiving or just this repository in general feel free to reach out to me with my email or submitting an <a href="https://github.com/exoad/apcs/issues">Issue here!</a></p>
+# 计算机科学[![Java CI with Gradle](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml)[![Java CI with Maven](https://github.com/meng-jack/apcs/actions/workflows/maven.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/maven.yml)[![Prettier for JS Code](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml)![](https://img.shields.io/github/repo-size/exoad/apcs)[![Codacy Security Scan](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml/badge.svg)](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml)
+
+以下是我在 GNSHS（Great Neck South High School）学校为 2021-2022 年的 AP-CS 课程所做的事情。
+
+**请记住，如果您获得相同的项目，请不要复制我的代码。请阅读许可证以获取更多详细信息。**
+
+所有代码都是许可证并受许可证保护，请参阅[这里](./LICENSE.md).请阅读本文以更好地了解事情的运作方式。
+
+### 文件
+
+For each project and assignment, the code and assignment details would be put into a seperate folder.
+
+大多数 MARKDOWN 文件将用 HTML 编写和解析
+
+检查文件夹`/resource/`. Folders besides this folder should be ignored unless you are running this entire repo.
+
+与查看程序相关的文件请查看分支`view-program`
+
+### 查看程序
+
+我创建了这个程序，这样你就可以轻松找到你要找的任何东西，而不必手动浏览这个主分支。只需运行程序，是的:)。
+
+### 注意
+
+-   这个 repo 仅用于资源，而不是直接教你任何东西。
+-   不会分发二进制文件
+-   对于某些文件，为了运行它们，您可能需要删除`package`文件顶部的语句
+-   运行代码的风险自负，使用代码的风险自负（考虑到[执照](./LICENSE.md))
+
+### 代码质量
+
+如果我有当前的任务，我不会在到期之前把它放在这个 REPO 上！
+
+上面有一个 Codacy 徽章，将显示该分支的代码质量和等级，带有`A`成为最好的，等等。
+
+一些提高代码质量的工作流是以下工作流：`Prettier, Codacy, Discord Webhook`
+
+### 摇篮包装器
+
+物业名称
+
+信息
+
+JDK版本
+
+`16`
+
+JDK 最低要求
+
+`8`
+
+使用的软件
+
+`DrJava``VSCode Insiders`
+
+> 记住从这里复制代码不会教你任何东西！！！
+
+### 要忽略的文件
+
+以下是使用此存储库无关紧要的文件和目录：
+
+`.project``launch.json``.gitignore``.gitattributes``.gitpod.yml``/.github``seekout.sh`
+
+# 存档通知
+
+因为我在 2021-2022 学年参加 APCS。这意味着在我完成本课程后，此存储库将被存档
+
+#### 发生什么了
+
+视图程序将完成并准备好供用户分发和用户友好使用。与此同时，您正在寻找的真实内容，“答案”也将最终确定并存档在**掌握**此存储库的分支
+
+#### 问题？
+
+如果您对归档有任何疑问，或者只是对这个存储库有任何疑问，请随时通过我的电子邮件与我联系或提交[问题在这里！](https://github.com/exoad/apcs/issues)
