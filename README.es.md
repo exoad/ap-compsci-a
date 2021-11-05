@@ -20,7 +20,7 @@ Actualmente admite:`chinese (simplified)``japanese``spanish`
 
 [Español](README.es.md)
 
-# Files
+# Archivos
 
 Para cada proyecto y asignación, el código y los detalles de la asignación se colocarían en una carpeta separada.
 
@@ -73,11 +73,11 @@ Software utilizado
 
 Aquí hay archivos y directorios que no son esenciales para el uso de este repositorio:
 
-`.project``launch.json``.gitignore``.gitattributes``.gitpod.yml``/.github` `seekout.sh`
+`.project``launch.json``.gitignore``.gitattributes``.gitpod.yml``/.github``seekout.sh`
 
 # Aviso de archivo
 
-Since I am taking APCS in the school year 2021-2022. This means that after I finish this course, this repository WILL BE ARCHIVED
+Dado que estoy tomando APCS en el año escolar 2021-2022. Esto significa que después de que termine este curso, este repositorio SERÁ ARCHIVADO
 
 # Lo que sucede
 
