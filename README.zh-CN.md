@@ -10,7 +10,7 @@
 
 现在支持此 REAMDE 的不同语言！
 
-目前支持：`chinese (simplified)``japanese``spanish`
+目前支持：` chinese (simplified)``japanese``spanish `
 
 **文件**
 
@@ -36,10 +36,10 @@
 
 # Notice
 
--   这个 repo 仅用于资源，而不是直接教你任何东西。
--   不会分发二进制文件
--   对于某些文件，为了运行它们，您可能需要删除`package`文件顶部的语句
--   运行代码的风险自负，使用代码的风险自负（考虑到[执照](./LICENSE.md))
+- 这个 repo 仅用于资源，而不是直接教你任何东西。
+- 不会分发二进制文件
+- 对于某些文件，为了运行它们，您可能需要删除`package`文件顶部的语句
+- 运行代码的风险自负，使用代码的风险自负（考虑到[执照](./LICENSE.md))
 
 # 代码质量
 
@@ -55,7 +55,7 @@
 
 信息
 
-JDK版本
+JDK 版本
 
 `16`
 
@@ -73,7 +73,7 @@ JDK 最低要求
 
 以下是使用此存储库无关紧要的文件和目录：
 
-`.project``launch.json``.gitignore``.gitattributes``.gitpod.yml``/.github``seekout.sh`
+` .project``launch.json``.gitignore``.gitattributes``.gitpod.yml``/.github``seekout.sh `
 
 # 存档通知
 
