@@ -7,6 +7,16 @@ Here are the stuffs I did for my AP-CS class of year 2021-2022 at the school of 
 
 All code are licenses and protected by the license see [here](./LICENSE.md). Please read this in order to better understand how things work.
 
+# Multi-Lang!
+Now there is support for different languages of this REAMDE!
+
+Currently suppports: `chinese (simplified)`
+
+**Files**
+
+[Chinese Simplified](README.zh-CN.md)
+
+
 # Files
 
 For each project and assignment, the code and assignment details would be put into a seperate folder.
