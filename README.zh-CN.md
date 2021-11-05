@@ -51,13 +51,13 @@ JDK 最低要求
 
 使用的软件
 
-`DrJava` `VSCode Insiders`
+`DrJava``VSCode Insiders`
 
 > 记住从这里复制代码不会教你任何东西！！！
 
 ### 要忽略的文件
 
-以下是使用此存储库无关紧要的文件和目录：
+Here are files & directories that are nonessential to the usage of this repository:
 
 `.project``launch.json``.gitignore``.gitattributes``.gitpod.yml``/.github``seekout.sh`
 
