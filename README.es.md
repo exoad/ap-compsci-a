@@ -14,7 +14,7 @@ Actualmente admite:`chinese (simplified)``japanese``spanish`
 
 **Archivos**
 
-[Chinese (Simplified)](README.zh-CN.md)
+[Chino simplificado)](README.zh-CN.md)
 
 [japonés](README.ja.md)
 
@@ -22,7 +22,7 @@ Actualmente admite:`chinese (simplified)``japanese``spanish`
 
 # Archivos
 
-For each project and assignment, the code and assignment details would be put into a seperate folder.
+Para cada proyecto y asignación, el código y los detalles de la asignación se colocarían en una carpeta separada.
 
 La mayoría de los archivos MARKDOWN se escribirán y analizarán en HTML
 
@@ -83,7 +83,7 @@ Dado que estoy tomando APCS en el año escolar 2021-2022. Esto significa que des
 
 El programa de visualización estará finalizado y listo para su distribución y uso amigable. Junto con esto, el contenido real que está buscando, las "respuestas" también se finalizarán y archivarán en el**Maestro**rama de este repositorio
 
-#### Questions?
+#### ¿Preguntas?
 
 Si tiene alguna pregunta sobre el archivo o simplemente sobre este repositorio en general, no dude en comunicarse conmigo con mi correo electrónico o enviando un[¡Emitir aquí!](https://github.com/exoad/apcs/issues)
 
