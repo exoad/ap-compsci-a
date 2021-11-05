@@ -14,7 +14,7 @@ Currently suppports: `chinese (simplified)` `japanese` `spanish`
 
 **Files**
 
-[Chinese Simplified](README.zh-CN.md)
+[Chinese (Simplified)](README.zh-CN.md)
 
 [Japanese](README.ja.md)
 
