@@ -1,4 +1,4 @@
-# AP-Computer Science [![Java CI with Gradle](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml)[![Java CI with Maven](https://github.com/meng-jack/apcs/actions/workflows/maven.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/maven.yml)[![Prettier for JS Code](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml)![](https://img.shields.io/github/repo-size/exoad/apcs)[![Codacy Security Scan](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml/badge.svg)](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml)
+# 计算机科学[![Java CI with Gradle](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml)[![Java CI with Maven](https://github.com/meng-jack/apcs/actions/workflows/maven.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/maven.yml)[![Prettier for JS Code](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml)![](https://img.shields.io/github/repo-size/exoad/apcs)[![Codacy Security Scan](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml/badge.svg)](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml)
 
 以下是我在 GNSHS（Great Neck South High School）学校为 2021-2022 年的 AP-CS 课程所做的事情。
 
@@ -16,7 +16,7 @@
 
 [简体中文](README.zh-CN.md)
 
-[Japanese](README.ja.md)
+[日本人](README.ja.md)
 
 # 文件
 
@@ -61,7 +61,7 @@ JDK 最低要求
 
 `8`
 
-使用的软件
+Software Used
 
 `DrJava``VSCode Insiders`
 
@@ -71,7 +71,7 @@ JDK 最低要求
 
 以下是使用此存储库无关紧要的文件和目录：
 
-`.project``launch.json``.gitignore``.gitattributes``.gitpod.yml` `/.github``seekout.sh`
+`.project``launch.json``.gitignore``.gitattributes``.gitpod.yml``/.github``seekout.sh`
 
 # 存档通知
 
@@ -84,3 +84,5 @@ JDK 最低要求
 #### 问题？
 
 如果您对归档有任何疑问，或者只是对这个存储库有任何疑问，请随时通过我的电子邮件与我联系或提交[问题在这里！](https://github.com/exoad/apcs/issues)
+
+> 是的，我知道我对待这种方式太认真了：P
