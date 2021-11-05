@@ -7,7 +7,7 @@ Here are the stuffs I did for my AP-CS class of year 2021-2022 at the school of 
 
 All code are licenses and protected by the license see [here](./LICENSE.md). Please read this in order to better understand how things work.
 
-### Files
+# Files
 
 For each project and assignment, the code and assignment details would be put into a seperate folder.
 
@@ -21,14 +21,14 @@ For files related to the view program please check the branch `view-program`
 
 I created this program so you could easily find anything you are looking for without having to look through this master branch manually. Just run the program and yea :).
 
-### Notice
+# Notice
 
 *   This repo is only for resources and not to teach you anything directly.
 *   Binary files will not be distributed
 *   For some files, in order to run them you might need to remove the `package` statement from the top of the file
 *   Run code at your own risk and use code at your own risk (in regardance with the [license](./LICENSE.md))
 
-### Code Quality
+# Code Quality
 
 If I have a current assignment, I will not put it on this REPO before it is due!
 
@@ -36,7 +36,7 @@ There is a Codacy Badge above that will show this branch's Code quality and Grad
 
 Some workflows to improve Code Quality are the following Workflows: `Prettier, Codacy, Discord Webhook`
 
-### Gradle Wrapper
+# Gradle Wrapper
 
 Property Name
 
@@ -67,7 +67,7 @@ Archive Notice
 
 Since I am taking APCS in the school year 2021-2022. This means that after I finish this course, this repository WILL BE ARCHIVED
 
-#### What happens
+# What happens
 
 The view program will be finalized and ready for user distribution and user friendly usage. Along with this, the real content you are looking for, the "answers" will also be finalized and archived in the **master** branch of this repository
 
