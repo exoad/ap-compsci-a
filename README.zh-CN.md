@@ -73,7 +73,7 @@ JDK 最低要求
 
 以下是使用此存储库无关紧要的文件和目录：
 
-`.project``launch.json``.gitignore``.gitattributes``.gitpod.yml``/.github``seekout.sh`
+`.project``launch.json``.gitignore` `.gitattributes``.gitpod.yml``/.github``seekout.sh`
 
 # 存档通知
 
