@@ -1,16 +1,16 @@
-# 计算机科学[![Java CI with Gradle](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml)[![Java CI with Maven](https://github.com/meng-jack/apcs/actions/workflows/maven.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/maven.yml)[![Prettier for JS Code](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml)![](https://img.shields.io/github/repo-size/exoad/apcs)[![Codacy Security Scan](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml/badge.svg)](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml)
+# AP-Computer Science [![Java CI with Gradle](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml)[![Java CI with Maven](https://github.com/meng-jack/apcs/actions/workflows/maven.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/maven.yml)[![Prettier for JS Code](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml)![](https://img.shields.io/github/repo-size/exoad/apcs)[![Codacy Security Scan](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml/badge.svg)](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml)
 
-以下是我在 GNSHS（Great Neck South High School）学校为 2021-2022 年的 AP-CS 课程所做的事情。
+Here are the stuffs I did for my AP-CS class of year 2021-2022 at the school of GNSHS (Great Neck South High School).
 
 **请记住，如果您获得相同的项目，请不要复制我的代码。请阅读许可证以获取更多详细信息。**
 
 所有代码都是许可证并受许可证保护，请参阅[这里](./LICENSE.md).请阅读本文以更好地了解事情的运作方式。
 
-# 多朗！
+# Multi-Lang!
 
 现在支持此 REAMDE 的不同语言！
 
-目前支持：`chinese (simplified)``japanese``spanish`
+Currently suppports: `chinese (simplified)``japanese``spanish`
 
 **文件**
 
@@ -18,11 +18,11 @@
 
 [日本人](README.ja.md)
 
-[西班牙语](README.es.md)
+[Spanish](README.es.md)
 
 # 文件
 
-对于每个项目和作业，代码和作业详细信息将放在单独的文件夹中。
+For each project and assignment, the code and assignment details would be put into a seperate folder.
 
 大多数 MARKDOWN 文件将用 HTML 编写和解析
 
@@ -32,13 +32,13 @@
 
 ### 查看程序
 
-我创建了这个程序，这样你就可以轻松地找到你想要的任何东西，而不必手动浏览这个主分支。只需运行程序，是的:)。
+我创建了这个程序，这样你就可以轻松找到你要找的任何东西，而不必手动浏览这个主分支。只需运行程序，是的:)。
 
 # 注意
 
 -   这个 repo 仅用于资源，而不是直接教你任何东西。
--   不会分发二进制文件
--   对于某些文件，为了运行它们，您可能需要删除`package`文件顶部的语句
+-   Binary files will not be distributed
+-   对于某些文件，为了运行它们，您可能需要删除`package` statement from the top of the file
 -   运行代码的风险自负，使用代码的风险自负（考虑到[执照](./LICENSE.md))
 
 # 代码质量
@@ -85,6 +85,6 @@ JDK 最低要求
 
 #### 问题？
 
-如果您对存档或一般这个存储库有任何疑问，请随时通过我的电子邮件与我联系或提交[问题在这里！](https://github.com/exoad/apcs/issues)
+如果您对归档有任何疑问，或者只是对这个存储库有任何疑问，请随时通过我的电子邮件与我联系或提交[问题在这里！](https://github.com/exoad/apcs/issues)
 
-> 是的，我知道我对待这种方式太认真了：P
+> Yes I know I treat this way too seriously :P
