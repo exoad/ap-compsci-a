@@ -1,6 +1,6 @@
-# Ciencias de la computación[![Java CI with Gradle](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml)[![Java CI with Maven](https://github.com/meng-jack/apcs/actions/workflows/maven.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/maven.yml) [![Prettier for JS Code](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml)![](https://img.shields.io/github/repo-size/exoad/apcs)[![Codacy Security Scan](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml/badge.svg)](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml)
+# Ciencias de la computación[![Java CI with Gradle](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml)[![Java CI with Maven](https://github.com/meng-jack/apcs/actions/workflows/maven.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/maven.yml)[![Prettier for JS Code](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml)![](https://img.shields.io/github/repo-size/exoad/apcs)[![Codacy Security Scan](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml/badge.svg)](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml)
 
-Aquí están las cosas que hice para mi clase AP-CS del año 2021-2022 en la escuela de GNSHS (Great Neck South High School).
+Aquí están las cosas que hice para mi clase AP-CS del año 2021-2022 en una escuela.
 
 **Recuerde, no copie mi código si obtiene el mismo proyecto. Lea la licencia para obtener más detalles.**
 
@@ -14,7 +14,7 @@ Actualmente admite:`chinese (simplified)``japanese``spanish`
 
 **Archivos**
 
-[Chino simplificado)](README.zh-CN.md)
+[Chinese (Simplified)](README.zh-CN.md)
 
 [japonés](README.ja.md)
 
@@ -22,7 +22,7 @@ Actualmente admite:`chinese (simplified)``japanese``spanish`
 
 # Archivos
 
-Para cada proyecto y asignación, el código y los detalles de la asignación se colocarían en una carpeta separada.
+For each project and assignment, the code and assignment details would be put into a seperate folder.
 
 La mayoría de los archivos MARKDOWN se escribirán y analizarán en HTML
 
@@ -83,7 +83,7 @@ Dado que estoy tomando APCS en el año escolar 2021-2022. Esto significa que des
 
 El programa de visualización estará finalizado y listo para su distribución y uso amigable. Junto con esto, el contenido real que está buscando, las "respuestas" también se finalizarán y archivarán en el**Maestro**rama de este repositorio
 
-#### ¿Preguntas?
+#### Questions?
 
 Si tiene alguna pregunta sobre el archivo o simplemente sobre este repositorio en general, no dude en comunicarse conmigo con mi correo electrónico o enviando un[¡Emitir aquí!](https://github.com/exoad/apcs/issues)
 
