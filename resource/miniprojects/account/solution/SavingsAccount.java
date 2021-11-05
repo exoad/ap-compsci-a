@@ -1,6 +1,5 @@
 package resource.miniprojects.account.solution;
 
-
 /**
  * @author Jack Meng This class inherits the Account class and uses the account
  *         class to create a separate account of type SavingsAccount

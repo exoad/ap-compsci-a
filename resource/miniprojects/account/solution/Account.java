@@ -1,6 +1,5 @@
 package resource.miniprojects.account.solution;
 
-
 /**
  * @author Jack Meng
  * This class is inherited by the classes CheckingAccount & SavingsAccount

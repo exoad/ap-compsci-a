@@ -1,6 +1,5 @@
 package resource.miniprojects.account.solution;
 
-
 /**
  * @author Jack Meng Inherits the Account class and creates a separate account
  *         of type CheckingAccount
