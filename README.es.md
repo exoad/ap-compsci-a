@@ -81,7 +81,7 @@ Dado que estoy tomando APCS en el año escolar 2021-2022. Esto significa que des
 
 # Lo que sucede
 
-El programa de visualización estará finalizado y listo para su distribución y uso amigable. Junto con esto, el contenido real que está buscando, las "respuestas" también se finalizarán y archivarán en el**Maestro**rama de este repositorio
+El programa de visualización estará finalizado y listo para su distribución y uso amigable. Junto con esto, el contenido real que está buscando, las "respuestas" también se finalizarán y archivarán en el**master**rama de este repositorio
 
 #### ¿Preguntas?
 
