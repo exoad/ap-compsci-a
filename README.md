@@ -1,5 +1,4 @@
-AP-Computer Science [![Java CI with Gradle](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml) [![Java CI with Maven](https://github.com/meng-jack/apcs/actions/workflows/maven.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/maven.yml) [![Prettier for JS Code](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml)![](https://img.shields.io/github/repo-size/exoad/apcs)[![Codacy Security Scan](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml/badge.svg)](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml)
-===========================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================================
+# AP-Computer Science [![Java CI with Gradle](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml) [![Java CI with Maven](https://github.com/meng-jack/apcs/actions/workflows/maven.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/maven.yml) [![Prettier for JS Code](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml)![](https://img.shields.io/github/repo-size/exoad/apcs)[![Codacy Security Scan](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml/badge.svg)](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml)
 
 Here are the stuffs I did for my AP-CS class of year 2021-2022 at the school of GNSHS (Great Neck South High School).
 
@@ -8,6 +7,7 @@ Here are the stuffs I did for my AP-CS class of year 2021-2022 at the school of 
 All code are licenses and protected by the license see [here](./LICENSE.md). Please read this in order to better understand how things work.
 
 # Multi-Lang!
+
 Now there is support for different languages of this REAMDE!
 
 Currently suppports: `chinese (simplified)` `japanese` `spanish`
@@ -36,10 +36,10 @@ I created this program so you could easily find anything you are looking for wit
 
 # Notice
 
-*   This repo is only for resources and not to teach you anything directly.
-*   Binary files will not be distributed
-*   For some files, in order to run them you might need to remove the `package` statement from the top of the file
-*   Run code at your own risk and use code at your own risk (in regardance with the [license](./LICENSE.md))
+- This repo is only for resources and not to teach you anything directly.
+- Binary files will not be distributed
+- For some files, in order to run them you might need to remove the `package` statement from the top of the file
+- Run code at your own risk and use code at your own risk (in regardance with the [license](./LICENSE.md))
 
 # Code Quality
 
@@ -75,8 +75,7 @@ Here are files & directories that are nonessential to the usage of this reposito
 
 `.project` `launch.json` `.gitignore` `.gitattributes` `.gitpod.yml` `/.github` `seekout.sh`
 
-Archive Notice
-==============
+# Archive Notice
 
 Since I am taking APCS in the school year 2021-2022. This means that after I finish this course, this repository WILL BE ARCHIVED
 

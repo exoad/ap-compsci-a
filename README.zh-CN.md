@@ -10,7 +10,7 @@ Here are the stuffs I did for my AP-CS class of year 2021-2022 at the school of 
 
 现在支持此 REAMDE 的不同语言！
 
-Currently suppports: `chinese (simplified)``japanese``spanish`
+Currently suppports: ` chinese (simplified)``japanese``spanish `
 
 **文件**
 
@@ -36,10 +36,10 @@ For each project and assignment, the code and assignment details would be put in
 
 # 注意
 
--   这个 repo 仅用于资源，而不是直接教你任何东西。
--   Binary files will not be distributed
--   对于某些文件，为了运行它们，您可能需要删除`package` statement from the top of the file
--   运行代码的风险自负，使用代码的风险自负（考虑到[执照](./LICENSE.md))
+- 这个 repo 仅用于资源，而不是直接教你任何东西。
+- Binary files will not be distributed
+- 对于某些文件，为了运行它们，您可能需要删除`package` statement from the top of the file
+- 运行代码的风险自负，使用代码的风险自负（考虑到[执照](./LICENSE.md))
 
 # 代码质量
 
@@ -55,7 +55,7 @@ For each project and assignment, the code and assignment details would be put in
 
 信息
 
-JDK版本
+JDK 版本
 
 `16`
 
@@ -65,7 +65,7 @@ JDK 最低要求
 
 使用的软件
 
-`DrJava``VSCode Insiders`
+` DrJava``VSCode Insiders `
 
 > 记住从这里复制代码不会教你任何东西！！！
 
@@ -73,7 +73,7 @@ JDK 最低要求
 
 以下是使用此存储库无关紧要的文件和目录：
 
-`.project``launch.json``.gitignore``.gitattributes``.gitpod.yml``/.github``seekout.sh`
+` .project``launch.json``.gitignore``.gitattributes``.gitpod.yml``/.github``seekout.sh `
 
 # 存档通知
 
