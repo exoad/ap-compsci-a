@@ -10,12 +10,13 @@ All code are licenses and protected by the license see [here](./LICENSE.md). Ple
 # Multi-Lang!
 Now there is support for different languages of this REAMDE!
 
-Currently suppports: `chinese (simplified)`
+Currently suppports: `chinese (simplified)` `japanese`
 
 **Files**
 
 [Chinese Simplified](README.zh-CN.md)
 
+[Japanese](README.ja.md)
 
 # Files
 
