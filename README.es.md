@@ -1,6 +1,6 @@
 # Ciencias de la computación[![Java CI with Gradle](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml)[![Java CI with Maven](https://github.com/meng-jack/apcs/actions/workflows/maven.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/maven.yml)[![Prettier for JS Code](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml)![](https://img.shields.io/github/repo-size/exoad/apcs)[![Codacy Security Scan](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml/badge.svg)](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml)
 
-Here are the stuffs I did for my AP-CS class of year 2021-2022 at the school of GNSHS (Great Neck South High School).
+Aquí están las cosas que hice para mi clase AP-CS del año 2021-2022 en la escuela de GNSHS (Great Neck South High School).
 
 **Recuerde, no copie mi código si obtiene el mismo proyecto. Lea la licencia para obtener más detalles.**
 
@@ -8,7 +8,7 @@ Todos los códigos son licencias y están protegidos por la licencia ver[aquí](
 
 # Multi-Lang!
 
-Now there is support for different languages of this REAMDE!
+¡Ahora hay soporte para diferentes idiomas de este REAMDE!
 
 Actualmente admite:`chinese (simplified)``japanese``spanish`
 
