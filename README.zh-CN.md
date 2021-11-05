@@ -1,4 +1,4 @@
-# 计算机科学[![Java CI with Gradle](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml)[![Java CI with Maven](https://github.com/meng-jack/apcs/actions/workflows/maven.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/maven.yml)[![Prettier for JS Code](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml)![](https://img.shields.io/github/repo-size/exoad/apcs)[![Codacy Security Scan](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml/badge.svg)](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml)
+# AP-Computer Science [![Java CI with Gradle](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml)[![Java CI with Maven](https://github.com/meng-jack/apcs/actions/workflows/maven.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/maven.yml)[![Prettier for JS Code](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml)![](https://img.shields.io/github/repo-size/exoad/apcs)[![Codacy Security Scan](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml/badge.svg)](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml)
 
 以下是我在 GNSHS（Great Neck South High School）学校为 2021-2022 年的 AP-CS 课程所做的事情。
 
@@ -10,11 +10,13 @@
 
 现在支持此 REAMDE 的不同语言！
 
-目前支持：`chinese (simplified)`
+目前支持：`chinese (simplified)``japanese`
 
 **文件**
 
 [简体中文](README.zh-CN.md)
+
+[Japanese](README.ja.md)
 
 # 文件
 
@@ -69,7 +71,7 @@ JDK 最低要求
 
 以下是使用此存储库无关紧要的文件和目录：
 
-`.project``launch.json``.gitignore``.gitattributes``.gitpod.yml``/.github``seekout.sh`
+`.project``launch.json``.gitignore``.gitattributes``.gitpod.yml` `/.github``seekout.sh`
 
 # 存档通知
 
