@@ -6,13 +6,13 @@
 
 所有代码都是许可证并受许可证保护，请参阅[这里](./LICENSE.md).请阅读本文以更好地了解事情的运作方式。
 
-### 文件
+# 文件
 
-For each project and assignment, the code and assignment details would be put into a seperate folder.
+对于每个项目和作业，代码和作业详细信息将放在单独的文件夹中。
 
 大多数 MARKDOWN 文件将用 HTML 编写和解析
 
-检查文件夹`/resource/`. Folders besides this folder should be ignored unless you are running this entire repo.
+检查文件夹`/resource/`.除非您正在运行整个存储库，否则应忽略除此文件夹之外的文件夹。
 
 与查看程序相关的文件请查看分支`view-program`
 
@@ -20,14 +20,14 @@ For each project and assignment, the code and assignment details would be put in
 
 我创建了这个程序，这样你就可以轻松找到你要找的任何东西，而不必手动浏览这个主分支。只需运行程序，是的:)。
 
-### 注意
+# 注意
 
 -   这个 repo 仅用于资源，而不是直接教你任何东西。
 -   不会分发二进制文件
 -   对于某些文件，为了运行它们，您可能需要删除`package`文件顶部的语句
 -   运行代码的风险自负，使用代码的风险自负（考虑到[执照](./LICENSE.md))
 
-### 代码质量
+# 代码质量
 
 如果我有当前的任务，我不会在到期之前把它放在这个 REPO 上！
 
@@ -35,7 +35,7 @@ For each project and assignment, the code and assignment details would be put in
 
 一些提高代码质量的工作流是以下工作流：`Prettier, Codacy, Discord Webhook`
 
-### 摇篮包装器
+# 摇篮包装器
 
 物业名称
 
@@ -51,7 +51,7 @@ JDK 最低要求
 
 使用的软件
 
-`DrJava``VSCode Insiders`
+`DrJava` `VSCode Insiders`
 
 > 记住从这里复制代码不会教你任何东西！！！
 
@@ -65,7 +65,7 @@ JDK 最低要求
 
 因为我在 2021-2022 学年参加 APCS。这意味着在我完成本课程后，此存储库将被存档
 
-#### 发生什么了
+# 发生什么了
 
 视图程序将完成并准备好供用户分发和用户友好使用。与此同时，您正在寻找的真实内容，“答案”也将最终确定并存档在**掌握**此存储库的分支
 
