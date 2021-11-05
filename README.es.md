@@ -4,13 +4,13 @@ Aquí están las cosas que hice para mi clase AP-CS del año 2021-2022 en la esc
 
 **Recuerde, no copie mi código si obtiene el mismo proyecto. Lea la licencia para obtener más detalles.**
 
-Todos los códigos son licencias y están protegidos por la licencia ver[aquí](./LICENSE.md). Lea esto para comprender mejor cómo funcionan las cosas.
+Todos los códigos son licencias y están protegidos por la licencia ver[here](./LICENSE.md). Lea esto para comprender mejor cómo funcionan las cosas.
 
 # Multi-Lang!
 
 ¡Ahora hay soporte para diferentes idiomas de este REAMDE!
 
-Actualmente admite:` chinese (simplified)``japanese``spanish `
+Actualmente admite:`chinese (simplified)``japanese``spanish`
 
 **Archivos**
 
@@ -30,16 +30,16 @@ Verificar en la carpeta`/resource/`. Las carpetas además de esta carpeta deben 
 
 Para los archivos relacionados con el programa de visualización, consulte la rama`view-program`
 
-### View Program
+### Ver programa
 
 Creé este programa para que pueda encontrar fácilmente cualquier cosa que esté buscando sin tener que buscar manualmente en esta rama maestra. Simplemente ejecute el programa y sí :).
 
 # Aviso
 
-- Este repositorio es solo para recursos y no para enseñarle nada directamente.
-- Los archivos binarios no se distribuirán
-- Para algunos archivos, para ejecutarlos, es posible que deba eliminar el`package`declaración de la parte superior del archivo
-- Run code at your own risk and use code at your own risk (in regardance with the [licencia](./LICENSE.md))
+-   Este repositorio es solo para recursos y no para enseñarle nada directamente.
+-   Los archivos binarios no se distribuirán
+-   Para algunos archivos, para ejecutarlos, es posible que deba eliminar el`package`declaración de la parte superior del archivo
+-   Ejecute el código bajo su propio riesgo y use el código bajo su propio riesgo (de acuerdo con el[licencia](./LICENSE.md))
 
 # Calidad del código
 
@@ -65,7 +65,7 @@ JDK mínimo
 
 Software utilizado
 
-` DrJava``VSCode Insiders `
+`DrJava``VSCode Insiders`
 
 > RECUERDA QUE COPIAR EL CÓDIGO DESDE AQUÍ NO TE ENSEÑARÁ NADA !!!
 
@@ -73,7 +73,7 @@ Software utilizado
 
 Aquí hay archivos y directorios que no son esenciales para el uso de este repositorio:
 
-` .project``launch.json``.gitignore``.gitattributes``.gitpod.yml``/.github``seekout.sh `
+`.project``launch.json``.gitignore``.gitattributes``.gitpod.yml``/.github``seekout.sh`
 
 # Aviso de archivo
 
