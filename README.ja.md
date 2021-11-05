@@ -85,4 +85,4 @@ JDK最小
 
 アーカイブまたはこのリポジトリ全般について質問がある場合は、メールまたは送信で私に連絡してください。[ここで発行してください！](https://github.com/exoad/apcs/issues)
 
-> Yes I know I treat this way too seriously :P
+> はい、私はこのように真剣に扱っていることを知っています：P
