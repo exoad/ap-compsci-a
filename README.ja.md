@@ -1,6 +1,6 @@
 # アップコンピュータサイエンス[![Java CI with Gradle](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml)[![Java CI with Maven](https://github.com/meng-jack/apcs/actions/workflows/maven.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/maven.yml)[![Prettier for JS Code](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml)![](https://img.shields.io/github/repo-size/exoad/apcs)[![Codacy Security Scan](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml/badge.svg)](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml)
 
-これが、GNSHS（グレートネックサウスハイスクール）の学校で2021年から2022年のAP-CSクラスで行ったことです。
+これが、2021年から2022年にかけて学校でAP-CSクラスのために行ったことです。
 
 **同じプロジェクトを取得した場合は、コードをコピーしないでください。詳細については、ライセンスをお読みください。**
 
@@ -49,7 +49,7 @@
 
 コード品質を向上させるためのいくつかのワークフローは、次のワークフローです。`Prettier, Codacy, Discord Webhook`
 
-# Gradleラッパー
+# Gradle Wrapper
 
 プロパティ名
 
@@ -85,6 +85,6 @@ JDK最小
 
 #### 質問？
 
-アーカイブまたはこのリポジトリ全般について質問がある場合は、メールまたは送信で私に連絡してください。[Issue here!](https://github.com/exoad/apcs/issues)
+アーカイブまたはこのリポジトリ全般について質問がある場合は、メールまたは送信で私に連絡してください。[ここで発行してください！](https://github.com/exoad/apcs/issues)
 
 > はい、私はこのように真剣に扱っていることを知っています：P
