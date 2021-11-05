@@ -1,6 +1,6 @@
 # アップコンピュータサイエンス[![Java CI with Gradle](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml)[![Java CI with Maven](https://github.com/meng-jack/apcs/actions/workflows/maven.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/maven.yml)[![Prettier for JS Code](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml)![](https://img.shields.io/github/repo-size/exoad/apcs)[![Codacy Security Scan](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml/badge.svg)](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml)
 
-これが、GNSHS（グレートネックサウスハイスクール）の学校で 2021 年から 2022 年の AP-CS クラスで行ったことです。
+これが、GNSHS（グレートネックサウスハイスクール）の学校で2021年から2022年のAP-CSクラスで行ったことです。
 
 **同じプロジェクトを取得した場合は、コードをコピーしないでください。詳細については、ライセンスをお読みください。**
 
@@ -8,9 +8,9 @@
 
 # 多言語！
 
-現在、この REAMDE のさまざまな言語がサポートされています。
+現在、このREAMDEのさまざまな言語がサポートされています。
 
-現在サポートされているもの：` chinese (simplified)``japanese``spanish `
+現在サポートされているもの：`chinese (simplified)``japanese``spanish`
 
 **ファイル**
 
@@ -24,7 +24,7 @@
 
 プロジェクトと割り当てごとに、コードと割り当ての詳細は別のフォルダーに配置されます。
 
-ほとんどの MARKDOWN ファイルは HTML で記述および解析されます
+ほとんどのMARKDOWNファイルはHTMLで記述および解析されます
 
 フォルダをチェックインします`/resource/`。このリポジトリ全体を実行している場合を除き、このフォルダー以外のフォルダーは無視する必要があります。
 
@@ -36,36 +36,36 @@
 
 # 知らせ
 
-- このリポジトリはリソース専用であり、直接何かを教えるものではありません。
-- バイナリファイルは配布されません
-- 一部のファイルでは、それらを実行するために、を削除する必要がある場合があります`package`ファイルの先頭からのステートメント
-- 自己責任でコードを実行し、自己責任でコードを使用してください（[ライセンス](./LICENSE.md)）
+-   このリポジトリはリソース専用であり、直接何かを教えるものではありません。
+-   バイナリファイルは配布されません
+-   一部のファイルでは、それらを実行するために、を削除する必要がある場合があります`package`ファイルの先頭からのステートメント
+-   自己責任でコードを実行し、自己責任でコードを使用してください（[ライセンス](./LICENSE.md)）
 
 # コード品質
 
-現在の割り当てがある場合、期限が切れる前にこの REPO に配置しません。
+現在の割り当てがある場合、期限が切れる前にこのREPOに配置しません。
 
-このブランチのコードの品質とグレードを示す Codacy バッジが上にあります。`A`最高であることなど。
+このブランチのコードの品質とグレードを示すCodacyバッジが上にあります。`A`最高であることなど。
 
 コード品質を向上させるためのいくつかのワークフローは、次のワークフローです。`Prettier, Codacy, Discord Webhook`
 
-# Gradle ラッパー
+# Gradleラッパー
 
 プロパティ名
 
 情報
 
-JDK バージョン
+JDKバージョン
 
 `16`
 
-JDK 最小
+JDK最小
 
 `8`
 
 使用したソフトウェア
 
-` DrJava``VSCode Insiders `
+`DrJava``VSCode Insiders`
 
 > ここからコードをコピーしても、何も教えられないことを忘れないでください!!!
 
@@ -73,11 +73,11 @@ JDK 最小
 
 このリポジトリの使用に不可欠ではないファイルとディレクトリは次のとおりです。
 
-` .project``launch.json``.gitignore``.gitattributes``.gitpod.yml``/.github``seekout.sh `
+`.project``launch.json``.gitignore``.gitattributes``.gitpod.yml``/.github``seekout.sh`
 
 # アーカイブ通知
 
-私は 2021 年から 2022 年の学年に APCS を受講しているので。これは、このコースを終了すると、このリポジトリがアーカイブされることを意味します
+私は2021年から2022年の学年にAPCSを受講しているので。これは、このコースを終了すると、このリポジトリがアーカイブされることを意味します
 
 # 何が起こるのですか
 
