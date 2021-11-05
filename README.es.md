@@ -30,7 +30,7 @@ Verificar en la carpeta`/resource/`. Las carpetas además de esta carpeta deben 
 
 Para los archivos relacionados con el programa de visualización, consulte la rama`view-program`
 
-### Ver programa
+### View Program
 
 Creé este programa para que pueda encontrar fácilmente cualquier cosa que esté buscando sin tener que buscar manualmente en esta rama maestra. Simplemente ejecute el programa y sí :).
 
@@ -39,7 +39,7 @@ Creé este programa para que pueda encontrar fácilmente cualquier cosa que est�
 -   Este repositorio es solo para recursos y no para enseñarle nada directamente.
 -   Los archivos binarios no se distribuirán
 -   Para algunos archivos, para ejecutarlos, es posible que deba eliminar el`package`declaración de la parte superior del archivo
--   Ejecute el código bajo su propio riesgo y use el código bajo su propio riesgo (de acuerdo con el[licencia](./LICENSE.md))
+-   Run code at your own risk and use code at your own risk (in regardance with the [licencia](./LICENSE.md))
 
 # Calidad del código
 
@@ -81,7 +81,7 @@ Dado que estoy tomando APCS en el año escolar 2021-2022. Esto significa que des
 
 # Lo que sucede
 
-El programa de visualización estará finalizado y listo para su distribución y uso amigable. Junto con esto, el contenido real que está buscando, las "respuestas" también se finalizarán y archivarán en el**master**rama de este repositorio
+El programa de visualización estará finalizado y listo para su distribución y uso amigable. Junto con esto, el contenido real que está buscando, las "respuestas" también se finalizarán y archivarán en el**Maestro**rama de este repositorio
 
 #### ¿Preguntas?
 
