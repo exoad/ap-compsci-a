@@ -1,3 +1,5 @@
+package resource.miniprojects.account.solution;
+
 
 /**
  * @author Jack Meng

@@ -1,3 +1,5 @@
+package resource.miniprojects.account.solution;
+
 
 /**
  * @author Jack Meng this class is the driver class and utilizes the Account,
