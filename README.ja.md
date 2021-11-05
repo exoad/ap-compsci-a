@@ -10,13 +10,15 @@
 
 現在、このREAMDEのさまざまな言語がサポートされています。
 
-現在サポートされているもの：`chinese (simplified)``japanese`
+現在サポートされているもの：`chinese (simplified)``japanese``spanish`
 
 **ファイル**
 
 [中国語（簡体字](README.zh-CN.md)
 
 [日本](README.ja.md)
+
+[スペイン語](README.es.md)
 
 # ファイル
 
@@ -30,7 +32,7 @@
 
 ### プログラムを見る
 
-このプログラムを作成したので、このマスターブランチを手動で確認しなくても、探しているものを簡単に見つけることができます。プログラムを実行するだけで、そうです:)。
+I created this program so you could easily find anything you are looking for without having to look through this master branch manually. Just run the program and yea :).
 
 # 知らせ
 
@@ -85,4 +87,4 @@ JDK最小
 
 アーカイブまたはこのリポジトリ全般について質問がある場合は、メールまたは送信で私に連絡してください。[ここで発行してください！](https://github.com/exoad/apcs/issues)
 
-> はい、私はこのように真剣に扱っていることを知っています：P
+> Yes I know I treat this way too seriously :P
