@@ -10,13 +10,15 @@ Todos los códigos son licencias y están protegidos por la licencia ver[aquí](
 
 ¡Ahora hay soporte para diferentes idiomas de este REAMDE!
 
-Actualmente admite:`chinese (simplified)``japanese`
+Actualmente admite:`chinese (simplified)``japanese``spanish`
 
 **Archivos**
 
 [Chino simplificado](README.zh-CN.md)
 
 [japonés](README.ja.md)
+
+[Español](README.es.md)
 
 # Archivos
 
@@ -28,7 +30,7 @@ Verificar en la carpeta`/resource/`. Las carpetas además de esta carpeta deben 
 
 Para los archivos relacionados con el programa de visualización, consulte la rama`view-program`
 
-### View Program
+### Ver programa
 
 Creé este programa para que pueda encontrar fácilmente cualquier cosa que esté buscando sin tener que buscar manualmente en esta rama maestra. Simplemente ejecute el programa y sí :).
 
