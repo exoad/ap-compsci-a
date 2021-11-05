@@ -6,6 +6,16 @@
 
 所有代码都是许可证并受许可证保护，请参阅[这里](./LICENSE.md).请阅读本文以更好地了解事情的运作方式。
 
+# 多朗！
+
+现在支持此 REAMDE 的不同语言！
+
+目前支持：`chinese (simplified)`
+
+**文件**
+
+[简体中文](README.zh-CN.md)
+
 # 文件
 
 对于每个项目和作业，代码和作业详细信息将放在单独的文件夹中。
@@ -18,7 +28,7 @@
 
 ### 查看程序
 
-我创建了这个程序，这样你就可以轻松找到你要找的任何东西，而不必手动浏览这个主分支。只需运行程序，是的:)。
+我创建了这个程序，这样你就可以轻松找到你正在寻找的任何东西，而无需手动浏览这个主分支。只需运行程序，是的:)。
 
 # 注意
 
@@ -49,7 +59,7 @@ JDK 最低要求
 
 `8`
 
-使用的软件
+Software Used
 
 `DrJava``VSCode Insiders`
 
@@ -57,7 +67,7 @@ JDK 最低要求
 
 ### 要忽略的文件
 
-Here are files & directories that are nonessential to the usage of this repository:
+以下是使用此存储库无关紧要的文件和目录：
 
 `.project``launch.json``.gitignore``.gitattributes``.gitpod.yml``/.github``seekout.sh`
 
@@ -71,4 +81,4 @@ Here are files & directories that are nonessential to the usage of this reposito
 
 #### 问题？
 
-如果您对归档有任何疑问，或者只是对这个存储库有任何疑问，请随时通过我的电子邮件与我联系或提交[问题在这里！](https://github.com/exoad/apcs/issues)
+如果您对存档或一般这个存储库有任何疑问，请随时通过我的电子邮件与我联系或提交[问题在这里！](https://github.com/exoad/apcs/issues)
