@@ -38,7 +38,7 @@ Creé este programa para que pueda encontrar fácilmente cualquier cosa que est�
 
 -   Este repositorio es solo para recursos y no para enseñarle nada directamente.
 -   Los archivos binarios no se distribuirán
--   Para algunos archivos, para ejecutarlos, es posible que deba eliminar el`package`declaración de la parte superior del archivo
+-   For some files, in order to run them you might need to remove the `package`declaración de la parte superior del archivo
 -   Ejecute el código bajo su propio riesgo y use el código bajo su propio riesgo (de acuerdo con el[licencia](./LICENSE.md))
 
 # Calidad del código
@@ -67,7 +67,7 @@ Software utilizado
 
 `DrJava``VSCode Insiders`
 
-> RECUERDA QUE COPIAR EL CÓDIGO DESDE AQUÍ NO TE ENSEÑARÁ NADA !!!
+> REMEMBER COPYING CODE FROM HERE WON'T TEACH YOU ANYTHING!!!
 
 ### Archivos para ignorar
 
