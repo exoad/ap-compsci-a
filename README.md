@@ -5,3 +5,10 @@ Here are the stuffs I did for my AP-CS class of year 2021-2022 at a school.
 **Remember, don't copy my code if you get the same project. Please read the license for further details.**
 
 All code are licenses and protected by the license see [here](./LICENSE.md). Please read this in order to better understand how things work.
+
+# Files
+
+Check the folder `./resource` for all of the files
+
+# Changed README
+This readme used to be huge and had a lot of stuffs, but i have decided to shorten it :)
