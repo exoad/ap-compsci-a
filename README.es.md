@@ -5,3 +5,11 @@ Aquí están las cosas que hice para mi clase AP-CS del año 2021-2022 en una es
 **Recuerde, no copie mi código si obtiene el mismo proyecto. Lea la licencia para obtener más detalles.**
 
 Todos los códigos son licencias y están protegidos por la licencia ver[aquí](./LICENSE.md). Lea esto para comprender mejor cómo funcionan las cosas.
+
+# Archivos
+
+Revisa la carpeta`./resource`para todos los archivos
+
+# README modificado
+
+Este archivo Léame solía ser enorme y tenía muchas cosas, pero he decidido acortarlo :)
