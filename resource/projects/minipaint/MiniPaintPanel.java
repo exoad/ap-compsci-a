@@ -12,17 +12,15 @@ import java.awt.Graphics;
 import java.awt.Point;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.ComponentEvent;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-import java.awt.event.ComponentListener;
 
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class MiniPaintPanel extends JPanel implements MouseListener, ActionListener, ComponentListener {
+public class MiniPaintPanel extends JPanel implements MouseListener, ActionListener {
   /**
    * Purpose: This class creates a Line object which is then utilized by the
    * Dynanmic Class to create and store lines in order to display them correctly
@@ -63,15 +61,16 @@ public class MiniPaintPanel extends JPanel implements MouseListener, ActionListe
   private final JButton[] buttons = new JButton[7];
   private final JLabel[] labels = new JLabel[2];
   private Color currColor = Color.BLACK;
-  private int startx, starty, endx, endy, iterator = 0, size = 1, iterator2 = 0;
+  private int startx;
+  private int starty;
+  private int endx; 
+  private int endy; 
+  private int iterator = 0;
+  private int size = 1;
   private boolean line = true;
-  private Line[] entities = new Line[1]; // start out as size of one but will increase as times goes on
+  private transient Line[] entities = new Line[1]; // start out as size of one but will increase as times goes on
   private Graphics g;
-  private Dimension windowSize;
-
   MiniPaintPanel(Dimension dim) {
-    windowSize = dim; //set dimension for use later
-
     labels[0] = new JLabel("<html>Current Shape: " + shape + "<br>Current Color:<html>"); // use html in order to space and format text properly
     labels[0].setForeground(Color.BLACK);
     labels[0].setOpaque(true);
@@ -83,24 +82,25 @@ public class MiniPaintPanel extends JPanel implements MouseListener, ActionListe
     labels[1].setOpaque(true);
     labels[1].setAlignmentX(Component.LEFT_ALIGNMENT);
 
+    String placeHolder = "           ";
     // separately initialize all of the buttons
-    buttons[0] = new JButton("            ");
+    buttons[0] = new JButton(placeHolder);
     buttons[0].setBackground(Color.GREEN);
 
-    buttons[1] = new JButton("            ");
+    buttons[1] = new JButton(placeHolder);
     buttons[1].setBackground(Color.BLUE);
 
-    buttons[2] = new JButton("            ");
+    buttons[2] = new JButton(placeHolder);
     buttons[2].setBackground(Color.RED);
 
-    buttons[3] = new JButton("            ");
+    buttons[3] = new JButton(placeHolder);
     buttons[3].setBackground(Color.BLACK);
 
-    buttons[4] = new JButton("            ");
+    buttons[4] = new JButton(placeHolder);
     buttons[4].setBackground(
         new Color((int) (Math.random() * 256), (int) (Math.random() * 256), (int) (Math.random() * 256)));
 
-    buttons[5] = new JButton("            ");
+    buttons[5] = new JButton(placeHolder);
     buttons[5].setBackground(Color.ORANGE);
 
     buttons[6] = new JButton("Change Shape");
@@ -125,7 +125,6 @@ public class MiniPaintPanel extends JPanel implements MouseListener, ActionListe
     }
 
     setPreferredSize(new Dimension(800, 800));
-    addComponentListener(this);
     addMouseListener(this);
     setLayout(new BorderLayout());
     add(menu1, BorderLayout.WEST);
@@ -141,14 +140,12 @@ public class MiniPaintPanel extends JPanel implements MouseListener, ActionListe
     g1.setColor(currColor);
     if (line) {
       g1.drawLine(startx, starty, endx, endy);
-      iterator2++;
       add(new Line(new Point(startx, starty), new Point(endx, endy), currColor));
     } else {
       g1.drawLine(startx, starty, endx, starty);
       g1.drawLine(startx, starty, startx, endy);
       g1.drawLine(endx, endy, endx, starty);
       g1.drawLine(endx, endy, startx, endy);
-      iterator2++;
       add(new Line(new Point(startx, starty), new Point(endx, starty), currColor));
       add(new Line(new Point(startx, starty), new Point(startx, endy), currColor));
       add(new Line(new Point(endx, endy), new Point(endx, starty), currColor));
@@ -282,37 +279,17 @@ public class MiniPaintPanel extends JPanel implements MouseListener, ActionListe
   }
 
   @Override
-  public void componentResized(ComponentEvent e) {
-    System.out.println("Resized");
-    // true == line ;; false == rectangle
-    boolean needResize = true;
-  }
-
-  // unused methods
-  @Override
   public void mouseClicked(MouseEvent e) {
+    // UNUSED LISTENER
   }
 
   @Override
   public void mouseExited(MouseEvent e) {
+    // UNUSED LISTENER
   }
 
   @Override
   public void mouseEntered(MouseEvent e) {
-  }
-
-  @Override
-  public void componentMoved(ComponentEvent e) {
-
-  }
-
-  @Override
-  public void componentShown(ComponentEvent e) {
-
-  }
-
-  @Override
-  public void componentHidden(ComponentEvent e) {
-
+    // UNUSED LISTENER
   }
 }
