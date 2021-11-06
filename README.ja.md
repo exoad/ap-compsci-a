@@ -4,7 +4,7 @@
 
 **同じプロジェクトを取得した場合は、コードをコピーしないでください。詳細については、ライセンスをお読みください。**
 
-すべてのコードはライセンスであり、ライセンスによって保護されています。を参照してください。[ここ](./LICENSE.md)。物事がどのように機能するかをよりよく理解するためにこれを読んでください。
+すべてのコードはライセンスであり、ライセンスによって保護されています。を参照してください。[ここ](./LICENSE.md). Please read this in order to better understand how things work.
 
 # 多言語！
 
@@ -32,7 +32,7 @@
 
 ### プログラムを見る
 
-I created this program so you could easily find anything you are looking for without having to look through this master branch manually. Just run the program and yea :).
+このプログラムを作成したので、このマスターブランチを手動で確認しなくても、探しているものを簡単に見つけることができます。プログラムを実行するだけで、そうです:)。
 
 # 知らせ
 
