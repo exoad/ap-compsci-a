@@ -10,7 +10,7 @@ Todos los códigos son licencias y están protegidos por la licencia ver[aquí](
 
 ¡Ahora hay soporte para diferentes idiomas de este REAMDE!
 
-Currently suppports: `chinese (simplified)``japanese``spanish`
+Actualmente admite:`chinese (simplified)``japanese``spanish`
 
 **Archivos**
 
