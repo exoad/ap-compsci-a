@@ -32,7 +32,7 @@
 
 ### プログラムを見る
 
-このプログラムを作成したので、このマスターブランチを手動で確認しなくても、探しているものを簡単に見つけることができます。プログラムを実行するだけで、そうです:)。
+I created this program so you could easily find anything you are looking for without having to look through this master branch manually. Just run the program and yea :).
 
 # 知らせ
 
@@ -49,7 +49,7 @@
 
 コード品質を向上させるためのいくつかのワークフローは、次のワークフローです。`Prettier, Codacy, Discord Webhook`
 
-# Gradle Wrapper
+# Gradleラッパー
 
 プロパティ名
 
@@ -81,7 +81,7 @@ JDK最小
 
 # 何が起こるのですか
 
-ビュープログラムが完成し、ユーザー配布とユーザーフレンドリーな使用の準備が整います。これに加えて、あなたが探している実際のコンテンツ、「回答」も最終決定され、**master**このリポジトリのブランチ
+ビュープログラムが完成し、ユーザー配布とユーザーフレンドリーな使用の準備が整います。これに加えて、あなたが探している実際のコンテンツ、「回答」も最終決定され、**主人**このリポジトリのブランチ
 
 #### 質問？
 
