@@ -19,9 +19,7 @@ Permission is hereby granted <span class="hljs-built_in">to</span> anyone <span 
 <li>Trademark use</li>
 </ol>
 <h3 id="quick-summary-of-license">Quick Summary of License</h3>
-<p>This License allows for the distribution of said software for only educational purposes. However, no matter the distribution, all original documentations and licensing
-notices must be preserved. Source code is also allowed to be distributed under different names and terms, but not licenses.</p>
-<p>Said consumer must use code at their own expenses and risks as the original author will not be held accountable for any misconducts and any mishaps.</p>
+<p>THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</p>
 <blockquote>
 <p>Created by Jack Meng 2020 | Last Revised 2021 | Copyright not Copyleft </p>
 </blockquote>
