@@ -1,6 +1,6 @@
-# 计算机科学[![Java CI with Gradle](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml)[![Java CI with Maven](https://github.com/meng-jack/apcs/actions/workflows/maven.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/maven.yml)[![Prettier for JS Code](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml)![](https://img.shields.io/github/repo-size/exoad/apcs)[![Codacy Security Scan](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml/badge.svg)](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml)
+# AP-Computer Science [![Java CI with Gradle](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/gradle.yml)[![Java CI with Maven](https://github.com/meng-jack/apcs/actions/workflows/maven.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/maven.yml)[![Prettier for JS Code](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml/badge.svg?branch=dax-program)](https://github.com/meng-jack/apcs/actions/workflows/prettify.yml)![](https://img.shields.io/github/repo-size/exoad/apcs)[![Codacy Security Scan](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml/badge.svg)](https://github.com/exoad/apcs/actions/workflows/codacy-analysis.yml)
 
-以下是我在学校 2021-2022 年的 AP-CS 课程中所做的事情。
+以下是我在学校 2021-2022 学年的 AP-CS 课程中所做的事情。
 
 **请记住，如果您获得相同的项目，请不要复制我的代码。请阅读许可证以获取更多详细信息。**
 
@@ -38,8 +38,8 @@
 
 -   这个 repo 仅用于资源，而不是直接教你任何东西。
 -   不会分发二进制文件
--   For some files, in order to run them you might need to remove the `package`文件顶部的语句
--   Run code at your own risk and use code at your own risk (in regardance with the [执照](./LICENSE.md))
+-   对于某些文件，为了运行它们，您可能需要删除`package`文件顶部的语句
+-   运行代码的风险自负，使用代码的风险自负（考虑到[执照](./LICENSE.md))
 
 # 代码质量
 
@@ -47,7 +47,7 @@
 
 上面有一个 Codacy 徽章，将显示该分支的代码质量和等级，带有`A`成为最好的，等等。
 
-一些提高代码质量的工作流是以下工作流：`Prettier, Codacy, Discord Webhook`
+一些提高代码质量的工作流程是以下工作流程：`Prettier, Codacy, Discord Webhook`
 
 # 摇篮包装器
 
@@ -85,6 +85,6 @@ JDK 最低要求
 
 #### 问题？
 
-如果您对存档或一般这个存储库有任何疑问，请随时通过我的电子邮件与我联系或提交[问题在这里！](https://github.com/exoad/apcs/issues)
+如果您对归档有任何疑问，或者只是对这个存储库有任何疑问，请随时通过我的电子邮件与我联系或提交[问题在这里！](https://github.com/exoad/apcs/issues)
 
 > 是的，我知道我对待这种方式太认真了：P
