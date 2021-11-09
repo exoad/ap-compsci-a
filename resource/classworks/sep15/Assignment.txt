@@ -1,1 +1,0 @@
-public boolean inRange(int l, int u, int i). This method should return true if the value i is between l (lower) and u (upper), exclusive, false otherwise.
