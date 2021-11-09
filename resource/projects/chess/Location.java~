@@ -1,0 +1,16 @@
+public class Location {
+  private int locX, locY;
+  
+  public Location(int locX, locY) {
+    this.locX = locX;
+    this.locY = locY;
+  }
+  
+  public Location(String location) {
+    if((location.charAt(0) >= 'a' && location.charAt(0) <= 'h') && (location.charAt(1) >= '1' && location.charAt(1) <= '8'))
+      // set locations here
+      this.locY = (int) location.charAt(1);
+    else
+      throw new IllegalArgumentException("Invalid Position");
+  }
+}
