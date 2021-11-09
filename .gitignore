@@ -1,0 +1,10 @@
+*.class
+.idea
+.vscode
+/out
+.settings
+/.gradle
+/bin
+
+
+# current assignments ignore

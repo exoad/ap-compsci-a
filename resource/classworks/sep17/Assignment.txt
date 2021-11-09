@@ -1,0 +1,1 @@
+public String[] removeWordsOfLength(String[] arr, int length). This method returns an array of Strings such that no remaining String has a length of the given value.
