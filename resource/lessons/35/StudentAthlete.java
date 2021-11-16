@@ -5,30 +5,26 @@
 //  Used to demonstrate inheritance.
 //********************************************************************
 
-public class StudentAthlete extends Student
-{
-   private String sport;
+public class StudentAthlete extends Student {
+  private String sport;
 
-   //-----------------------------------------------------------------
-   //  Sets up the student athlete using the specified information.
-   //-----------------------------------------------------------------
-   public StudentAthlete (String studentName, int courses,
-                       String sportName)
-   {
-      super (studentName, courses);
+  //-----------------------------------------------------------------
+  //  Sets up the student athlete using the specified information.
+  //-----------------------------------------------------------------
+  public StudentAthlete(String studentName, int courses, String sportName) {
+    super(studentName, courses);
 
-      sport = sportName;
-   }
+    sport = sportName;
+  }
 
-   //-----------------------------------------------------------------
-   //  Returns a description of this graduate student as a string.
-   //-----------------------------------------------------------------
-   public String toString()
-   {
-      String result = super.toString();
+  //-----------------------------------------------------------------
+  //  Returns a description of this graduate student as a string.
+  //-----------------------------------------------------------------
+  public String toString() {
+    String result = super.toString();
 
-      result += "\nSport: " + sport;
+    result += "\nSport: " + sport;
 
-      return result;
-   }
+    return result;
+  }
 }
