@@ -1,3 +1,5 @@
+REWRITE IN PROCESS THIS IS NOT THE LATEST FIX TO THE CC
+
 # Code of Conduct
 
 As the lead of contribution to this repository, I am pledging to provide the highest quality content along with the most amount of support while this reposoitory is active.
