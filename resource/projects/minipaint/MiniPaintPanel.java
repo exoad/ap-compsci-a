@@ -1,7 +1,7 @@
 /**
  * Clas: MiniPaintPanel
- * Purpose: This class handles all of the drawing and everything in the main window
- * Author: Jack Meng
+ * Purpose: This class handles all of the drawing and everything in the main
+ * window Author: Jack Meng
  */
 
 import java.awt.BorderLayout;
@@ -14,13 +14,13 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class MiniPaintPanel extends JPanel implements MouseListener, ActionListener {
+public class MiniPaintPanel
+    extends JPanel implements MouseListener, ActionListener {
   /**
    * Purpose: This class creates a Line object which is then utilized by the
    * Dynanmic Class to create and store lines in order to display them correctly
@@ -45,15 +45,13 @@ public class MiniPaintPanel extends JPanel implements MouseListener, ActionListe
     }
 
     // getter method for the color
-    public Color getColor() {
-      return color;
-    }
+    public Color getColor() { return color; }
 
-    // to string in order to print to the console to make sure the line was drawn
-    // correctly
+    // to string in order to print to the console to make sure the line was
+    // drawn correctly
     public String toString() {
-      return "Line: (" + startx + ", " + starty + ") to (" + endx + ", " + endy + ")\nColor: " + color.toString()
-          + "\n";
+      return "Line: (" + startx + ", " + starty + ") to (" + endx + ", " +
+          endy + ")\nColor: " + color.toString() + "\n";
     }
   }
 
@@ -63,15 +61,20 @@ public class MiniPaintPanel extends JPanel implements MouseListener, ActionListe
   private Color currColor = Color.BLACK;
   private int startx;
   private int starty;
-  private int endx; 
-  private int endy; 
+  private int endx;
+  private int endy;
   private int iterator = 0;
   private int size = 1;
   private boolean line = true;
-  private transient Line[] entities = new Line[1]; // start out as size of one but will increase as times goes on
+  private transient Line[] entities =
+      new Line[1]; // start out as size of one but will increase as times goes
+                   // on
   private Graphics g;
   MiniPaintPanel(Dimension dim) {
-    labels[0] = new JLabel("<html>Current Shape: " + shape + "<br>Current Color:<html>"); // use html in order to space and format text properly
+    labels[0] =
+        new JLabel("<html>Current Shape: " + shape +
+                   "<br>Current Color:<html>"); // use html in order to space
+                                                // and format text properly
     labels[0].setForeground(Color.BLACK);
     labels[0].setOpaque(true);
     labels[0].setAlignmentX(Component.LEFT_ALIGNMENT);
@@ -97,8 +100,9 @@ public class MiniPaintPanel extends JPanel implements MouseListener, ActionListe
     buttons[3].setBackground(Color.BLACK);
 
     buttons[4] = new JButton(placeHolder);
-    buttons[4].setBackground(
-        new Color((int) (Math.random() * 256), (int) (Math.random() * 256), (int) (Math.random() * 256)));
+    buttons[4].setBackground(new Color((int)(Math.random() * 256),
+                                       (int)(Math.random() * 256),
+                                       (int)(Math.random() * 256)));
 
     buttons[5] = new JButton(placeHolder);
     buttons[5].setBackground(Color.ORANGE);
@@ -128,7 +132,6 @@ public class MiniPaintPanel extends JPanel implements MouseListener, ActionListe
     addMouseListener(this);
     setLayout(new BorderLayout());
     add(menu1, BorderLayout.WEST);
-
   }
 
   /**
@@ -140,21 +143,25 @@ public class MiniPaintPanel extends JPanel implements MouseListener, ActionListe
     g1.setColor(currColor);
     if (line) {
       g1.drawLine(startx, starty, endx, endy);
-      add(new Line(new Point(startx, starty), new Point(endx, endy), currColor));
+      add(new Line(new Point(startx, starty), new Point(endx, endy),
+                   currColor));
     } else {
       g1.drawLine(startx, starty, endx, starty);
       g1.drawLine(startx, starty, startx, endy);
       g1.drawLine(endx, endy, endx, starty);
       g1.drawLine(endx, endy, startx, endy);
-      add(new Line(new Point(startx, starty), new Point(endx, starty), currColor));
-      add(new Line(new Point(startx, starty), new Point(startx, endy), currColor));
+      add(new Line(new Point(startx, starty), new Point(endx, starty),
+                   currColor));
+      add(new Line(new Point(startx, starty), new Point(startx, endy),
+                   currColor));
       add(new Line(new Point(endx, endy), new Point(endx, starty), currColor));
       add(new Line(new Point(endx, endy), new Point(startx, endy), currColor));
     }
   }
 
-  /** 
-   * This overriden method will redrawn everything when the window is resized and keep everything in view
+  /**
+   * This overriden method will redrawn everything when the window is resized
+   * and keep everything in view
    */
   @Override
   public void paintComponent(Graphics gr) {
@@ -177,7 +184,6 @@ public class MiniPaintPanel extends JPanel implements MouseListener, ActionListe
     labels[1].setForeground(cc);
     g = getGraphics();
     g.setColor(cc);
-
   }
 
   @Override
@@ -193,7 +199,9 @@ public class MiniPaintPanel extends JPanel implements MouseListener, ActionListe
     else if (e.getSource() == buttons[3])
       updateText(Color.BLACK);
     else if (e.getSource() == buttons[4]) {
-      Color rar = new Color((int) (Math.random() * 256), (int) (Math.random() * 256), (int) (Math.random() * 256));
+      Color rar =
+          new Color((int)(Math.random() * 256), (int)(Math.random() * 256),
+                    (int)(Math.random() * 256));
       updateText(rar);
       buttons[4].setBackground(rar);
     } else if (e.getSource() == buttons[5])
@@ -201,26 +209,26 @@ public class MiniPaintPanel extends JPanel implements MouseListener, ActionListe
     else if (e.getSource() == buttons[6]) {
       if (line) {
         shape = "rectangle";
-        labels[0].setText("<html>Current Shape: " + shape + "<br>Current Color:<html>");
+        labels[0].setText("<html>Current Shape: " + shape +
+                          "<br>Current Color:<html>");
         line = false;
       } else {
         shape = "line";
-        labels[0].setText("<html>Current Shape: " + shape + "<br>Current Color:<html>");
+        labels[0].setText("<html>Current Shape: " + shape +
+                          "<br>Current Color:<html>");
         line = true;
       }
     }
-
   }
 
-  public Line get(int index) {
-    return entities[index];
-  }
+  public Line get(int index) { return entities[index]; }
 
   /**
    * @param tag This is the object that will be added to the dynanmic array
    */
   public void add(Line tag) {
-    // check if we have not reached the limit if we did, we will expand the array
+    // check if we have not reached the limit if we did, we will expand the
+    // array
     if (iterator == size)
       expand();
     System.out.println(tag.toString());
@@ -234,7 +242,8 @@ public class MiniPaintPanel extends JPanel implements MouseListener, ActionListe
    *              specific index
    */
   public void add(Line tag, int index) {
-    // check if we have not reached the limit if we did, we will expand the array
+    // check if we have not reached the limit if we did, we will expand the
+    // array
     if (iterator == size)
       expand();
     // loop through the array to find said index
@@ -248,8 +257,8 @@ public class MiniPaintPanel extends JPanel implements MouseListener, ActionListe
   }
 
   /**
-   * This method will expand the array double the size of the original array size.
-   * This method shall not be used outside of this class itself
+   * This method will expand the array double the size of the original array
+   * size. This method shall not be used outside of this class itself
    */
   protected void expand() {
     System.out.println("Expanding...");
