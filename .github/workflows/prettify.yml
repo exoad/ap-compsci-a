@@ -13,7 +13,7 @@ jobs:
     - name: Cloning the repository
       uses: actions/checkout@v1
       with:
-        fetch-depth: 1
+        fetch-depth: 5
     - name: Prettify the JS Code
       uses: lwerner-lshigh/prettier_action_java@v1.1.1
       with:
