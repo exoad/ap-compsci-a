@@ -12,5 +12,5 @@ Check the folder `./resource` for all of the files
 
 # Changed README
 This readme used to be huge and had a lot of stuffs, but i have decided to shorten it :)
-
-<footer>Signature: US975</footer>
+<br>
+<footer>Readme Signature: UT492</footer>
