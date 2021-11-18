@@ -16,3 +16,5 @@ This readme used to be huge and had a lot of stuffs, but i have decided to short
 <br>
 
 <footer>Readme Signature: UT492</footer>
+
+### ALL CODE BELONGS TO ME WHILE ORIGINALS, LESSONS, DOCUMENTATIONS, ASSIGNMENT DETAILS BELONG TO THEIR SPECIFIC OWNERS (e.g. COLLEGBOARD, THE SCHOOL, ETC.)
