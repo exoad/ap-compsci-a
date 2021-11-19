@@ -1,3 +1,5 @@
+# OUTDATED LICENSE
+
 <h1 id="c-license-1-2-renewed">C-License 1.2 RENEWED</h1>
 <pre><code>COPYRIGHT (C) <span class="hljs-number">2021</span> JACKMENG
 
