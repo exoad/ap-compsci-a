@@ -13,4 +13,4 @@
 <p><a href="/projects">/projects</a> - This folder contains all major projects</p>
 <h2 id="files">Files</h2>
 <p><a href="./README.md">README</a> - This file is the current file you are reading</p>
-<p><a href="./TODO">TODO</a> - Things I plan on doing for this directory</p>
+
