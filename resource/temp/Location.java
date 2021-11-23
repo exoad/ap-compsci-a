@@ -1,35 +1,41 @@
 public class Location {
-  int file;
-  int rank;
-  public Location(int file, int rank) {
-    this.file = file;
-    this.rank = rank;
+  int col;
+  int row;
+  public Location(int col, int row) {
+    this.col = col;
+    this.row = row;
   }
   public Location(String not) {
     //parse from conventional notation
     if(not.length() != 2) {
       throw new IllegalArgumentException("Invalid location string");
     }
-    this.file = not.charAt(0) - '1';
-    this.rank = not.charAt(1) - 'a';    
+    this.col = not.charAt(0) - 'a';
+    this.row = not.charAt(1) - '1';
   }
   public int getCol() {
-    return file;
+    return col;
   }
   public int getRow() {
-    return rank;
+    return row;
   }
+  public void setCol(int col) {
+    this.col = col;
+  }
+  public void setRow(int row) {
+    this.row = row;
+  }
+
   public boolean isValid(Location loc) {
-    return loc.file >= 0 && loc.file < 8 && loc.rank >= 0 && loc.rank < 8;
+    return loc.col >= 0 && loc.col < 8 && loc.row >= 0 && loc.row < 8;
   }
   public boolean isValid() {
-    return file >= 0 && file < 8 && rank >= 0 && rank < 8;
+    return col >= 0 && col < 8 && row >= 0 && row < 8;
   }
   public boolean equals(Location loc) {
-    return loc.file == this.file && loc.rank == this.rank;
+    return loc.col == this.col && loc.row == this.row;
   }
   public String toString() {
-    //parse file and rank back to conventional notation
-    return "" + (char)('1' + file) + (char)('a' + rank);
+    return "" + (char)('a' + col) + (row + 1);
   }
 }
