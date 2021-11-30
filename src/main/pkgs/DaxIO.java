@@ -14,14 +14,12 @@ public class DaxIO {
   private final OutputStreamWriter osw;
   private static Object byteBuffer;
 
-  public DaxIO() {
-    osw = new OutputStreamWriter(System.out);
-  }
+  public DaxIO() { osw = new OutputStreamWriter(System.out); }
 
   public <T> void println(T streamByte) {
     DaxIO.byteBuffer = streamByte;
     try {
-      osw.write((Object) streamByte + "\n");
+      osw.write((Object)streamByte + "\n");
       osw.flush();
     } catch (IOException e) {
       e.printStackTrace();
@@ -31,7 +29,7 @@ public class DaxIO {
   public <T> void print(T streamByte) {
     DaxIO.byteBuffer = streamByte;
     try {
-      osw.write((Object) streamByte + "");
+      osw.write((Object)streamByte + "");
       osw.flush();
     } catch (IOException e) {
       e.printStackTrace();
@@ -67,7 +65,7 @@ public class DaxIO {
 
   public void writeBuffer() {
     try {
-      osw.write((Object) byteBuffer + " \n");
+      osw.write((Object)byteBuffer + " \n");
     } catch (IOException e) {
       e.printStackTrace();
     }
@@ -78,5 +76,4 @@ public class DaxIO {
     osw.close();
     byteBuffer = null;
   }
-
 }

@@ -8,12 +8,11 @@ package main;
  * File Purpose: The main handler for this project using sub project files
  */
 
-import main.pkgs.DaxIO;
-import main.pkgs.Kattio;
-import main.pkgs.Eval;
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import main.pkgs.DaxIO;
+import main.pkgs.Eval;
+import main.pkgs.Kattio;
 
 public class Runner implements Runnable {
   private static Eval e;
@@ -33,8 +32,6 @@ public class Runner implements Runnable {
 
     jp = new JPanel();
     jf.add(jp);
-
-
   }
 
   @Override

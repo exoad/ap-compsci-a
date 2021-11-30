@@ -4,14 +4,14 @@
 
 package main.pkgs;
 
-import java.util.StringTokenizer;
-import java.io.BufferedReader;
 import java.io.BufferedOutputStream;
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.io.PrintWriter;
 import java.io.OutputStream;
+import java.io.PrintWriter;
+import java.util.StringTokenizer;
 
 public class Kattio extends PrintWriter {
   public Kattio(InputStream i) {
@@ -24,25 +24,15 @@ public class Kattio extends PrintWriter {
     r = new BufferedReader(new InputStreamReader(i));
   }
 
-  public boolean hasMoreTokens() {
-    return peekToken() != null;
-  }
+  public boolean hasMoreTokens() { return peekToken() != null; }
 
-  public int getInt() {
-    return Integer.parseInt(nextToken());
-  }
+  public int getInt() { return Integer.parseInt(nextToken()); }
 
-  public double getDouble() {
-    return Double.parseDouble(nextToken());
-  }
+  public double getDouble() { return Double.parseDouble(nextToken()); }
 
-  public long getLong() {
-    return Long.parseLong(nextToken());
-  }
+  public long getLong() { return Long.parseLong(nextToken()); }
 
-  public String getWord() {
-    return nextToken();
-  }
+  public String getWord() { return nextToken(); }
 
   private BufferedReader r;
   private StringTokenizer st;
@@ -58,7 +48,8 @@ public class Kattio extends PrintWriter {
           st = new StringTokenizer(line);
         }
         token = st.nextToken();
-      } catch (IOException ignored) {}
+      } catch (IOException ignored) {
+      }
     return token;
   }
 
