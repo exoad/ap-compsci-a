@@ -19,16 +19,16 @@ import java.util.stream.Stream;
 public class DaxFileIO {
   private final String fileDir;
 
-  public DaxFileIO(String dir) {
-    fileDir = dir;
-  }
+  public DaxFileIO(String dir) { fileDir = dir; }
 
   public String readLineNumber(int number, Object subDir) {
     if (new File(fileDir + subDir.toString()).exists()) {
       String t = "";
-      try (Stream<String> lines = Files.lines(Paths.get(fileDir + subDir.toString()))) {
+      try (Stream<String> lines =
+               Files.lines(Paths.get(fileDir + subDir.toString()))) {
         t = lines.skip(number).findFirst().get();
-        List<String> f = Files.readAllLines(Paths.get(fileDir + "saves"), Charset.defaultCharset());
+        List<String> f = Files.readAllLines(Paths.get(fileDir + "saves"),
+                                            Charset.defaultCharset());
         f.forEach((m) -> System.out.print("\nSuccess on reading: " + m + "\n"));
       } catch (IOException e) {
         e.printStackTrace();
@@ -55,7 +55,8 @@ public class DaxFileIO {
       String t = "";
       try (Stream<String> lines = Files.lines(Paths.get(typ.toString()))) {
         t = lines.skip(number).findFirst().get();
-        List<String> f = Files.readAllLines(Paths.get(typ.toString()), Charset.defaultCharset());
+        List<String> f = Files.readAllLines(Paths.get(typ.toString()),
+                                            Charset.defaultCharset());
         f.forEach((m) -> System.out.print("\nSuccess on reading: " + m + "\n"));
       } catch (IOException e) {
         e.printStackTrace();
