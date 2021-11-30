@@ -1,3 +1,5 @@
+package resource.lessons.l_35;
+
 //********************************************************************
 //  StudentAthlete.java       Author: Lewis/Loftus/Cocking
 //

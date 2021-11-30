@@ -1,3 +1,5 @@
+package resource.lessons.l_35;
+
 //********************************************************************
 //  Pet.java       Author: Lewis/Loftus/Cocking
 //

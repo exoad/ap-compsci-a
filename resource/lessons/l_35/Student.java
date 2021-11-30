@@ -1,3 +1,5 @@
+package resource.lessons.l_35;
+
 //********************************************************************
 //  Student.java       Author: Lewis/Loftus/Cocking
 //

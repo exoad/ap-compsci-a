@@ -1,3 +1,5 @@
+package resource.lessons.l_33;
+
 //********************************************************************
 //  Words.java       Author: Lewis/Loftus/Cocking
 //

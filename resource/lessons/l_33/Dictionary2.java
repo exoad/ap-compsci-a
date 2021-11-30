@@ -1,3 +1,5 @@
+package resource.lessons.l_33;
+
 //********************************************************************
 //  Dictionary2.java       Author: Lewis/Loftus/Cocking
 //

@@ -1,3 +1,5 @@
+package resource.lessons.l_34;
+
 //********************************************************************
 //  Thought.java       Author: Lewis/Loftus/Cocking
 //

@@ -1,3 +1,5 @@
+package resource.lessons.l_34;
+
 //********************************************************************
 //  Messages.java       Author: Lewis/Loftus/Cocking
 //

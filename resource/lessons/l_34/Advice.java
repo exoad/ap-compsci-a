@@ -1,3 +1,5 @@
+package resource.lessons.l_34;
+
 //********************************************************************
 //  Advice.java       Author: Lewis/Loftus/Cocking
 //
