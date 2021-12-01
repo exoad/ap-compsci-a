@@ -1,6 +1,0 @@
-Create a class called Student
-that implements the
-Comparable interface. Your
-Student must contain a
-String (their name) and an
-int (their ID number).

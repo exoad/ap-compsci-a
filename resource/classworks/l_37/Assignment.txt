@@ -1,0 +1,5 @@
+Using the List interface posted on 
+classroom, write the ArrayList 
+class. Put these two files in their own 
+subfolder so that they don’t affect 
+any of your other work.
