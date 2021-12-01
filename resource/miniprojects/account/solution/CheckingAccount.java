@@ -14,7 +14,7 @@ public class CheckingAccount extends Account {
   // Constructs a CheckingAccount with given owner, balance, and starting check
   // number.
   public CheckingAccount(String newOwner, double initBalance,
-                         int startingCheckNumber) {
+      int startingCheckNumber) {
     super(newOwner, initBalance);
     nextCheckNumber = startingCheckNumber;
   }
@@ -27,7 +27,9 @@ public class CheckingAccount extends Account {
   }
 
   // Additional accessor
-  public int getNextCheckNumber() { return nextCheckNumber; }
+  public int getNextCheckNumber() {
+    return nextCheckNumber;
+  }
 
   // Writes a check for the given amount to the given recipient.
   // Always increment nextCheckNumber.
@@ -46,9 +48,9 @@ public class CheckingAccount extends Account {
     else {
       super.withdraw(amount);
       System.out.println("\nCheck Number: " + nextCheckNumber +
-                         "\nRecipient: " + recipient +
-                         "\nAmount of the Check: " + amount +
-                         "\nAccount: " + super.getOwner());
+          "\nRecipient: " + recipient +
+          "\nAmount of the Check: " + amount +
+          "\nAccount: " + super.getOwner());
       return true;
     }
     return false;

@@ -75,7 +75,7 @@ class RotateArray {
      * output normal as 360
      */
 
-    int[][] arr = {{1, 2, 3}, {4, 5, 6}};
+    int[][] arr = { { 1, 2, 3 }, { 4, 5, 6 } };
 
     /* Print the values in a time complexity of O(N^2) */
     for (int[] x : rotateArray(arr, 360)) {
@@ -99,27 +99,27 @@ class RotateArray {
      * = 270
      */
     int[][] testCase1 = {
-        {1, 3, 4, 9}, {4, 3, 1, 8}, {1, 3, 5, 2}, {4, 2, 5, 0}};
+        { 1, 3, 4, 9 }, { 4, 3, 1, 8 }, { 1, 3, 5, 2 }, { 4, 2, 5, 0 } };
     int[][] testCase1Correct = {
-        {4, 1, 4, 1}, {2, 3, 3, 3}, {5, 5, 1, 4}, {0, 2, 8, 9}};
+        { 4, 1, 4, 1 }, { 2, 3, 3, 3 }, { 5, 5, 1, 4 }, { 0, 2, 8, 9 } };
 
     int[][] testCase2 = {
-        {1, 3, 4, 9}, {4, 3, 1, 8}, {1, 3, 5, 2}, {4, 2, 5, 0}};
+        { 1, 3, 4, 9 }, { 4, 3, 1, 8 }, { 1, 3, 5, 2 }, { 4, 2, 5, 0 } };
     int[][] testCase2Correct = {
-        {0, 5, 2, 4}, {2, 5, 3, 1}, {8, 1, 3, 4}, {9, 4, 3, 1}};
+        { 0, 5, 2, 4 }, { 2, 5, 3, 1 }, { 8, 1, 3, 4 }, { 9, 4, 3, 1 } };
 
     int[][] testCase3 = {
-        {1, 3, 4, 9}, {4, 3, 1, 8}, {1, 3, 5, 2}, {4, 2, 5, 0}};
+        { 1, 3, 4, 9 }, { 4, 3, 1, 8 }, { 1, 3, 5, 2 }, { 4, 2, 5, 0 } };
     int[][] testCase3Correct = {
-        {9, 8, 2, 0}, {4, 1, 5, 5}, {3, 3, 3, 2}, {1, 4, 1, 4}};
+        { 9, 8, 2, 0 }, { 4, 1, 5, 5 }, { 3, 3, 3, 2 }, { 1, 4, 1, 4 } };
 
     /* Moved the JUNIT sections here so I could easily test them */
     System.out.println(java.util.Arrays.deepEquals(rotateArray(testCase1, 90),
-                                                   testCase1Correct));
+        testCase1Correct));
     System.out.println(java.util.Arrays.deepEquals(rotateArray(testCase2, 180),
-                                                   testCase2Correct));
+        testCase2Correct));
     System.out.println(java.util.Arrays.deepEquals(rotateArray(testCase3, 270),
-                                                   testCase3Correct));
+        testCase3Correct));
     System.out.flush();
     // end
   }

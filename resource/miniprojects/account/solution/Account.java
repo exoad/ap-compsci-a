@@ -38,12 +38,18 @@ public class Account {
   }
 
   // accessors
-  public double getBalance() { return balance; }
+  public double getBalance() {
+    return balance;
+  }
 
-  public String getOwner() { return owner; }
+  public String getOwner() {
+    return owner;
+  }
 
   // mutators
-  public void setOwner(String newOwner) { owner = newOwner; }
+  public void setOwner(String newOwner) {
+    owner = newOwner;
+  }
 
   // note: there is no specific mutator method for the balance.
 

@@ -25,15 +25,19 @@ public class SavingsAccount extends Account {
   }
 
   // Additional accessors/mutators:
-  public double getInterestRate() { return interestRate; }
+  public double getInterestRate() {
+    return interestRate;
+  }
 
-  public void setInterestRate(double newRate) { interestRate = newRate; }
+  public void setInterestRate(double newRate) {
+    interestRate = newRate;
+  }
 
   // Increases the balance by an amount equal to the interestRate times the
   // current balance. Note that a 3% interest rate would be a rate of 0.03.
   public void compoundInterest() {
     // deposit the new amount of the balance
-    super.deposit((double)super.getBalance() * interestRate);
+    super.deposit((double) super.getBalance() * interestRate);
   }
 
   // Returns a String representation of the Savings Account. This can call the

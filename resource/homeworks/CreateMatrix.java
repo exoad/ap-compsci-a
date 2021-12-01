@@ -8,8 +8,9 @@ public class CreateMatrix {
         newArr[i][j] = arr[j];
     return newArr;
   }
+
   public static void main(String[] args) {
-    String[] testArr = {"hello", "world", "period", "1"};
+    String[] testArr = { "hello", "world", "period", "1" };
     for (String element[] : createMatrix(testArr)) {
       for (String ele : element) {
         System.out.print(ele + " ");

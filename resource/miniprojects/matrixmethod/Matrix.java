@@ -34,7 +34,7 @@ public class Matrix {
    * @param colLen the size of the columns
    *
    *               This method is overloaded and is used when the user decides
-   * to input the values manually
+   *               to input the values manually
    */
   public Matrix(int rowLen, int colLen) {
     rows = rowLen;
@@ -44,7 +44,7 @@ public class Matrix {
     for (int i = 0; i < matrix.length; i++) {
       for (int j = 0; j < matrix[0].length; j++) {
         System.out.println("Enter value at location: ROW: " + (i + 1) +
-                           " COL: " + (j + 1));
+            " COL: " + (j + 1));
         matrix[i][j] = new Scanner(System.in).nextInt();
       }
     }
@@ -53,15 +53,21 @@ public class Matrix {
   /*
    * Setter & Mutator Methods
    */
-  public int getRows() { return rows; }
+  public int getRows() {
+    return rows;
+  }
 
-  public int getColumns() { return cols; }
+  public int getColumns() {
+    return cols;
+  }
 
   public int getSpecific(int row, int column) {
     return matrix == null ? null : matrix[row][column];
   }
 
-  public int[][] getMatrix() { return matrix == null ? null : matrix; }
+  public int[][] getMatrix() {
+    return matrix == null ? null : matrix;
+  }
 
   /**
    * @return the final array after it's columns and rows have been inversed
@@ -70,7 +76,8 @@ public class Matrix {
     int[][] temp = new int[matrix[0].length][matrix.length];
     for (int i = 0; i < matrix[0].length; i++)
       for (int j = 0; j < matrix.length; j++)
-        /* Inverse the rows and columns from the original array to the new array
+        /*
+         * Inverse the rows and columns from the original array to the new array
          */
         temp[i][j] = matrix[j][i];
     return temp;
@@ -80,7 +87,8 @@ public class Matrix {
     int[][] temp = new int[arr[0].length][arr.length];
     for (int i = 0; i < arr[0].length; i++)
       for (int j = 0; j < arr.length; j++)
-        /* Inverse the rows and columns from the original array to the new array
+        /*
+         * Inverse the rows and columns from the original array to the new array
          */
         temp[i][j] = arr[j][i];
     return temp;
@@ -142,7 +150,7 @@ public class Matrix {
 
   /**
    * @param toAdd this is the 2D array that will be added to the current 2D
-   *     array
+   *              array
    * @return the sum of the 2 2D arrays
    */
   public int addArrays(int[][] toAdd) {
@@ -155,7 +163,7 @@ public class Matrix {
 
   /**
    * @param rotations the amount of rotations needed for the rotateArray()
-   *     method
+   *                  method
    * @param addMatrix this is the 2D array that will be used for the addArrays()
    * @return the final value returned to the user without the user having to set
    *         everything up
@@ -164,7 +172,7 @@ public class Matrix {
     String con = "";
     con += "Add 2D arrays: " + addArrays(addMatrix) + "\n";
     con += "Rotate Arrays with degrees " + rotations + " : \n" +
-           arrayToString(rotateArray(rotations)) + "\n";
+        arrayToString(rotateArray(rotations)) + "\n";
     con += "Transpose the Array: \n" + arrayToString(transpose()) + "\n";
     con += "Matrix Properties, Rows : " + rows + " Columns : " + cols + "\n";
 

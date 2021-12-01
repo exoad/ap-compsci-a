@@ -21,7 +21,7 @@ public class AccountDriver {
     // you think it does?
     for (int i = 0; i < acctList.length; i++) {
       if (acctList[i] instanceof SavingsAccount)
-        ((SavingsAccount)acctList[i]).compoundInterest();
+        ((SavingsAccount) acctList[i]).compoundInterest();
     }
 
     printAccounts(acctList);

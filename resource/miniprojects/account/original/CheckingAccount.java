@@ -9,7 +9,7 @@ public class CheckingAccount extends Account {
   // Constructs a CheckingAccount with given owner, balance, and starting check
   // number.
   public CheckingAccount(String newOwner, double initBalance,
-                         int startingCheckNumber) {
+      int startingCheckNumber) {
     super(newOwner, initBalance);
     nextCheckNumber = startingCheckNumber;
   }

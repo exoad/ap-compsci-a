@@ -60,9 +60,9 @@ public class AccountDriver {
      */
     for (int i = 0; i < acctList.length; i++) {
       if (acctList[i] instanceof SavingsAccount)
-        ((SavingsAccount)acctList[i]).compoundInterest();
+        ((SavingsAccount) acctList[i]).compoundInterest();
       else if (acctList[i] instanceof CheckingAccount)
-        ((CheckingAccount)acctList[i]).writeCheck(5, "Jeremy");
+        ((CheckingAccount) acctList[i]).writeCheck(5, "Jeremy");
     }
 
     printAccounts(acctList);

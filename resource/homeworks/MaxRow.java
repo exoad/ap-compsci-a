@@ -8,7 +8,7 @@ public class MaxRow {
       for (int j = 0; j < arr[i].length; j++) {
         rowSum += arr[i][j];
         System.out.println("ROW: " + i + " "
-                           + "COL: " + j + " CURR: " + rowSum);
+            + "COL: " + j + " CURR: " + rowSum);
       }
       System.out.println("SUM " + rowSum);
       if (rowSum > maxSum) {
@@ -19,9 +19,10 @@ public class MaxRow {
     System.out.println("MAX ROW: " + (maxRow));
     return arr[maxRow];
   }
+
   public static void main(String[] args) {
     // return row 2
-    int[][] temp = {{4, 4}, {8, 8}, {-4, -4}};
+    int[][] temp = { { 4, 4 }, { 8, 8 }, { -4, -4 } };
     for (int ele : largestRow(temp))
       System.out.printf("%d ", ele);
   }
