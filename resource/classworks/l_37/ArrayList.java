@@ -1,4 +1,4 @@
-//package resource.classworks.l_37;
+package resource.classworks.l_37;
 
 /**
  * @author Jack Meng
@@ -163,6 +163,7 @@ public class ArrayList<E> implements List<E> {
     String s = "[";
     for (int i = 0; i < iterator; i++)
       s += array[i] + (i != iterator - 1 ? ", " : "");
-    return s += "]";
+    s += "]";
+    return s;
   }
 }

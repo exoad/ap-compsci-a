@@ -1,4 +1,4 @@
-//package resource.classworks.l_37;
+package resource.classworks.l_37;
 /**
  * @author Jack Meng
  * Class: Tester
