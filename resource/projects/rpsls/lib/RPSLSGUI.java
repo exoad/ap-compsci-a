@@ -1,4 +1,4 @@
-package resource.projects.rpsls;
+package resource.projects.rpsls.lib;
 
 import java.awt.*;
 import java.awt.event.*;

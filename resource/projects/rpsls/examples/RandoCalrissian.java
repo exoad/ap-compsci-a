@@ -1,6 +1,6 @@
 package resource.projects.rpsls.examples;
 
-import resource.projects.rpsls.RPSLSStrategy;
+import resource.projects.rpsls.lib.RPSLSStrategy;
 
 public class RandoCalrissian implements RPSLSStrategy {
   public String strategyName() { return "RandoCalrissian"; }

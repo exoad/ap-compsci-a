@@ -7,3 +7,6 @@ still avaliable under the following conditions and modifications:
 -CoderName will also be blocked
 
 It is your duty to keep this your project and not copied off.
+
+Also the main files are located in the directory: 
+[resource/projects/rpsls/lib](resource/projects/rpsls/lib)

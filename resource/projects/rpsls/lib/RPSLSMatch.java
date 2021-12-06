@@ -1,4 +1,4 @@
-package resource.projects.rpsls;
+package resource.projects.rpsls.lib;
 
 public class RPSLSMatch {
   private RPSLSStrategy player1;

@@ -1,4 +1,4 @@
-package resource.projects.rpsls;
+package resource.projects.rpsls.lib;
 
 public interface RPSLSStrategy {
   public String strategyName();
