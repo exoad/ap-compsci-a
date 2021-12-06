@@ -1,4 +1,6 @@
-package resource.projects.rpsls;
+package resource.projects.rpsls.examples;
+
+import resource.projects.rpsls.RPSLSStrategy;
 
 public class RockBotTom implements RPSLSStrategy {
   public String strategyName() { return "RockBotTom"; }
