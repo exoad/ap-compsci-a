@@ -2,7 +2,6 @@ package resource.projects.rpsls;
 
 import java.util.*;
 import javax.swing.*;
-
 import resource.projects.rpsls.examples.CycleBot;
 import resource.projects.rpsls.examples.RockBotTom;
 import resource.projects.rpsls.examples.SheldonCooperBot;
