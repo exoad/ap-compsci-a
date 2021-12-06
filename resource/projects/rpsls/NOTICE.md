@@ -1,6 +1,6 @@
 # NOTICE
 
-Because this project is made for a tournament, the source code is 
+Because this project is made for a tournament, the source code is
 still avaliable under the following conditions and modifications:
 -The Source Code is obfuscated
 -Functionalities will be blocked (comments, etc.)
