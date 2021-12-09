@@ -1,7 +1,7 @@
 Consider the following instance variable and method.
 private List&lt;Integer&gt; nums;
 ```java
-/** Precondition: nums.size &gt; 0
+/** Precondition: nums.size > 0
  */
 public void numQuest() {
     int k = 0;
