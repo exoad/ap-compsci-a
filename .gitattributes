@@ -1,2 +1,2 @@
 # for syntax highlighting
-*.java linguist-language=C++
+*.java linguist-language=Kotlin
