@@ -1,5 +1,6 @@
 Consider the following instance variable and method.
 private List&lt;Integer&gt; nums;
+
 ```java
 /** Precondition: nums.size > 0
  */
@@ -13,11 +14,13 @@ public void numQuest() {
     }
 }
 ```
+
 Assume that List nums initially contains the following Integer values.
 
 [0, 0, 4, 2, 5, 0, 3, 0]
 
 What will List nums contain as a result of executing numQuest?
+
 ```
 A) [0, 0, 4, 2, 5, 0, 3, 0]
 B) [4, 2, 5, 3]
