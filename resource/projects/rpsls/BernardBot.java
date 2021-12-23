@@ -1,3 +1,5 @@
+package resource.projects.rpsls;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Objects;
