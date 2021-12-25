@@ -9,7 +9,7 @@ still avaliable under the following conditions and modifications:
 It is your duty to keep this your project and not copied off.
 
 Also, my bot isn't the best bot, it is just a simple algorithm
-I came up with over dinner lmao.
+I came up with over dinner lmao. My bot got like #5 not #1
 
 Also the main files are located in the directory: 
 [resource/projects/rpsls/lib](resource/projects/rpsls/lib)
