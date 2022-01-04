@@ -1,3 +1,0 @@
-Please leave a private comment here with the name of your java file (including proper capitalization). In addition, your java file must be uploaded to Classroom BEFORE the due date.
-
-Reminder: Please have no print statements in your program. You will not have time the day of the tournament to adjust your code.

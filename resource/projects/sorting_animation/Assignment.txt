@@ -1,1 +1,0 @@
-Create an animation that sorts 100 random numbers (i.e., heights of rectangles) with options of Selection, Insertion, and Bubble sorts. Have the user select the sort they would like to use by using either JButtons or JRadioButtons, and have the animation start with the click of a JButton.
