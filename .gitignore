@@ -1,0 +1,11 @@
+*.class
+.idea
+.vscode
+/out
+.settings
+/.gradle
+/bin
+
+
+# current assignments ignore
+resource/projects/sorting_animation/*.java
