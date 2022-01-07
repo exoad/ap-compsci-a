@@ -5,7 +5,7 @@
 .settings
 /.gradle
 /bin
-
+*.java~
 
 # current assignments ignore
 resource/projects/sorting_animation/*.java
