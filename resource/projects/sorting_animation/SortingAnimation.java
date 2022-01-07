@@ -1,4 +1,3 @@
-
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.UIManager;
@@ -15,8 +14,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Arrays;
 
-/** This import is static so it could be used without Math.* */
+/** This import is static so it could be used without Math.* & also the standard print */
 import static java.lang.Math.*;
+import static java.lang.System.*;
 
 /**
  * <h1>SortingAnimation</h1>
@@ -44,13 +44,15 @@ public class SortingAnimation {
   /**
    * <p>
    * Here are the methods that our nested class,
-   * where the magic hapoens, will use.
+   * where the magic happens, will use.
    * 
    * Technically it is just a Runnable {@link java.lang.Runnable}
    * </p>
    */
   public interface Runner {
     public void run();
+
+    public void write(int[] list);
   }
 
   /**
@@ -62,7 +64,7 @@ public class SortingAnimation {
     } catch (Exception e) {
       e.printStackTrace();
     }
-    new SortingAnimation().new Magic().run();
+    new Magic().run();
   }
 
   /**
@@ -81,9 +83,9 @@ public class SortingAnimation {
    * @see #SortingAnimation.Magic.insertionSort()
    * @see #SortingAnimation.Magic.pressuredRunner(Runnable)
    */
-  private class Magic extends JPanel implements SortingAnimation.Runner, ActionListener {
+  private static class Magic extends JPanel implements SortingAnimation.Runner, ActionListener {
     private int[] list;
-    private int current;
+    private int current, concurrent;
     private final long speed = 50;
     private JButton[] buttons = new JButton[4];
     private javax.swing.JLabel status = new javax.swing.JLabel();
@@ -94,7 +96,7 @@ public class SortingAnimation {
 
     /**
      * <p>
-     * Our constructor will be called to initalize our components
+     * Our constructor will be called to initialize our components
      * in our GUI, and also generate the proper values for our list
      * </p>
      * 
@@ -156,7 +158,7 @@ public class SortingAnimation {
     /**
      * <p>
      * This method performs the bubble sort algorithm.
-     * Everytime it is sorted, it will be redrawn, and
+     * Every time it is sorted, it will be redrawn, and
      * the animation will be paused for 100th of a second
      * 
      * After it is done, the status JLabel will be updated
@@ -174,6 +176,7 @@ public class SortingAnimation {
       int n = list.length;
       for (int i = 0; i < n - 1; i++) {
         for (int j = 0; j < n - i - 1; j++) {
+          concurrent = j;
           if (list[j] > list[j + 1]) {
             int temp = list[j];
             list[j] = list[j + 1];
@@ -182,6 +185,7 @@ public class SortingAnimation {
         }
         current = i;
         repaint();
+        write(list);
         Thread.sleep(speed);
       }
       status.setForeground(Color.GREEN);
@@ -213,7 +217,9 @@ public class SortingAnimation {
           list[i] = list[j];
           list[j] = temp;
           current = i;
+          concurrent = j;
           repaint();
+          write(list);
           Thread.sleep(speed);
         }
       }
@@ -224,7 +230,7 @@ public class SortingAnimation {
     /**
      * <p>
      * This method performs the selection sort algorithm.
-     * Everytime it is sorted, it will be redrawn, and
+     * Every time it is sorted, it will be redrawn, and
      * the animation will be paused for 100th of a second
      * 
      * Our selectionSort's stats:
@@ -240,6 +246,7 @@ public class SortingAnimation {
       for (int i = 0; i < list.length - 1; i++) {
         int mm = i;
         for (int j = i + 1; j < list.length; j++) {
+          concurrent = mm;
           if (list[j] < list[mm]) {
             mm = j;
           }
@@ -249,6 +256,7 @@ public class SortingAnimation {
         list[mm] = temp;
         current = i;
         repaint();
+        write(list);
         Thread.sleep(speed);
 
       }
@@ -259,7 +267,7 @@ public class SortingAnimation {
     /**
      * <p>
      * This method performs the insertion sort algorithm.
-     * Everytime it is sorted, it will be redrawn, and
+     * Every time it is sorted, it will be redrawn, and
      * the animation will be paused for 100th of a second
      * 
      * Our insertionSort's stats:
@@ -278,10 +286,12 @@ public class SortingAnimation {
         while (k >= 0 && list[k] >= curr) {
           list[k + 1] = list[k];
           k -= 1;
+          concurrent = k;
         }
         list[k + 1] = curr;
         current = i;
         repaint();
+        write(list);
         Thread.sleep(speed);
 
       }
@@ -291,13 +301,21 @@ public class SortingAnimation {
 
     /**
      * <p>
-     * This method is overriden.
+     * This method is overridden.
      * 
      * It will attempt to redraw the most current
      * state of the array as lines on the screen.
      * 
      * This will also make a temporary cursor and flag
      * for the current element being sorted.
+     * 
+     * Cursor Colors:
+     * Blue: Current Element
+     * Green: Finish Element
+     * Red: Start Element
+     * Black: Default
+     * Magenta: Finding Element
+     * White: Last Element
      * </p>
      * 
      * @param g This is the graphics object that will be used to draw the array
@@ -313,7 +331,7 @@ public class SortingAnimation {
           g.drawLine(j, 400 - list[i], j, 600);
           g.setColor(Color.BLACK);
         } else if (i == current - 1) {
-          g.setColor(Color.YELLOW);
+          g.setColor(Color.WHITE);
           g.drawLine(j, 400 - list[i], j, 600);
           g.setColor(Color.BLACK);
         } else if (i == 0) {
@@ -324,16 +342,22 @@ public class SortingAnimation {
           g.setColor(Color.GREEN);
           g.drawLine(j, 400 - list[i], j, 600);
           g.setColor(Color.BLACK);
+        } else if (i == concurrent) {
+          g.setColor(Color.MAGENTA);
+          g.drawLine(j, 400 - list[i], j, 600);
+          g.setColor(Color.BLACK);
         }
       }
     }
 
     /**
      * <p>
-     * This method is overriden.
+     * This method is overridden.
      * 
      * It is used to run the current GUI
      * </p>
+     * 
+     * @see java.lang.Runnable#run()
      */
     @Override
     public void run() {
@@ -341,12 +365,19 @@ public class SortingAnimation {
       frame.setVisible(true);
     }
 
+    @Override
+    public void write(int[] list) {
+      for(int e : list) 
+        System.out.print(e + " ");
+      out.print("\n========================================================\n\n\n");
+    }
+
     /**
      * <p>
      * This method is a macro function, meaning it is used to make my life
      * easier when writing the code.
      * 
-     * A thread is runned because this allows our GUI to not "broken" or
+     * A thread is ran because this allows our GUI to not "broken" or
      * frozen when our algorithm is running. This also allows us to switch
      * from algorithm to algorithm without having to restart the program or wait
      * until it is done.
@@ -359,6 +390,7 @@ public class SortingAnimation {
      * 
      * @param func The callback to be run
      * @throws InterruptedException
+     * @see #run()
      */
     private void pressuredRunner(Runnable func) throws InterruptedException {
       worker = new Thread(() -> {
@@ -369,7 +401,7 @@ public class SortingAnimation {
 
     /**
      * <p>
-     * This method is overriden
+     * This method is overridden
      * 
      * This method acts as an actionListener for the JButtons in the GUI.
      * 
@@ -379,7 +411,7 @@ public class SortingAnimation {
      * This action allows us to run multiple algorithms at once or at least
      * make sure the program doesn't freeze when running the algorithms.
      * 
-     * Everytime a button is pressed, the status JLabel will be updated
+     * Every time a button is pressed, the status JLabel will be updated
      * so the user can a see what the program is doing.
      * </p>
      * 
