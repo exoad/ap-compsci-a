@@ -1,17 +1,20 @@
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.JSlider;
 import javax.swing.UIManager;
 import javax.swing.WindowConstants;
+import javax.swing.event.ChangeListener;
 import javax.swing.JButton;
 
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.BorderLayout;
-
 import java.awt.Graphics;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import javax.swing.event.ChangeEvent;
+
 import java.util.Arrays;
 
 /** This import is static so it could be used without Math.* & also the standard print */
@@ -83,16 +86,17 @@ public class SortingAnimation {
    * @see #SortingAnimation.Magic.insertionSort()
    * @see #SortingAnimation.Magic.pressuredRunner(Runnable)
    */
-  private static class Magic extends JPanel implements SortingAnimation.Runner, ActionListener {
+  private static class Magic extends JPanel implements SortingAnimation.Runner, ActionListener, ChangeListener {
     private int[] list;
     private int current, concurrent;
-    private final long speed = 50;
-    private JButton[] buttons = new JButton[4];
-    private javax.swing.JLabel status = new javax.swing.JLabel();
+    private long speed = 50;
+    private JButton[] buttons = new JButton[5];
+    private JSlider speedSlider = new JSlider(1, 200, 50);
+    private javax.swing.JLabel status = new javax.swing.JLabel(), speedLabel = new javax.swing.JLabel();
     private JPanel panel = new JPanel();
     private JFrame frame = new JFrame("Bad Sorting");
     private Thread worker;
-    private final int WIDTH = 600;
+    private final int WIDTH = 900;
 
     /**
      * <p>
@@ -107,26 +111,41 @@ public class SortingAnimation {
       frame.setSize(new Dimension(WIDTH, 700));
 
       buttons[0] = new JButton("Bubble Sort");
-      buttons[0].addActionListener(this);
 
       buttons[1] = new JButton("Selection Sort");
-      buttons[1].addActionListener(this);
 
       buttons[2] = new JButton("Insertion Sort");
-      buttons[2].addActionListener(this);
 
       buttons[3] = new JButton("Bogo Sort");
-      buttons[3].addActionListener(this);
+
+      buttons[4] = new JButton("Stop");
 
       status.setText("Stopped.");
-      status.setForeground(Color.BLACK);
       status.setOpaque(true);
+      status.setForeground(Color.RED);
       status.setBackground(Color.BLACK);
 
-      Arrays.asList(buttons).forEach(button -> panel.add(button));
+      Arrays.asList(buttons).forEach(button -> {
+        button.addActionListener(this);
+        panel.add(button);
+      });
+
+      speedSlider.setMajorTickSpacing(10);
+      speedSlider.setMinorTickSpacing(1);
+      speedSlider.setPaintTicks(true);
+      speedSlider.addChangeListener(this);
+      speedSlider.setOpaque(true);
+      speedSlider.setBackground(Color.GRAY);
+
+      speedLabel.setText("@" + speed + "ms");
+      speedLabel.setOpaque(true);
+      speedLabel.setBackground(Color.BLACK);
+      speedLabel.setForeground(Color.YELLOW);
 
       panel.add(status);
-      panel.setPreferredSize(new Dimension(WIDTH - 420, 40));
+      panel.add(speedLabel);
+      panel.add(speedSlider);
+      panel.setPreferredSize(new Dimension(WIDTH, 40));
       panel.setOpaque(true);
       panel.setBackground(Color.GRAY);
 
@@ -293,7 +312,6 @@ public class SortingAnimation {
         repaint();
         write(list);
         Thread.sleep(speed);
-
       }
       status.setForeground(Color.GREEN);
       status.setText("Sorted.");
@@ -310,12 +328,9 @@ public class SortingAnimation {
      * for the current element being sorted.
      * 
      * Cursor Colors:
-     * Blue: Current Element
-     * Green: Finish Element
-     * Red: Start Element
+     * Orange: Current Element
      * Black: Default
-     * Magenta: Finding Element
-     * White: Last Element
+     * Blue: Finding Element
      * </p>
      * 
      * @param g This is the graphics object that will be used to draw the array
@@ -324,26 +339,14 @@ public class SortingAnimation {
     public void paintComponent(Graphics g) {
       super.paintComponent(g);
       g.setColor(Color.BLACK);
-      for (int i = 0, j = 50; j < WIDTH && i < list.length; i++, j += 5) {
+      for (int i = 0, j = 200; j < WIDTH && i < list.length; i++, j += 5) {
         g.drawLine(j, 400 - list[i], j, 600);
         if (i == current) {
+          g.setColor(Color.ORANGE);
+          g.drawLine(j, 400 - list[i], j, 600);
+          g.setColor(Color.BLACK);
+        }else if (i == concurrent) {
           g.setColor(Color.BLUE);
-          g.drawLine(j, 400 - list[i], j, 600);
-          g.setColor(Color.BLACK);
-        } else if (i == current - 1) {
-          g.setColor(Color.WHITE);
-          g.drawLine(j, 400 - list[i], j, 600);
-          g.setColor(Color.BLACK);
-        } else if (i == 0) {
-          g.setColor(Color.RED);
-          g.drawLine(j, 400 - list[i], j, 600);
-          g.setColor(Color.BLACK);
-        } else if (i == list.length - 1) {
-          g.setColor(Color.GREEN);
-          g.drawLine(j, 400 - list[i], j, 600);
-          g.setColor(Color.BLACK);
-        } else if (i == concurrent) {
-          g.setColor(Color.MAGENTA);
           g.drawLine(j, 400 - list[i], j, 600);
           g.setColor(Color.BLACK);
         }
@@ -367,7 +370,7 @@ public class SortingAnimation {
 
     @Override
     public void write(int[] list) {
-      for(int e : list) 
+      for (int e : list)
         System.out.print(e + " ");
       out.print("\n========================================================\n\n\n");
     }
@@ -396,6 +399,7 @@ public class SortingAnimation {
       worker = new Thread(() -> {
         func.run();
       });
+      Thread.sleep(2);
       worker.start();
     }
 
@@ -425,6 +429,7 @@ public class SortingAnimation {
         try {
           worker.interrupt();
         } catch (Exception ex) {
+          // do nothing
         }
         list = generate();
         repaint();
@@ -493,7 +498,31 @@ public class SortingAnimation {
         } catch (InterruptedException e1) {
 
         }
+      } else if (e.getSource().equals(buttons[4])) {
+        if (worker != null) {
+          worker.interrupt();
+          status.setText("Stopped");
+          repaint();
+        }
       }
+    }
+
+    /**
+     * <p>
+     * This method is overriden
+     * 
+     * It is used to update the speed
+     * of the animation based on the
+     * slider's position
+     * </p>
+     * 
+     * @see #ChangeListener.stateChanged(ChangeEvent)
+     */
+    @Override
+    public void stateChanged(ChangeEvent e) {
+      speed = speedSlider.getValue() * 2;
+      repaint();
+      speedLabel.setText("@" + speed + "ms");
     }
   }
 }
