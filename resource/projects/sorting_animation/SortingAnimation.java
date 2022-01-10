@@ -1,3 +1,5 @@
+package resource.projects.sorting_animation;
+
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JSlider;
