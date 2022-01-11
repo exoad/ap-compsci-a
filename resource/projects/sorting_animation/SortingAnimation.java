@@ -196,17 +196,20 @@ public class SortingAnimation {
     public synchronized void bubbleSort() throws InterruptedException {
       int n = list.length;
       for (int i = 0; i < n - 1; i++) {
+        
         for (int j = 0; j < n - i - 1; j++) {
+          repaint();
           concurrent = j;
           if (list[j] > list[j + 1]) {
             int temp = list[j];
             list[j] = list[j + 1];
             list[j + 1] = temp;
+            repaint();
           }
         }
-        current = i;
-        repaint();
-        write(list);
+        current = i + 1;
+        
+        //write(list);
         Thread.sleep(speed);
       }
       status.setForeground(Color.GREEN);
@@ -237,10 +240,10 @@ public class SortingAnimation {
           int temp = list[i];
           list[i] = list[j];
           list[j] = temp;
-          current = i;
+          current = i + 1;
           concurrent = j;
           repaint();
-          write(list);
+          //write(list);
           Thread.sleep(speed);
         }
       }
@@ -275,9 +278,9 @@ public class SortingAnimation {
         int temp = list[i];
         list[i] = list[mm];
         list[mm] = temp;
-        current = i;
+        current = i + 1;
         repaint();
-        write(list);
+        //write(list);
         Thread.sleep(speed);
 
       }
@@ -312,7 +315,7 @@ public class SortingAnimation {
         list[k + 1] = curr;
         current = i;
         repaint();
-        write(list);
+        //write(list);
         Thread.sleep(speed);
       }
       status.setForeground(Color.GREEN);
