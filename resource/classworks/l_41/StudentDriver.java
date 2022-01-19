@@ -71,6 +71,26 @@ public class StudentDriver {
     }
     return false;
   }
+  
+  /**
+   * @param list the array of Students to sort
+   * @return The sorted Students
+   */ 
+  public static Student[] selectionSort (Student[] list) {       
+    int min;       
+    Student temp;        
+    for (int index = 0; index < list.length-1; index++)       
+    {          
+      min = index;          
+      for (int scan = index+1; scan < list.length; scan++)             
+        if (list[scan].compareTo(list[min]) < 0)                
+        min = scan;           
+      temp = list[min];          
+      list[min] = list[index];          
+      list[index] = temp;       
+    }
+    return list;
+  }   
 
   public static void main(String[] args) {
     Student s1 = new Student("James", 42394);
@@ -81,9 +101,9 @@ public class StudentDriver {
     Student s6 = new Student("Sally", 42394);
     Student s7 = new Student("Dennis", 42394);
     Student s8 = new Student("Bill", 42394);
-
     Student[] students = { s1, s2, s3, s4, s5, s6, s7, s8 };
     Student name = new Student("James", 42394);
+    students = selectionSort(students);
 
     System.out.println("Linear Search: " + linearSearch(students, name));
     System.out.println("Binary Search: " + binSearch(students, name));
