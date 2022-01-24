@@ -2,7 +2,9 @@ package resource.classworks.l_43;
 
 public class IterativeVRecursion {  
   public static int recursiveFib(int n) {
-    return iterativeFib(n-1) + iterativeFib(n-2);
+    if(n <= 1)
+      return n;
+    return (recursiveFib(n-1) + recursiveFib(n-2));
   }
   
   public static int iterativeFib(int n) {
@@ -16,7 +18,7 @@ public class IterativeVRecursion {
   }
   
   public static void main(String[] args) {
-    System.out.println(recursiveFib(55));
-    System.out.println(iterativeFib(55));
+    System.out.println(recursiveFib(7));
+    System.out.println(iterativeFib(7));
   }
 }
