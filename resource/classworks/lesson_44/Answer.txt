@@ -1,0 +1,5 @@
+1. The more efficient algorithm in WRITING is recursive because the amount of characters is less than that of the iterative algorithm.
+
+2. The iterative algorithm is more efficient because there is a less chance of a stackoverflow error and that it uses less memory in terms of running in a loop-like functionality.
+
+3. The positives of recursion is that it can easily accomplish simple loop-like tasks, while the downside is that it is much more inefficient in terms of runtime than just using a loop.
