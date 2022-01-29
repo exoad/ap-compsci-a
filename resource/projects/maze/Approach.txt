@@ -2,13 +2,13 @@ Basically after asking the teacher, it is required for the project to have at le
 recursive calls for looking in the directions of the blocks near me in a way so:
 
        A
-    
-       |
-     
+          +Y
+       |  
+   -X     +X
 B  --  X  --  C
     
        |
-    
+          -Y
        D
        
 Now there are many other ways to approach this, but for me one could quickly identify this could be solveable with a simple
