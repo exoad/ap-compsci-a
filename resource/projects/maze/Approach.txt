@@ -44,6 +44,9 @@ Flood-Fill for our example will of course utilize 4 major recursive calls which 
 3. Up
 4. Down
 
+Each of these directions will be checked and we will continously call this method to either backtrack
+or move forward in that desired direction.
+
 Whenever we traverse a spot where we have previously gone, we can the  mark that area with a final char, where our program will know to exclude when it is checking.
 
 One can find a good pseudocode-ish implementation of this algorithm here: https://en.wikipedia.org/wiki/Flood_fill

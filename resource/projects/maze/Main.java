@@ -15,6 +15,7 @@ public class Main {
             this.col = col;
         }
     }
+
     private Integer[] ROWC = {
         0,
         1,
@@ -26,9 +27,12 @@ public class Main {
         -1,
         0
     };
+
     private Integer[][] maze;
     private boolean[][] visited;
     private int currRow, currCol;
+    private Stack<Point> poses = new Stack<>();
+
     public Main(final ArrayList < ArrayList < Integer >> maze) {
         this.maze = maze.stream().map(u - > u.toArray(new Integer[0])).toArray(Integer[][]::new);
         this.visited = new boolean[maze[0].length][maze.length];
@@ -45,7 +49,7 @@ public class Main {
      * @param c Column
      */
     public void flood(int r, int c) {
-        Stack < Point > maps = new Stack < > ();
+        Stack < Point > maps = poses;
         maps.push(new Point(r, c));
         while (!maps.isEmpty()) {
             Point temp = maps.pop();
@@ -55,7 +59,7 @@ public class Main {
                 continue;
             visited[r][c] = true;
             for (int i = 0; i < 4; i++) {
-                maps.add(new Point(r + ROWC[i], c + COLC[i]));
+                flood(r + ROWC[i], c + COLC[i]);
             }
         }
     }
@@ -78,6 +82,10 @@ public class Main {
         while (sc.hasNextLine()) {
             String line = sc.nextLine();
             maze.add((ArrayList) Arrays.asList(line.toIntegerArray()));
+        }
+        Main m = new Main(maze);
+        for(int i = 0; i < m.toSolve.size(); i += 2) {
+            System.out.println(m.toSolve.get(i));
         }
 
         sc.close();
