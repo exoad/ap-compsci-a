@@ -14,7 +14,7 @@ public class Main {
         }
     }
     private ArrayList<ArrayList<?>> toSolve = new ArrayList<>();
-    private ArrayList<ArrayList<boolea>> visited = new ArrayList<>();
+    private ArrayList<ArrayList<Boolean>> visited = new ArrayList<>();
     private int currRow, currCol;
     public Main(ArrayList<ArrayList<?>> maze) {
         toSolve = maze;
@@ -27,7 +27,8 @@ public class Main {
             Point temp = maps.pop();
             r = temp.row;
             c = temp.col;
-            if(r < 0 || row >= currRow || )
+            if(r < 0 || r >= currRow)
+                System.out.println("yes");
         }
     }
         
