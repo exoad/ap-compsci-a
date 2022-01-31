@@ -1,3 +1,14 @@
+Input:
+Input can either be hardcoded or we can read it from a file. For this part it will be your decision. Another thing
+is the characters presented, for the most part it is much easier for one to use numbers instead of ASCII chars, 
+this allows us to manipulate the numbers easily (+, -, /, *).
+
+Output:
+One can output each tick (each recursive call) or we can just outout the original, then we instantly output our 
+finished maze with the modifed array.
+
+------
+
 Basically after asking the teacher, it is required for the project to have at least FOUR recursive calls, I used these 4 
 recursive calls for looking in the directions of the blocks near me in a way so:
 
@@ -30,4 +41,5 @@ this recursive behavior for a N times or 1 time and thus proceed to whenever it 
 
 However we cannot simply just move whenever there is an open space, we can then determine if such path is a "valid" path.
 
-Given this we end with a time complexity of somewhere around O(nm) where n = rows & m = columns. 
+Given this we end with a time complexity of somewhere around O(nm) where n = rows & m = columns. However, the only thing you
+have to watch out for is that you are allocating the resources properly without running into some kinda of stackoverflowerror, etc..
