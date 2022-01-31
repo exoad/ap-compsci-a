@@ -33,7 +33,9 @@ B  --  +  --  C
        D
        
 Now there are many other ways to approach this, but for me one could quickly identify this could be solveable with a simple
-implementation of a FF-algorithm (Flood-Fill), however one could also try a DFS-approach (although this seems counter-intuitive).
+implementation of a FF-algorithm (Flood-Fill), however one could also try a BFS-approach (although this seems counter-intuitive).
+
+(To use a BFS-approach, one can simply just use a Queue inplace of a Stack when compared to the usage of a Flood-Fill implementation.)
 
 Flood-Fill in simple terms is basically an algorithm that runs through the avaliable paths and literally fill them with a value.
 Flood-Fill for our example will of course utilize 4 major recursive calls which will help us to walk in the directions:
