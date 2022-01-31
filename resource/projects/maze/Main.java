@@ -13,11 +13,12 @@ public class Main {
             this.col = col;
         }
     }
-    private ArrayList<ArrayList<?>> toSolve = new ArrayList<>();
-    private ArrayList<ArrayList<Boolean>> visited = new ArrayList<>();
+    private Integer[][] maze;
+    private boolean[][] visited;
     private int currRow, currCol;
-    public Main(ArrayList<ArrayList<?>> maze) {
-        toSolve = maze;
+    public Main(ArrayList<ArrayList<Integer>> maze) {
+        this.maze = maze.stream().map(u -> u.toArray(new Integer[0])).toArray(Integer[][]::new);
+        this.visited = new boolean[maze[0].length][maze.length];
     }
     
     public void flood(int r, int c) {
@@ -27,7 +28,7 @@ public class Main {
             Point temp = maps.pop();
             r = temp.row;
             c = temp.col;
-            if(r < 0 || r >= currRow)
+            if(r < 0 || r >= currRow || c < 0 || c >= currCol)
                 System.out.println("yes");
         }
     }
