@@ -26,7 +26,7 @@ recursive calls for looking in the directions of the blocks near me in a way so:
           +Y
        |  
    -X     +X
-B  --  X  --  C
+B  --  +  --  C
     
        |
           -Y
