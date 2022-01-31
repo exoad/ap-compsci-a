@@ -7,6 +7,16 @@ Output:
 One can output each tick (each recursive call) or we can just outout the original, then we instantly output our 
 finished maze with the modifed array.
 
+Storing Data:
+One can store your data in many different ways, for example, for my part I used the Flood-Fill algo, which mostly
+involves the usage of a queue or a stack. However, one doesn't have to do this and just use something like a Hashmap:
+HashMap: Key: maze-val, Value: status (blocked, etc.)
+
+Or
+
+A simple 2D array which is much more primitive however this allows for much intensive actions to be executed in a short
+amount of time (increase in time for runtime).
+
 ------
 
 Basically after asking the teacher, it is required for the project to have at least FOUR recursive calls, I used these 4 
