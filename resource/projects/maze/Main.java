@@ -3,7 +3,9 @@ import java.io.File;
 import java.util.Stack;
 import java.util.Arrays;
 import java.util.ArrayList;
+
 import static java.lang.Math.*;
+import static java.lang.System.*;
 
 public class Main {
     public class Point {
@@ -13,6 +15,7 @@ public class Main {
             this.col = col;
         }
     }
+    private Integer[] ROWC = {0, 1, 0, -1}, COLC = {1, 0, -1, 0};
     private Integer[][] maze;
     private boolean[][] visited;
     private int currRow, currCol;
@@ -21,6 +24,16 @@ public class Main {
         this.visited = new boolean[maze[0].length][maze.length];
     }
     
+    /**
+     * <p>
+     * This function performs the necessary floodFill operation
+     * however one can simply alter the Stack to a queue to
+     * use this algorithm into a BFS-like algorithm.
+     * </p>
+     *
+     * @param r Row
+     * @param c Column
+     */
     public void flood(int r, int c) {
         Stack<Point> maps = new Stack<>();
         maps.push(new Point(r, c));
@@ -28,8 +41,12 @@ public class Main {
             Point temp = maps.pop();
             r = temp.row;
             c = temp.col;
-            if(r < 0 || r >= currRow || c < 0 || c >= currCol)
-                System.out.println("yes");
+            if(r < 0 || r >= currRow || c < 0 || c >= currCol || Integer[r][c] == 0 || visited[r][c]) 
+                continue;
+            visited[r][c] = true;
+            for(int i = 0; i < 4; i++) {
+                maps.add(new Point(r + ROWC[i], c + COLC[i]));
+            }
         }
     }
         
