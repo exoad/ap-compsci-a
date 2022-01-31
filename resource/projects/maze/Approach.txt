@@ -21,7 +21,13 @@ Flood-Fill for our example will of course utilize 4 major recursive calls which 
 3. Up
 4. Down
 
+Whenever we traverse a spot where we have previously gone, we can the  mark that area with a final char, where our program will know to exclude when it is checking.
+
 One can find a good pseudocode-ish implementation of this algorithm here: https://en.wikipedia.org/wiki/Flood_fill
 
 Each of these will calls for each direction will fill each avaliable "open" path. Each time it is called, it will attempt
 this recursive behavior for a N times or 1 time and thus proceed to whenever it finds the finish. 
+
+However we cannot simply just move whenever there is an open space, we can then determine if such path is a "valid" path.
+
+Given this we end with a time complexity of somewhere around O(nm) where n = rows & m = columns. 
