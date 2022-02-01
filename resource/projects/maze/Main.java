@@ -1,93 +1,108 @@
-import java.util.Scanner;
-import java.io.File;
-import java.util.Stack;
-import java.util.Arrays;
-import java.util.ArrayList;
-
-import static java.lang.Math.*;
-import static java.lang.System.*;
+import java.io.*;
+import java.util.*;
 
 public class Main {
-    public class Point {
-        public int row, col;
-        public Point(int row, int col) {
-            this.row = row;
-            this.col = col;
-        }
-    }
-
-    private Integer[] ROWC = {
-        0,
-        1,
-        0,
-        -1
-    }, COLC = {
-        1,
-        0,
-        -1,
-        0
-    };
-
-    private Integer[][] maze;
+  public class Maze {
+    private char[][] maze;
+    private String[][] prettify;
     private boolean[][] visited;
-    private int currRow, currCol;
-    private Stack<Point> poses = new Stack<>();
 
-    public Main(final ArrayList < ArrayList < Integer >> maze) {
-        this.maze = maze.stream().map(u - > u.toArray(new Integer[0])).toArray(Integer[][]::new);
-        this.visited = new boolean[maze[0].length][maze.length];
+    public Maze(char[][] c) {
+      maze = c;
+      visited = new boolean[maze.length][maze[0].length];
+      prettify = new String[maze.length][maze[0].length];
+      for (int i = 0; i < maze.length; i++)
+        for (int j = 0; j < maze[0].length; j++)
+          prettify[i][j] = c[i][j] + "";
     }
 
-    /**
-     * <p>
-     * This function performs the necessary floodFill operation
-     * however one can simply alter the Stack to a queue to
-     * use this algorithm into a BFS-like algorithm.
-     * </p>
-     *
-     * @param r Row
-     * @param c Column
-     */
-    public void flood(int r, int c) {
-        Stack < Point > maps = poses;
-        maps.push(new Point(r, c));
-        while (!maps.isEmpty()) {
-            Point temp = maps.pop();
-            r = temp.row;
-            c = temp.col;
-            if (r < 0 || r >= currRow || c < 0 || c >= currCol || Integer[r][c] == 0 || visited[r][c])
-                continue;
-            visited[r][c] = true;
-            for (int i = 0; i < 4; i++) {
-                flood(r + ROWC[i], c + COLC[i]);
-            }
-        }
+    public void solve() {
+      for (int i = 0; i < maze.length; i++)
+        for (int j = 0; j < maze[0].length; j++)
+          if (maze[i][j] == 'S') {
+            floodfill(i, j);
+            break;
+          }
+      quantify(prettify);
     }
 
-    public String toString() {
-        return null;
+    public void quantify(String[][] paths) {
+      for (int i = 0; i < paths.length; i++)
+        for (int j = 0; j < paths[0].length; j++)
+          if (paths[i][j].equals("P"))
+            System.out.println(i + " " + j);
     }
 
-    public static void main(String[] args) throws java.io.IOException {
-        Scanner sc;
-        try {
-            sc = new Scanner(new File("maze.txt"));
-        } catch (java.io.FileNotFoundException fnofe) {
-            System.err.println("The maze file was not found");
-            System.exit(2);
-        }
-        sc = new Scanner(System.in);
-        System.out.println("File not found, please enter from STDIN.");
-        ArrayList < ArrayList < ? >> maze = new ArrayList < > ();
-        while (sc.hasNextLine()) {
-            String line = sc.nextLine();
-            maze.add((ArrayList) Arrays.asList(line.toIntegerArray()));
-        }
-        Main m = new Main(maze);
-        for(int i = 0; i < m.toSolve.size(); i += 2) {
-            System.out.println(m.toSolve.get(i));
-        }
+    public void floodfill(int i, int j) {
+      Queue<Integer> q = new LinkedList<>();
+      q.add(i * maze[0].length + j);
+      while (!q.isEmpty()) {
+        int curr = q.remove();
+        int x = curr / maze[0].length;
+        int y = curr % maze[0].length;
+        if (x < 0 || x >= maze.length || y < 0 || y >= maze[0].length || visited[x][y] || maze[x][y] == '#')
+          continue;
+        visited[x][y] = true;
+        if (maze[x][y] == '.')
+          prettify[x][y] = "B";
+        q.add(x * maze[0].length + y - 1);
+        q.add(x * maze[0].length + y + 1);
+        q.add((x - 1) * maze[0].length + y);
+        q.add((x + 1) * maze[0].length + y);
+      }
+    }
+    public String toString(String[][] s) {
+      String t = "";
+      for (int i = 0; i < s.length; i++) {
+        for (int j = 0; j < s[0].length; j++)
+          t += s[i][j];
+        t += "\n";
+      }
+      return t;
+    }
+  }
 
+  public static void main(String... args) {
+    File f = new File("maze.txt");
+    if (!f.exists() || !f.isFile()) {
+      System.out.println("\nFile not found.\nI have created the local 'maze.txt' for you, just put your maze in it.");
+      try {
+        f.createNewFile();
+      } catch (IOException e) {
+        e.printStackTrace();
+      }
+      return;
+    }
+    try (Scanner sc = new Scanner(new File("maze.txt"))) {
+      if(f.length() == 0) {
+        System.out.println("\nFile is empty.\nI have created the local 'maze.txt' for you, just put your maze in it.");
         sc.close();
+        return;
+      }
+
+      ArrayList<ArrayList<Character>> maze = new ArrayList<>();
+      while (sc.hasNextLine()) {
+        String line = sc.nextLine();
+        ArrayList<Character> row = new ArrayList<>();
+        for (int i = 0; i < line.length(); i++)
+          row.add(line.charAt(i));
+        maze.add(row);
+      }
+
+      char[][] c = new char[maze.size()][maze.get(0).size()];
+      for (int i = 0; i < maze.size(); i++)
+        for (int j = 0; j < maze.get(0).size(); j++)
+          c[i][j] = maze.get(i).get(j);
+
+      Maze m = new Main().new Maze(c);
+      m.solve();
+      System.out.println(m.toString(m.prettify));
+
+
+      sc.close();
+    } catch (FileNotFoundException e) {
+      // TODO Auto-generated catch block
+      e.printStackTrace();
     }
+  }
 }
