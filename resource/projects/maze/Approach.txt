@@ -1,3 +1,6 @@
+Notice this is already as a javadoc in the original source code in
+MazeSolver.java!
+
 Input:
 Input can either be hardcoded or we can read it from a file. For this part it will be your decision. Another thing
 is the characters presented, for the most part it is much easier for one to use numbers instead of ASCII chars, 
