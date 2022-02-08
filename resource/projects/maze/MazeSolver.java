@@ -2,6 +2,8 @@ import java.io.*;
 
 import java.util.*;
 
+import static java.lang.System.*;
+
 /**
  * <p>
  * This main big class will hold:
@@ -186,11 +188,11 @@ public class MazeSolver {
      */
     private synchronized void callEnd(final Pair<Integer, Integer> p) {
       worker.interrupt();
-      System.out.println(toString(parsedMaze));
-      System.out.println(
+      out.println(toString(parsedMaze));
+      out.println(
           "== MAZE SOLVED ==\nStats:\nFoot Steps: " + footSteps + "\nFound End At: "
               + p.toString());
-      System.exit(0);
+      exit(0);
     }
 
     /**
@@ -305,7 +307,7 @@ public class MazeSolver {
      */
     private void floodfill2(int i, int j) {
       if (right)
-        System.out.println(toString(parsedMaze));
+        out.println(toString(parsedMaze));
       if (i < 0 || j < 0 || i >= originalPrettyMaze.length || j >= originalPrettyMaze[0].length)
         return;
       if (parsedMaze[i][j] == Config.WALL_INT) {
@@ -328,7 +330,7 @@ public class MazeSolver {
         current = new Pair<>(i, j);
         footSteps++;
         if (right) {
-          System.out.println(toString(parsedMaze));
+          out.println(toString(parsedMaze));
 
           try {
             Thread.sleep(Config.TLE);
@@ -375,7 +377,6 @@ public class MazeSolver {
         }
         sb.append('\n');
       }
-      System.out.flush();
       return "\n\n" + sb.toString() + "\n";
     }
 
@@ -391,7 +392,7 @@ public class MazeSolver {
   public static void main(String... args) {
     File f = new File(Config.INPUT_FILE);
     if (!f.exists() || !f.isFile()) {
-      System.out.println(
+      out.println(
           Config.FILE_NOT_FOUND);
       try {
         f.createNewFile();
@@ -402,7 +403,7 @@ public class MazeSolver {
     }
     try (Scanner sc = new Scanner(new File(Config.INPUT_FILE))) {
       if (f.length() == 0) {
-        System.out.println(
+        out.println(
             Config.FILE_EMPTY);
         return;
       }
@@ -421,8 +422,8 @@ public class MazeSolver {
       for (int i = 0; i < firstMaze.size(); i++)
         for (int j = 0; j < firstMaze.get(0).size(); j++)
           c[i][j] = firstMaze.get(i).get(j);
-      Scanner sc2 = new Scanner(System.in);
-      System.out.println("Right to the results? (y/n)");
+      Scanner sc2 = new Scanner(in);
+      out.println("Right to the results? (y/n)");
       String ans = sc2.nextLine();
       sc2.close();
       Maze m;
@@ -434,7 +435,8 @@ public class MazeSolver {
       m.solve();
 
     } catch (FileNotFoundException e) {
-      e.printStackTrace();
+      out.println("The file was not found!!\n" + e.getLocalizedMessage());
+      exit(2);
     }
   }
 }
