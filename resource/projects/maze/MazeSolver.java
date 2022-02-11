@@ -334,9 +334,7 @@ public class MazeSolver {
 
           try {
             Thread.sleep(Config.TLE);
-          } catch (InterruptedException e) {
-            e.printStackTrace();
-          }
+          } catch (InterruptedException e) {}
         }
         if (originalPrettyMaze[i][j] == Config.END) {
           callEnd(new Pair<>(i, j));
