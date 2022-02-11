@@ -157,30 +157,6 @@ public class MazeSolver {
 
     /**
      * <p>
-     * This method is used to check if the given
-     * coordinates is DeadEnd.
-     * 
-     * To fulfill a deadend requirement, the following:
-     * <ul>
-     * <li>The current cell must be a path cell.</li>
-     * <li>The current cell must have at least one adjacent path cell.</li>
-     * <li>The three cells are wall cells.</li>
-     * <li>There must be at least one path cell between the three cells.</li>
-     * </ul>
-     * </p>
-     * 
-     * @param i row index
-     * @param j column index
-     * @return true if the given coordinates is DeadEnd, false otherwise
-     */
-    private boolean isDeadEnd(int i, int j) {
-      return parsedMaze[i][j] == Config.WALL_INT && parsedMaze[i - 1][j] == Config.WALL_INT
-          && parsedMaze[i + 1][j] == Config.WALL_INT && parsedMaze[i][j - 1] == Config.WALL_INT
-          && parsedMaze[i][j + 1] == Config.WALL_INT;
-    }
-
-    /**
-     * <p>
      * This method is constantly called from the {@link MazeSolver.Maze#floodFill(int, int)} 
      * to determine if the program should be ended
      * </p>
@@ -313,17 +289,7 @@ public class MazeSolver {
       if (parsedMaze[i][j] == Config.WALL_INT) {
         return;
       }
-      if (isDeadEnd(i, j)) {
-        if (i - 1 >= 0 && parsedMaze[i - 1][j] == Config.PATH_INT) {
-          floodfill2(i - 1, j);
-        } else if (i + 1 < originalPrettyMaze.length && parsedMaze[i + 1][j] == Config.PATH_INT) {
-          floodfill2(i + 1, j);
-        } else if (j - 1 >= 0 && parsedMaze[i][j - 1] == Config.PATH_INT) {
-          floodfill2(i, j - 1);
-        } else if (j + 1 < originalPrettyMaze[0].length && parsedMaze[i][j + 1] == Config.PATH_INT) {
-          floodfill2(i, j + 1);
-        }
-      }
+
       if (parsedMaze[i][j] == Config.PATH_INT) {
         parsedMaze[i][j]++;
         visited[i][j] = true;
