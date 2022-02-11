@@ -357,6 +357,10 @@ public class MazeSolver {
      * {@link java.lang.Object#toString()}
      * 
      * Prints the maze in a pretty format.
+     * We use a StringBuilder because appending using
+     * it will be much more efficient than using
+     * String Literal. 
+     * (B/C the program is already pretty bloat)
      * </p>
      * @param s The underlying maze
      * @return The pretty maze in a String format
