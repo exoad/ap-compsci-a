@@ -168,7 +168,6 @@ public class MazeSolver {
       out.println(
           "== MAZE SOLVED ==\nStats:\nFoot Steps: " + footSteps + "\nFound End At: "
               + p.toString());
-      exit(0);
     }
 
     /**
