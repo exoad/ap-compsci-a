@@ -18,6 +18,7 @@
 ```
 
 <h1>#2</h1>
+
 ```java
 /** Updates downloadList with information from titles.
  * @param titles a list of song titles
