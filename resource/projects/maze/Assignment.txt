@@ -1,1 +1,7 @@
 Write a program that solves a maze using recursion. I have posted a CSV file that has an example maze here. Assume that the start and end points will always have these coordinates: (1, 0) and (maze.length - 1, maze[0].length - 2).
+
+
+Also for some reason, the teacher decided close to the end to tell us that the method had to be a boolean, which
+basically made no sense in terms of my method of solving the method. (Also my method wasn't optimized as I basically just
+setup the algorithm to use the maximum amoung of steps it want, without setting a low and a high to limit it's
+choice).
