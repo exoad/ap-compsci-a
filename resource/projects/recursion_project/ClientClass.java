@@ -9,30 +9,6 @@ public class ClientClass {
         }
     }
 
-    public class Point {
-        private int x;
-        private int y;
-        public Point(int x, int y) {
-            this.x = x;
-            this.y = y;
-        }
-    }
-
-    private class Solver {
-        private int levels;
-        private List<ClientClass.Point> pts = new ArrayList<>(); 
-        public Solver(int levels) {
-            this.levels = levels;
-            fillPoints();
-        }
-
-        protected void fillPoints() {
-            pts.forEach(currPt -> {
-
-            });
-        }
-    }
-
     public static void main(String... args) {
         while(true) {
             int levels = 0;
