@@ -1,0 +1,15 @@
+Your task is to create your own animated game. This game does not need to be an original idea, but it does need to meet certain requirements.
+
+
+Your game must include:
+1. An ArrayList
+2. A 2-dimensional array
+3. Inheritance
+4. At least one timer
+5. An end
+6. Scorekeeping
+7. User interaction (i.e., KeyListener, MouseListener, etc)
+8. Proper encapsulation techniques
+
+My note:
+Requirement 1 & 2 can be combined
