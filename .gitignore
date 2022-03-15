@@ -1,10 +1,13 @@
-*.class
+# Directories
 .idea
 .vscode
 /out
 .settings
-/.gradle
 /bin
-*.java~
 
-# current assignments ignore
+
+# File types
+*.java~
+*.class
+*.iml
+*.xml
