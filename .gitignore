@@ -1,10 +1,9 @@
 # Directories
+/out
+/bin
 .idea
 .vscode
-/out
 .settings
-/bin
-
 
 # File types
 *.java~
