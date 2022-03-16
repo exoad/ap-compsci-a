@@ -1,4 +1,3 @@
-
 import javax.swing.*;
 
 /**
@@ -11,7 +10,7 @@ import javax.swing.*;
  * @author Jack Meng
  * @see Solver
  */
-public class Client {
+public class Main {
   public static void main(String... args) {
     try {
       UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
@@ -40,7 +39,7 @@ public class Client {
                   : "Enter the amount of steps (n >= 0) A number larger than 10 can result in a long time to process: "));
         } catch (NumberFormatException | NullPointerException e) {
           steps = Integer.parseInt(JOptionPane.showInputDialog(null,
-              steps < 0 ? "Enter an INTEGER GREATER OR EQUAL TO 0: "
+              steps < 0 ? "Enter an [ INTEGER ] GREATER OR EQUAL TO 0: "
                   : "Enter the amount of steps (n >= 0) A number larger than 10 can result in a long time to process: "));
         }
         /**
