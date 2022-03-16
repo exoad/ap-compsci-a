@@ -1,0 +1,33 @@
+client class:
+while input != y
+var s = "Enter the amount of steps (where steps >= 0)"
+if s < 0
+  do again
+show the jframe produced by the solver standalone class
+show the joptionpane to do again (y/n)
+
+solver class:
+var steps = getInput
+we draw our big triangle which is basically our standalone/parent triangle
+function something(steps, currentTriangle)
+if we are at lowest for this node
+  add(currentTriangle)
+else
+  we go to each node aka (n-1)
+  point 4 = midpoint from 1 to 2
+  point 5 = midpoint from 2 to 3
+  point 6 = midpoint from 3 to 1
+  for each node we go down with we input the corresponding sides aka:
+    point 1 + 4 + 6
+    point 4 + 2 + 5
+    point 6 + 5 + 3
+  (all of this is accquried via the sierpenski formula and overall fractal generation)
+
+at the end of this we call repaint to repaint the entire frame
+
+midpoint():
+  point2.x + point1.x / 2
+  point2.y + point1.y / 2
+
+paint():
+  draw the 3 lines of a triangle based on the inputted lines from an arraylist storing the current coordinates
