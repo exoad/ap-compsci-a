@@ -4,7 +4,6 @@ import javax.swing.WindowConstants;
 import javax.swing.JLabel;
 
 import java.awt.Color;
-import java.awt.Frame;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.BorderLayout;
@@ -112,14 +111,20 @@ public class Solver extends JPanel {
     f.add(this);
     f.pack();
     f.setVisible(true);
+    updateFrameTitle();
     Triangle curr = new Triangle(new Point(0, (int) Math.round((kio - 100) * Math.sqrt(3) / 2)),
         new Point((kio - 100) / 2, 0),
         new Point(kio - 100, (int) Math.round((kio - 100) * Math.sqrt(3) / 2)));
     sierpenski(steps, curr);
+    
   }
 
-  private synchronized void updateFrameTitle(String msg) {
-    f.setTitle(msg);
+  private synchronized void updateFrameTitle() {
+    new Thread(() -> {
+      while(triangleCount.compareTo(BigInteger.ZERO) != 0) {
+            f.setTitle("Calculating positions for " + triangleCount.toString() + " triangles");
+      }
+    }).start();
   }
 
   /**
@@ -138,7 +143,6 @@ public class Solver extends JPanel {
    * @param t The current triangle we are looking at
    */
   public synchronized void sierpenski(int n, Triangle t) {
-    updateFrameTitle("Calculating positions for " + triangleCount.toString() + " triangles");
     if (n == 1) {
       triangles.add(t);
       triangleCount = triangleCount.subtract(BigInteger.valueOf((long) Math.pow(3, n)));
@@ -201,9 +205,7 @@ public class Solver extends JPanel {
   @Override
   public synchronized void paintComponent(Graphics g) {
     super.paintComponent(g);
-    updateFrameTitle("Drawing...");
-
-    triangleCount = null;
+    f.setTitle("Drawing...");
     for (Triangle s : triangles) {
       g.setColor(Color.ORANGE);
       Polygon x = new Polygon();
@@ -213,6 +215,6 @@ public class Solver extends JPanel {
 
       g.drawPolygon(x);
     }
-    updateFrameTitle("Done");
+    f.setTitle("Done");
   }
 }
