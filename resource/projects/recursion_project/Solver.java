@@ -36,7 +36,7 @@ public class Solver extends JPanel {
    * </p>
    */
   public static class Triangle {
-    public Point a, b, c;
+    private Point a, b, c;
 
     /**
      * Constructor
@@ -49,6 +49,39 @@ public class Solver extends JPanel {
       this.a = a;
       this.b = b;
       this.c = c;
+    }
+
+    /**
+     * <p>
+     * Returns the first point in the triangle
+     * </p>
+     * 
+     * @return A point
+     */
+    public Point getA() {
+      return a;
+    }
+
+    /**
+     * <p>
+     * Returns the second point in the triangle
+     * </p>
+     * 
+     * @return B point
+     */
+    public Point getB() {
+      return b;
+    }
+
+    /**
+     * <p>
+     * Returns the third point in the triangle
+     * </p>
+     * 
+     * @return C point
+     */
+    public Point getC() {
+      return c;
     }
 
     /**
@@ -111,20 +144,12 @@ public class Solver extends JPanel {
     f.add(this);
     f.pack();
     f.setVisible(true);
-    updateFrameTitle();
+    f.setTitle("Calculating positions for " + triangleCount.toString() + " triangles");
     Triangle curr = new Triangle(new Point(0, (int) Math.round((kio - 100) * Math.sqrt(3) / 2)),
         new Point((kio - 100) / 2, 0),
         new Point(kio - 100, (int) Math.round((kio - 100) * Math.sqrt(3) / 2)));
     sierpenski(steps, curr);
-    
-  }
 
-  private synchronized void updateFrameTitle() {
-    new Thread(() -> {
-      while(triangleCount.compareTo(BigInteger.ZERO) != 0) {
-            f.setTitle("Calculating positions for " + triangleCount.toString() + " triangles");
-      }
-    }).start();
   }
 
   /**
@@ -146,6 +171,7 @@ public class Solver extends JPanel {
     if (n == 1) {
       triangles.add(t);
       triangleCount = triangleCount.subtract(BigInteger.valueOf((long) Math.pow(3, n)));
+      f.setTitle("Calculating positions for " + triangleCount.toString() + " triangles");
     } else {
       Point a = midpoint(t.a, t.b);
       Point b = midpoint(t.b, t.c);
@@ -205,13 +231,12 @@ public class Solver extends JPanel {
   @Override
   public synchronized void paintComponent(Graphics g) {
     super.paintComponent(g);
-    f.setTitle("Drawing...");
     for (Triangle s : triangles) {
       g.setColor(Color.ORANGE);
       Polygon x = new Polygon();
-      x.addPoint(s.a.x, s.a.y);
-      x.addPoint(s.b.x, s.b.y);
-      x.addPoint(s.c.x, s.c.y);
+      x.addPoint(s.getA().x, s.getA().y);
+      x.addPoint(s.getB().x, s.getB().y);
+      x.addPoint(s.getC().x, s.getC().y);
 
       g.drawPolygon(x);
     }
