@@ -47,4 +47,10 @@ public class WindowHandler {
     public void windowOpened(WindowEvent e) {
     }
   } 
+
+  public static class TickHandler {
+    public TickHandler() {
+
+    }
+  }
 }
