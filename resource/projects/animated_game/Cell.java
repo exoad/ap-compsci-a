@@ -3,7 +3,27 @@ import javax.swing.JPanel;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Cell extends Location {
+public class Cell {
+  public enum LOCATION_CORNER {
+    CORNER_TL,
+    CORNER_TR,
+    CORNER_BL,
+    CORNER_BR,
+    CORNER_NT,
+  }
+
+  public enum LOCATION_EDGE {
+    EDGE_L,
+    EDGE_R,
+    EDGE_T,
+    EDGE_B,
+    EDGE_N,
+  }
+
+  public enum LOCATION_CENTER {
+    CENTER_CM,
+    CENTER_NT;
+  }
 
   public static final int CORNER_BLOCKS_TOTAL = 4;
   public static final int EDGE_BLOCKS_TOTAL = (Config.GRID_MODIFIER - 2) * 4;
