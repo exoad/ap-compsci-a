@@ -15,7 +15,7 @@ public class Config {
   public static final Color CONTROL_PANEL_BUTTON_FG = new Color(10, 12, 16);
   public static final Color TOOLTIP_BG = new Color(224, 108, 118);
   public static final Color TOOLTIP_FG = new Color(10, 12, 16);
-  public static final Color DEBUG_NEIGHBOR = Color.RED;
+  public static final Color DEBUG_NEIGHBOR = new Color(255, 41, 251);
   public static final long MAX_DELAY = 300L;
   public static final long REFRESH_GENERATION_TIME_MS = 200L;
   public static final int GRID_MODIFIER = 85;
