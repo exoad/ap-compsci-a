@@ -149,14 +149,6 @@ public class Conway extends JPanel {
         while (true) {
           f.setTitle("Jack Meng - Conway's Game of Life | Memory Used: "
               + (Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory()) / (1024 * 1024) + "MB");
-          // conways game of life for each
-          for (int i = 0; i < Config.GRID_MODIFIER; i++) {
-            for (int j = 0; j < Config.GRID_MODIFIER; j++) {
-              cells[i][j].setBackground(
-                  (Config.DEBUG ? (seeder.nextInt() % 2 == 0 ? Config.ALIVE_COLOR : Config.DEAD_COLOR) : Config
-                      .DEAD_COLOR));
-            }
-          }
           // apply rules
           for (int i = 0; i < Config.GRID_MODIFIER; i++) {
             for (int j = 0; j < Config.GRID_MODIFIER; j++) {
