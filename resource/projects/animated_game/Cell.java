@@ -1,9 +1,12 @@
 import javax.swing.JPanel;
+import javax.swing.BorderFactory;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Cell {
+import java.awt.Color;
+
+public class Cell extends JPanel {
   public enum LOCATION_CORNER {
     CORNER_TL,
     CORNER_TR,
@@ -31,9 +34,19 @@ public class Cell {
   public static final int CORNER_BLOCKS_PER_SIDE = CORNER_BLOCKS_TOTAL / 2;
   public static final int TOTAL_CELLS = Config.GRID_MODIFIER * Config.GRID_MODIFIER;
   public static final int CENTER_CELLS_TOTAL = TOTAL_CELLS - CORNER_BLOCKS_TOTAL - EDGE_BLOCKS_TOTAL;
-
-  private Cell() {
+  
+  public Cell(Dimension sizePref, Color foreground, Color background, Color borderColor, Conway parent) {
+    setPreferredSize(sizePref);
+    setOpaque(true);
+    setForeground(foreground);
+    setBorder(BorderFactory.createLineBorder(Config.BORDER_COLOR));
+    addMouseListener(new ClickHandler.CellClickHandler(parent));
+    setBackground(Config.Debug ? (seeder.nextInt() % 2 == 0 ? Config.ALIVE_COLOR : Config.DEAD_COLOR) : Config.DEAD_COLOR);
   }
+  
+  @Deprecated
+  /** @deprecated */
+  public void 
 
   public static synchronized LOCATION_CORNER isCorner(int row, int col) {
     if (row == 0 && col == 0) {
