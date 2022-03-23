@@ -25,6 +25,8 @@ public class Conway extends JPanel {
       frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
       frame.setLocationRelativeTo(null);
       panel = new JPanel();
+      setOpaque(true);
+      setBackground(Config.FRAME_BG_COLOR);
       panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
       jl = new JLabel("Loading the program...!");
       panel.add(jl);
@@ -126,6 +128,19 @@ public class Conway extends JPanel {
     System.out.println("Memory used: " + (Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory())
         / (1024 * 1024) + "MB");
   }
+  
+  public void titleFrameUpdater() {
+    new Thread(() -> {
+      while(true) {
+        f.setTitle("Jack Meng - Conway's Game of Life | Memory Used: " + (Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory()) / (1024 * 1024) + "MB"); 
+        try {
+          Thread.sleep(Config.MAX_TLE);
+        } catch (InterruptedException e) {
+          System.out.println("Worker Killed."); 
+        }
+      }
+    }).start();
+  }
 
   public synchronized JPanel[][] getCells() {
     return cells;
@@ -147,8 +162,7 @@ public class Conway extends JPanel {
     if (!started) {
       worker = new Thread(() -> {
         while (true) {
-          f.setTitle("Jack Meng - Conway's Game of Life | Memory Used: "
-              + (Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory()) / (1024 * 1024) + "MB");
+
           // apply rules
           for (int i = 0; i < Config.GRID_MODIFIER; i++) {
             for (int j = 0; j < Config.GRID_MODIFIER; j++) {
@@ -173,7 +187,7 @@ public class Conway extends JPanel {
             }
           }
           try {
-            Thread.sleep(100);
+            Thread.sleep(Config.MAX_GENERATION_TLE);
           } catch (InterruptedException e) {
             break;
           }
