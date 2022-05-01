@@ -1,12 +1,11 @@
 Consider the following instance variable and method.
-private List&lt;Integer&gt; nums;
 ```java
 /** Precondition: nums.size > 0
  */
 public void numQuest() {
     int k = 0;
     Integer zero = new Integer(0);
-    while (k & lt; nums.size()) {
+    while (k < nums.size()) {
         if (nums.get(k).equals(zero))
             nums.remove(k);
         k++;
