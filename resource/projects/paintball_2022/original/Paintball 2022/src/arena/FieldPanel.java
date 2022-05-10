@@ -1,0 +1,175 @@
+/*
+ * Student Name:
+ * Code your work where indicated. 
+ * Do not delete the beginning and ending comments.
+ */
+
+package arena;
+
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Polygon;
+import java.awt.geom.Ellipse2D;
+import java.awt.geom.Line2D;
+import java.awt.geom.Rectangle2D;
+
+/**
+ *
+ * @author tweis0306
+ */
+public class FieldPanel extends javax.swing.JPanel {
+
+    private Board myBoard;
+    /**
+     * Creates new form FieldPanel
+     */
+    public FieldPanel() {
+        initComponents();
+    }
+
+    public Board getMyBoard() {
+        return myBoard;
+    }
+
+    public void setMyBoard(Board myBoard) {
+        this.myBoard = myBoard;
+    }
+    
+    @Override
+    public void paintComponent(Graphics g1) {
+        Graphics2D g = (Graphics2D) g1;
+        //Draw grid
+        g.draw(new Rectangle2D.Double(0,0,1000,660));
+        for (int x = 0; x <= 1000; x += 20)
+            g.draw(new Line2D.Double(x,0,x,660));
+        for (int y = 0; y <= 660; y += 20)
+            g.draw(new Line2D.Double(0,y,1000,y));
+        if (myBoard == null)
+            return;
+        //Draw elements
+        for (int r = 0; r < 33; r++) {
+            for (int c = 0; c < 50; c++) {
+                Occupant occ = myBoard.get(r, c);
+                if (occ == null)
+                    continue;
+                if (occ instanceof Blocker)
+                    drawBlocker(g, r, c);
+                if (occ instanceof Base)
+                    drawBase(g, r, c, ((Base) occ).getTeam());
+                if (occ instanceof Shot)
+                    drawShot(g, r, c, ((Shot) occ).getTeam(),
+                        ((Shot) occ).getDirection());
+                if (occ instanceof Player) {
+                    Color color;
+                    try {
+                        color = ((Player) occ).getController().getColor();
+                    } catch (Exception e) {
+                        color = Color.GRAY;
+                    }
+                    drawPlayer(g, r, c, 
+                            ((Player) occ).getTeam(),
+                            ((Player) occ).getDirection(), color);
+                }
+            }
+        }
+    }
+    
+    private void drawBlocker(Graphics2D g, int r, int c) {
+        //System.out.println("block: row " + r + ", col " + c);
+        g.setPaint(Color.GRAY);
+        g.fill(new Rectangle2D.Double(c*20 + 1, r*20 + 1,
+                        19, 19));
+    }
+    
+    private void drawBase(Graphics2D g, int r, int c, int team) {
+        if (team == 1)
+            g.setPaint(Color.BLACK);
+        if (team == 2)
+            g.setPaint(Color.RED);
+        int x0 = c * 20;
+        int y0 = r * 20;
+        g.fill(new Rectangle2D.Double(x0 + 2, y0 + 2, 5, 5));
+        g.fill(new Rectangle2D.Double(x0 + 14, y0 + 2, 5, 5));
+        g.fill(new Rectangle2D.Double(x0 + 2, y0 + 14, 5, 5));
+        g.fill(new Rectangle2D.Double(x0 + 14, y0 + 14, 5, 5));
+        g.fill(new Rectangle2D.Double(x0 + 4, y0 + 4, 13, 13));
+    }
+    
+    private void drawShot(Graphics2D g, int r, int c, int team,
+            int direction) {
+        if (team == 1)
+            g.setPaint(Color.BLACK);
+        if (team == 2)
+            g.setPaint(Color.RED);
+        int x0 = c * 20 + 10;
+        int y0 = r * 20 + 10;
+        g.fill(new Ellipse2D.Double(x0 - 4, y0 - 4, 9, 9));
+        int dir = Direction.roundTo8(direction) / 45;
+        int[] deltaX = {0, 6, 7, 6, 0, -6, -7, -6};
+        int[] deltaY = {-7, -6, 0, 6, 7, 6, 0, -6};
+        g.draw(new Line2D.Double(x0, y0, 
+                x0+deltaX[dir], y0+deltaY[dir]));
+    }
+    
+    private void drawPlayer(Graphics2D g, int r, int c,
+            int team, int direction, Color color) {
+        if (team == 1)
+            g.setPaint(Color.BLACK);
+        if (team == 2)
+            g.setPaint(Color.RED);
+        
+        int x0 = c * 20;
+        int y0 = r * 20;
+        int dir = Direction.roundTo8(direction) / 45;
+        int[][] deltaX = { {5, 10, 15}, {2, 8, 17},
+            {2, 2, 18}, {2, 8, 17}, {5, 10, 15},
+            {3, 12, 18}, {2, 18, 18}, {3, 12, 18}};
+        int[][] deltaY = { {18, 2, 18}, {12, 18, 3},
+            {5, 15, 10}, {8, 2, 17}, {2, 18, 2}, 
+            {17, 2, 8}, {10, 5, 15}, {2, 18, 12}};
+        int[] xCoords = new int[3];
+        int[] yCoords = new int[3];
+        for (int i = 0; i < 3; i++) {
+            xCoords[i] = x0 + deltaX[dir][i];
+            yCoords[i] = y0 + deltaY[dir][i];
+        }
+        
+        Polygon p = new Polygon(xCoords, yCoords, 3);
+        g.setPaint(color);
+        g.fill(p);
+        
+        if (team == 1)
+            g.setPaint(Color.BLACK);
+        if (team == 2)
+            g.setPaint(Color.RED);
+        g.draw(p);
+    }
+    
+    /**
+     * This method is called from within the constructor to initialize the form.
+     * WARNING: Do NOT modify this code. The content of this method is always
+     * regenerated by the Form Editor.
+     */
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1001, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 621, Short.MAX_VALUE)
+        );
+    }// </editor-fold>//GEN-END:initComponents
+
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    // End of variables declaration//GEN-END:variables
+}
